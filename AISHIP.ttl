@@ -89,6 +89,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/drives
 :drives rdf:type owl:ObjectProperty ;
+        owl:inverseOf :drivenBy ;
         rdfs:domain schema:EngineSpecification ;
         rdfs:range :MotorizedPropulsionTechnology ;
         rdfs:comment "Relates an engine to the motorized propulsion technology it drives."@en ;
@@ -223,6 +224,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isAntiCavitationMechanismFor
 :isAntiCavitationMechanismFor rdf:type owl:ObjectProperty ;
+                              owl:inverseOf :hasAntiCavitationMechanism ;
                               rdfs:domain :AntiCavitationMechanism ;
                               rdfs:range :MotorizedPropulsionTechnology ;
                               rdfs:comment "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."@en ;
@@ -231,6 +233,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isDescriptionOf
 :isDescriptionOf rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasDescription ;
                  rdfs:domain nfo:TextDocument ;
                  rdfs:range vai:Vessel ;
                  rdfs:comment "Relates a text document description to a vessel"@en ;
@@ -247,6 +250,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isPhotoOf
 :isPhotoOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasPhoto ;
            rdfs:domain nexif:Photo ;
            rdfs:range vai:Vessel ;
            rdfs:comment "Relates a photo to its vessel."@en ;
@@ -255,6 +259,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isSonarSignatureOf
 :isSonarSignatureOf rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :hasSonarSignature ;
                     rdfs:domain nfo:Audio ;
                     rdfs:range vai:Vessel ;
                     rdfs:comment "Relates a sonar signature audio file to its vessel."@en ;
@@ -272,6 +277,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/powers
 :powers rdf:type owl:ObjectProperty ;
+        owl:inverseOf :poweredBy ;
         rdfs:domain :PowerGenerationUnit ;
         rdfs:range schema:EngineSpecification ;
         rdfs:comment "Relates a power generation unit to the engine it powers."@en ;
@@ -289,6 +295,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/propells
 :propells rdf:type owl:ObjectProperty ;
+          owl:inverseOf :propelledBy ;
           rdfs:domain :PropulsionSystem ;
           rdfs:range vai:Vessel ;
           rdfs:comment "Relates a propulsion system to the vessel it propells."@en ;
@@ -306,6 +313,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/usesPropulsionTechnology
 :usesPropulsionTechnology rdf:type owl:ObjectProperty ;
+                          owl:inverseOf :usedByPropulsionSystem ;
                           rdfs:domain :PropulsionSystem ;
                           rdfs:range :PropulsionTechnology ;
                           rdfs:comment "Relates a propulsion system to the propulsion technology it uses to create thrust."@en ;
