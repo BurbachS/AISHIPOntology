@@ -1,4 +1,5 @@
 @prefix : <http://www.semanticweb.org/simonburbach/AISHIP/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
 @prefix nie: <http://www.semanticdesktop.org/ontologies/2007/01/19/nie#> .
@@ -7,6 +8,8 @@
 @prefix vai: <http://www.vesselAI-project.eu/ontology#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
@@ -17,83 +20,104 @@
 
 <http://www.semanticweb.org/simonburbach/AISHIP> rdf:type owl:Ontology ;
                                                   owl:imports <http://qudt.org/3.1.2/schema/qudt> ,
-                                                              rdf:Ontology .
+                                                              rdf:Ontology ;
+                                                  dct:bibliographicCitation "Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. https://doi.org/10.5281/zenodo.15390282" ;
+                                                  dct:created "2025-07-23"^^xsd:date ;
+                                                  dct:creator [ rdf:type foaf:Person ;
+                                                                foaf:homepage <https://orcid.org/0009-0009-8373-6622> ;
+                                                                foaf:mbox <mailto:burbachs@hsu-hh.de> ;
+                                                                foaf:name "Simon Burbach"
+                                                              ] ,
+                                                              [ rdf:type foaf:Person ;
+                                                                foaf:mbox <mailto:lennart.mackert@hsu-hh.de> ;
+                                                                foaf:name "Lennart Mackert"
+                                                              ] ,
+                                                              [ rdf:type foaf:Person ;
+                                                                foaf:homepage <https://orcid.org/0000-0003-3458-4748> ;
+                                                                foaf:mbox <mailto:maleshkm@hsu-hh.de> ;
+                                                                foaf:name "Maria Maleshkova"
+                                                              ] ;
+                                                  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                  dct:title "AISHIP Ontology" ;
+                                                  bibo:doi "10.5281/zenodo.15390282" ;
+                                                  rdfs:comment "Description of AISHIP Ontology. Also adapt DOIs below."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dct:bibliographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/doi
+bibo:doi rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+foaf:mbox rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/simonburbach/AISHIP#drivenBy
-:drivenBy rdf:type owl:ObjectProperty ;
-          owl:inverseOf :drives ;
-          rdfs:domain :MotorizedPropulsionSystem ;
-          rdfs:range schema:EngineSpecification ;
-          rdfs:comment "Relates a motorized propulsion technology with the engine it is driven by."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#drives
-:drives rdf:type owl:ObjectProperty ;
-        rdfs:domain schema:EngineSpecification ;
-        rdfs:range :MotorizedPropulsionTechnology ;
-        rdfs:comment "Relates an engine to the motorized propulsion technology it drives."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#hasAntiCavitationMechanism
-:hasAntiCavitationMechanism rdf:type owl:ObjectProperty ;
-                            owl:inverseOf :isAntiCavitationMechanismFor ;
-                            rdfs:domain :MotorizedPropulsionTechnology ;
-                            rdfs:range :AntiCavitationMechanism ;
-                            rdfs:comment "Relates a motorized propulsion technology to its anti-cavitation mechanism that reduces its cavitation."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#hasDiameter
-:hasDiameter rdf:type owl:ObjectProperty ;
-             rdfs:domain :BladedPropulsor ;
-             rdfs:range qudt:QuantityValue ;
-             rdfs:comment "Relates a bladed propulsor to its diameter."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#isAntiCavitationMechanismFor
-:isAntiCavitationMechanismFor rdf:type owl:ObjectProperty ;
-                              rdfs:domain :AntiCavitationMechanism ;
-                              rdfs:range :MotorizedPropulsionTechnology ;
-                              rdfs:comment "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#usedByPropulsionSystem
-:usedByPropulsionSystem rdf:type owl:ObjectProperty ;
-                        owl:inverseOf :usesPropulsionTechnology ;
-                        rdfs:domain :PropulsionTechnology ;
-                        rdfs:range :PropulsionSystem ;
-                        rdfs:comment "Relates a propulsion technology to the propulsion system it is used by to create thrust."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#usesPropulsionTechnology
-:usesPropulsionTechnology rdf:type owl:ObjectProperty ;
-                          rdfs:domain :PropulsionSystem ;
-                          rdfs:range :PropulsionTechnology ;
-                          rdfs:comment "Relates a propulsion system to the propulsion technology it uses to create thrust."@en .
-
-
 ###  http://www.semanticweb.org/simonburbach/AISHIP/computedOverTimeInterval
 :computedOverTimeInterval rdf:type owl:ObjectProperty ;
                           rdfs:domain :TypicalLocation ;
                           rdfs:range time:Interval ;
-                          rdfs:comment "Relatesa typical location with the time interval it was computed over."@en .
+                          rdfs:comment "Relatesa typical location with the time interval it was computed over."@en ;
+                          rdfs:label "computed over time interval"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/drivenBy
+:drivenBy rdf:type owl:ObjectProperty ;
+          owl:inverseOf :drives ;
+          rdfs:domain :MotorizedPropulsionSystem ;
+          rdfs:range schema:EngineSpecification ;
+          rdfs:comment "Relates a motorized propulsion technology with the engine it is driven by."@en ;
+          rdfs:label "driven by"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/drives
+:drives rdf:type owl:ObjectProperty ;
+        rdfs:domain schema:EngineSpecification ;
+        rdfs:range :MotorizedPropulsionTechnology ;
+        rdfs:comment "Relates an engine to the motorized propulsion technology it drives."@en ;
+        rdfs:label "drives"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasAntiCavitationMechanism
+:hasAntiCavitationMechanism rdf:type owl:ObjectProperty ;
+                            owl:inverseOf :isAntiCavitationMechanismFor ;
+                            rdfs:domain :MotorizedPropulsionTechnology ;
+                            rdfs:range :AntiCavitationMechanism ;
+                            rdfs:comment "Relates a motorized propulsion technology to its anti-cavitation mechanism that reduces its cavitation."@en ;
+                            rdfs:label "has anti-cavitation mechanism"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageSpeed
 :hasAverageSpeed rdf:type owl:ObjectProperty ;
                  rdfs:domain vai:Vessel ;
                  rdfs:range qudt:QuantityValue ;
-                 rdfs:comment "Relates a vessel with its overall average speed, typically measured in knots (kn)."@en .
+                 rdfs:comment "Relates a vessel with its overall average speed, typically measured in knots (kn)."@en ;
+                 rdfs:label "has average speed"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageTrajectorySpeed
 :hasAverageTrajectorySpeed rdf:type owl:ObjectProperty ;
                            rdfs:domain vai:Trajectory ;
                            rdfs:range qudt:QuantityValue ;
-                           rdfs:comment "Relates a trajtectory to the average speed of the vessel during that trip, typically measured in knots (kn)."@en .
+                           rdfs:comment "Relates a trajtectory to the average speed of the vessel during that trip, typically measured in knots (kn)."@en ;
+                           rdfs:label "has average trajectory speed"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDescription
@@ -101,50 +125,65 @@
                 owl:inverseOf :isDescriptionOf ;
                 rdfs:domain vai:Vessel ;
                 rdfs:range nfo:TextDocument ;
-                rdfs:comment "Relates a vessel to its text document description."@en .
+                rdfs:comment "Relates a vessel to its text document description."@en ;
+                rdfs:label "has description"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimA
-:hasDimA rdf:type owl:ObjectProperty ;
-         rdfs:domain vai:Vessel ;
-         rdfs:range qudt:QuantityValue ;
-         rdfs:comment "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."@en .
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasDiameter
+:hasDiameter rdf:type owl:ObjectProperty ;
+             rdfs:domain :BladedPropulsor ;
+             rdfs:range qudt:QuantityValue ;
+             rdfs:comment "Relates a bladed propulsor to its diameter."@en ;
+             rdfs:label "has diameter"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimB
-:hasDimB rdf:type owl:ObjectProperty ;
-         rdfs:domain vai:Vessel ;
-         rdfs:range qudt:QuantityValue ;
-         rdfs:comment "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."@en .
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionA
+:hasDimensionA rdf:type owl:ObjectProperty ;
+               rdfs:domain vai:Vessel ;
+               rdfs:range qudt:QuantityValue ;
+               rdfs:comment "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."@en ;
+               rdfs:label "has dimension A"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimC
-:hasDimC rdf:type owl:ObjectProperty ;
-         rdfs:domain vai:Vessel ;
-         rdfs:range qudt:QuantityValue ;
-         rdfs:comment "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."@en .
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionB
+:hasDimensionB rdf:type owl:ObjectProperty ;
+               rdfs:domain vai:Vessel ;
+               rdfs:range qudt:QuantityValue ;
+               rdfs:comment "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."@en ;
+               rdfs:label "has dimension B"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimD
-:hasDimD rdf:type owl:ObjectProperty ;
-         rdfs:domain vai:Vessel ;
-         rdfs:range qudt:QuantityValue ;
-         rdfs:comment "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."@en .
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionC
+:hasDimensionC rdf:type owl:ObjectProperty ;
+               rdfs:domain vai:Vessel ;
+               rdfs:range qudt:QuantityValue ;
+               rdfs:comment "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."@en ;
+               rdfs:label "has dimension C"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionD
+:hasDimensionD rdf:type owl:ObjectProperty ;
+               rdfs:domain vai:Vessel ;
+               rdfs:range qudt:QuantityValue ;
+               rdfs:comment "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."@en ;
+               rdfs:label "has dimension D"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDraught
 :hasDraught rdf:type owl:ObjectProperty ;
             rdfs:domain vai:TrajectoryPart ;
             rdfs:range qudt:QuantityValue ;
-            rdfs:comment "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."@en .
+            rdfs:comment "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."@en ;
+            rdfs:label "has draught"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasOwner
 :hasOwner rdf:type owl:ObjectProperty ;
-          owl:inverseOf :ownsVessel ;
+          owl:inverseOf :isOwnerOf ;
           rdfs:domain vai:Vessel ;
           rdfs:range :Owner ;
-          rdfs:comment "Relates a vessel to its owner"@en .
+          rdfs:comment "Relates a vessel to its owner"@en ;
+          rdfs:label "has owner"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasPhoto
@@ -152,7 +191,8 @@
           owl:inverseOf :isPhotoOf ;
           rdfs:domain vai:Vessel ;
           rdfs:range nexif:Photo ;
-          rdfs:comment "Relates a vessel to its photo."@en .
+          rdfs:comment "Relates a vessel to its photo."@en ;
+          rdfs:label "has photo"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasSonarSignature
@@ -160,7 +200,8 @@
                    owl:inverseOf :isSonarSignatureOf ;
                    rdfs:domain vai:Vessel ;
                    rdfs:range nfo:Audio ;
-                   rdfs:comment "Relates a vessel to its sonar signature audio file."@en .
+                   rdfs:comment "Relates a vessel to its sonar signature audio file."@en ;
+                   rdfs:label "has sonar signature"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasTypicalGeometry
@@ -168,42 +209,56 @@
                     rdfs:subPropertyOf vai:hasGeometry ;
                     rdfs:domain :TypicalLocation ;
                     rdfs:range geo:Geometry ;
-                    rdfs:comment "Relates a typical location of a vessel with its geometry."@en .
+                    rdfs:comment "Relates a typical location of a vessel with its geometry."@en ;
+                    rdfs:label "has typical geometry"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasTypicalLocation
 :hasTypicalLocation rdf:type owl:ObjectProperty ;
                     rdfs:domain vai:Vessel ;
                     rdfs:range :TypicalLocation ;
-                    rdfs:comment "Related a vessel with its typical location."@en .
+                    rdfs:comment "Related a vessel with its typical location."@en ;
+                    rdfs:label "has typical location"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/isAntiCavitationMechanismFor
+:isAntiCavitationMechanismFor rdf:type owl:ObjectProperty ;
+                              rdfs:domain :AntiCavitationMechanism ;
+                              rdfs:range :MotorizedPropulsionTechnology ;
+                              rdfs:comment "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."@en ;
+                              rdfs:label "is anti-cavitation mechanism for"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isDescriptionOf
 :isDescriptionOf rdf:type owl:ObjectProperty ;
                  rdfs:domain nfo:TextDocument ;
                  rdfs:range vai:Vessel ;
-                 rdfs:comment "Relates a text document description to a vessel"@en .
+                 rdfs:comment "Relates a text document description to a vessel"@en ;
+                 rdfs:label "is description of"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/isOwnerOf
+:isOwnerOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :Owner ;
+           rdfs:range vai:Vessel ;
+           rdfs:comment "Relates an owner to its vessel."@en ;
+           rdfs:label "is owner of"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isPhotoOf
 :isPhotoOf rdf:type owl:ObjectProperty ;
            rdfs:domain nexif:Photo ;
            rdfs:range vai:Vessel ;
-           rdfs:comment "Relates a photo to its vessel."@en .
+           rdfs:comment "Relates a photo to its vessel."@en ;
+           rdfs:label "is photo of"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isSonarSignatureOf
 :isSonarSignatureOf rdf:type owl:ObjectProperty ;
                     rdfs:domain nfo:Audio ;
                     rdfs:range vai:Vessel ;
-                    rdfs:comment "Relates a sonar signature audio file to its vessel."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP/ownsVessel
-:ownsVessel rdf:type owl:ObjectProperty ;
-            rdfs:domain :Owner ;
-            rdfs:range vai:Vessel ;
-            rdfs:comment "Relates an owner to its vessel."@en .
+                    rdfs:comment "Relates a sonar signature audio file to its vessel."@en ;
+                    rdfs:label "is sonar signature of"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/poweredBy
@@ -211,14 +266,16 @@
            owl:inverseOf :powers ;
            rdfs:domain schema:EngineSpecification ;
            rdfs:range :PowerGenerationUnit ;
-           rdfs:comment "Relates an engine to the power generation unit it is powered by."@en .
+           rdfs:comment "Relates an engine to the power generation unit it is powered by."@en ;
+           rdfs:label "powered by"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/powers
 :powers rdf:type owl:ObjectProperty ;
         rdfs:domain :PowerGenerationUnit ;
         rdfs:range schema:EngineSpecification ;
-        rdfs:comment "Relates a power generation unit to the engine it powers."@en .
+        rdfs:comment "Relates a power generation unit to the engine it powers."@en ;
+        rdfs:label "powers"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/propelledBy
@@ -226,32 +283,53 @@
              owl:inverseOf :propells ;
              rdfs:domain vai:Vessel ;
              rdfs:range :PropulsionSystem ;
-             rdfs:comment "Relates a vessel to the propulsion system it is propelled by."@en .
+             rdfs:comment "Relates a vessel to the propulsion system it is propelled by."@en ;
+             rdfs:label "propelled by"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/propells
 :propells rdf:type owl:ObjectProperty ;
           rdfs:domain :PropulsionSystem ;
           rdfs:range vai:Vessel ;
-          rdfs:comment "Relates a propulsion system to the vessel it propells."@en .
+          rdfs:comment "Relates a propulsion system to the vessel it propells."@en ;
+          rdfs:label "propells"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/usedByPropulsionSystem
+:usedByPropulsionSystem rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :usesPropulsionTechnology ;
+                        rdfs:domain :PropulsionTechnology ;
+                        rdfs:range :PropulsionSystem ;
+                        rdfs:comment "Relates a propulsion technology to the propulsion system it is used by to create thrust."@en ;
+                        rdfs:label "used by propulsion system"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/usesPropulsionTechnology
+:usesPropulsionTechnology rdf:type owl:ObjectProperty ;
+                          rdfs:domain :PropulsionSystem ;
+                          rdfs:range :PropulsionTechnology ;
+                          rdfs:comment "Relates a propulsion system to the propulsion technology it uses to create thrust."@en ;
+                          rdfs:label "uses propulsion technology"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/simonburbach/AISHIP#hasNumberOfBlades
-:hasNumberOfBlades rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :BladedPropulsor ;
-                   rdfs:range xsd:int ;
-                   rdfs:comment "Relates a bladed propulsor to its number of blades."@en .
-
-
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasHIN
 :hasHIN rdf:type owl:DatatypeProperty ;
         rdfs:domain vai:Vessel ;
-        rdfs:range xsd:decimal ;
-        rdfs:comment "Relates a vessel with its HIN."@en .
+        rdfs:range xsd:string ;
+        rdfs:comment "Relates a vessel with its HIN."@en ;
+        rdfs:label "has HIN"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasNumberOfBlades
+:hasNumberOfBlades rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :BladedPropulsor ;
+                   rdfs:range xsd:int ;
+                   rdfs:comment "Relates a bladed propulsor to its number of blades."@en ;
+                   rdfs:label "has number of blades"@en .
 
 
 #################################################################
@@ -260,414 +338,490 @@
 
 ###  http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio
 nfo:Audio rdf:type owl:Class ;
-          rdfs:comment "A text document."@en .
+          rdfs:comment "A file containing an audio content"@en ;
+          rdfs:label "Audio"@en .
 
 
 ###  http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument
 nfo:TextDocument rdf:type owl:Class ;
-                 rdfs:comment "A file containing audio content."@en .
+                 rdfs:comment "A text document."@en ;
+                 rdfs:label "Text document"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP#AntiCavitationMechanism
+###  http://www.semanticweb.org/simonburbach/AISHIP/AntiCavitationMechanism
 :AntiCavitationMechanism rdf:type owl:Class ;
-                         rdfs:comment "A design feature or technology applied to propulsion systems to prevent or reduce cavitation effects on propeller blades or related components. Such mechanisms aim to minimize efficiency loss, noise, and material damage caused by cavitation."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#BladedPropulsor
-:BladedPropulsor rdf:type owl:Class ;
-                 rdfs:subClassOf :MotorizedPropulsionTechnology ;
-                 rdfs:comment "A motorized propulsion technology that generates thrust using rotating blades to accelerate water. This category includes conventional propellers and specialized blade-based systems designed for various operational profiles."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#ControllablePitchPropeller
-:ControllablePitchPropeller rdf:type owl:Class ;
-                            rdfs:subClassOf :ScrewPropeller ;
-                            rdfs:comment "A screw propeller with blades that can adjust their pitch during operation, allowing flexible control of thrust and speed without changing the rotation direction. Frequently used in ships that require frequent speed or direction changes."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#CounterRotatingPropeller
-:CounterRotatingPropeller rdf:type owl:Class ;
-                          rdfs:subClassOf :ScrewPropeller ;
-                          rdfs:comment "A screw propeller system that uses two coaxial propellers rotating in opposite directions to improve efficiency and reduce rotational losses. This design enhances thrust and is typically used on high-performance vessels."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#DuctedPropeller
-:DuctedPropeller rdf:type owl:Class ;
-                 rdfs:subClassOf :ScrewPropeller ;
-                 rdfs:comment "A screw propeller enclosed in a fixed nozzle (duct) to increase thrust and efficiency at lower speeds and provide additional protection. Widely used in tugs and fishing trawlers requiring high bollard pull."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#FixedPitchPropeller
-:FixedPitchPropeller rdf:type owl:Class ;
-                     rdfs:subClassOf :ScrewPropeller ;
-                     rdfs:comment "A screw propeller with blades fixed at a constant angle. It offers simple and cost-effective design, commonly used in vessels with steady operating conditions where speed and load vary little."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#FlettnerRotor
-:FlettnerRotor rdf:type owl:Class ;
-               rdfs:subClassOf :RotorSails ;
-               rdfs:comment "A specific type of rotor sail consisting of a tall, rotating cylinder mounted vertically on the deck. When wind flows across the spinning surface, lift is generated via the Magnus effect, assisting vessel propulsion."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#GasWaterJet
-:GasWaterJet rdf:type owl:Class ;
-             rdfs:subClassOf :JetPropulsor ;
-             rdfs:comment "A jet propulsion technology that uses gas (e.g., exhaust gases from a turbine) instead of a pumpt to accelerate water and create thrust. This system combines combustion energy with fluid dynamics for high-performance propulsion."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#HullForm
-:HullForm rdf:type owl:Class ;
-          rdfs:subClassOf :WindAssistedPropulsionTechnology ;
-          rdfs:comment "A wind-assisted propulsion technology that utilizes the vessel’s hull geometry to generate additional aerodynamic lift or reduce drag, complementing primary propulsion systems."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#JetPropulsor
-:JetPropulsor rdf:type owl:Class ;
-              rdfs:subClassOf :MotorizedPropulsionTechnology ;
-              rdfs:comment "A motorized propulsion technology that generates thrust by accelerating a fluid (typically water) through a nozzle, creating a jet stream that propels the vessel. Jet propulsors are commonly used for high-speed boats and specialized vessels."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#Kite
-:Kite rdf:type owl:Class ;
-      rdfs:subClassOf :WindAssistedPropulsionTechnology ;
-      rdfs:comment "A wind-assisted propulsion technology that uses a large controllable kite deployed ahead of the vessel to harness wind energy and reduce engine power requirements."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#MotorizedPropulsionTechnology
-:MotorizedPropulsionTechnology rdf:type owl:Class ;
-                               rdfs:subClassOf :PropulsionTechnology ;
-                               rdfs:comment "A propulsion technology that relies on mechanical motors or engine to convert energy into thrust for vessel propulsion."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#PaddleWheel
-:PaddleWheel rdf:type owl:Class ;
-             rdfs:subClassOf :BladedPropulsor ;
-             rdfs:comment "A propulsion technology that uses large external wheels with attached blades or paddles to push water and generate thrust. Historically used in riverboats and still applied in some shallow-water or heritage vessels."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#PropellerPod
-:PropellerPod rdf:type owl:Class ;
-              rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
-              rdfs:comment "A propulsion system where the propeller is mounted on a steerable pod that also contains the drive motor. Podded propulsors allow full 360-degree rotation for excellent maneuverability and are commonly used in cruise ships and offshore vessels."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#PropulsionTechnology
-:PropulsionTechnology rdf:type owl:Class ;
-                      rdfs:comment "A general concept representing the method or technology used by a propulsion system to generate thrust for vessel movement. This class provides an abstraction for different approaches such as motor-driven or wind-based techniques."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#PureWindPropulsionTechnology
-:PureWindPropulsionTechnology rdf:type owl:Class ;
-                              rdfs:subClassOf :WindPropulsionTechnology ;
-                              rdfs:comment "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#RotorSails
-:RotorSails rdf:type owl:Class ;
-            rdfs:subClassOf :WindAssistedPropulsionTechnology ;
-            rdfs:comment "A wind-assisted propulsion technology that uses rotating cylindrical sails (rotors) to create aerodynamic lift through the Magnus effect, reducing engine load and fuel consumption."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#RudderPropeller
-:RudderPropeller rdf:type owl:Class ;
-                 rdfs:subClassOf :ScrewPropeller ;
-                 rdfs:comment "A screw propeller integrated with a steerable drive unit, enabling both propulsion and steering without a separate rudder. Common in azimuth thrusters for offshore vessels and ships needing high maneuverability."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#ScrewPropeller
-:ScrewPropeller rdf:type owl:Class ;
-                rdfs:subClassOf :BladedPropulsor ;
-                rdfs:comment "A widely used bladed propulsion technology where helical blades mounted on a rotating hub create thrust by pushing water backwards. Screw propellers are commonly used for most vessel types due to their simplicity and efficiency."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#SpeciallyDesignedBladedPropulsor
-:SpeciallyDesignedBladedPropulsor rdf:type owl:Class ;
-                                  rdfs:subClassOf :BladedPropulsor ;
-                                  rdfs:comment "A bladed propulsion technology adapted for specific vessel requirements or operational conditions, such as high maneuverability or integrated drive systems."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#SuctionWings
-:SuctionWings rdf:type owl:Class ;
-              rdfs:subClassOf :WindAssistedPropulsionTechnology ;
-              rdfs:comment "A wind-assisted propulsion technology using rigid wing structures with suction or airflow control systems to enhance aerodynamic lift and reduce fuel consumption."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#SupercavitatingPropeller
-:SupercavitatingPropeller rdf:type owl:Class ;
-                          rdfs:subClassOf :ScrewPropeller ;
-                          rdfs:comment "A screw propeller designed to operate under conditions of intentional cavitation, reducing drag at very high speeds. Common in fast military or racing vessels where conventional propellers would suffer performance loss."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#VoithSchneiderPropeller
-:VoithSchneiderPropeller rdf:type owl:Class ;
-                         rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
-                         rdfs:comment "A highly maneuverable bladed propulsion system using vertical blades that rotate and adjust their pitch cyclically. This design enables precise control in all directions, making it ideal for tugs, ferries, and vessels operating in confined waters."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#WaterJet
-:WaterJet rdf:type owl:Class ;
-          rdfs:subClassOf :JetPropulsor ;
-          rdfs:comment "A jet propulsion technology that draws water into an intake and expels it at high velocity through a nozzle to generate thrust. Water jets are widely used for high-speed ferries, jet boats, and shallow-water applications."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#WindAssistedPropulsionTechnology
-:WindAssistedPropulsionTechnology rdf:type owl:Class ;
-                                  rdfs:subClassOf :WindPropulsionTechnology ;
-                                  rdfs:comment "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#WindPropulsionTechnology
-:WindPropulsionTechnology rdf:type owl:Class ;
-                          rdfs:subClassOf :PropulsionTechnology ;
-                          rdfs:comment "A propulsion technology that harnesses wind energy, typically through aerodynamic surfaces or devices, to provide thrust for moving a vessel."@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP#WindTurbine
-:WindTurbine rdf:type owl:Class ;
-             rdfs:subClassOf :WindAssistedPropulsionTechnology ;
-             rdfs:comment "A wind-assisted propulsion technology using rotor blades similar to wind power generators, converting wind energy into thrust or auxiliary electrical energy for propulsion."@en .
+                         rdfs:comment "A design feature or technology applied to propulsion systems to prevent or reduce cavitation effects on propeller blades or related components. Such mechanisms aim to minimize efficiency loss, noise, and material damage caused by cavitation."@en ;
+                         rdfs:label "Anti cavitation mechanism"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/BatteryUnit
 :BatteryUnit rdf:type owl:Class ;
              rdfs:subClassOf :PowerGenerationUnit ;
-             rdfs:comment "An energy storage system that supplies electrical power for propulsion or auxiliary systems, charged from onboard or external sources."@en .
+             rdfs:comment "An energy storage system that supplies electrical power for propulsion or auxiliary systems, charged from onboard or external sources."@en ;
+             rdfs:label "Battery unit"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/BladedPropulsor
+:BladedPropulsor rdf:type owl:Class ;
+                 rdfs:subClassOf :MotorizedPropulsionTechnology ;
+                 rdfs:comment "A motorized propulsion technology that generates thrust using rotating blades to accelerate water. This category includes conventional propellers and specialized blade-based systems designed for various operational profiles."@en ;
+                 rdfs:label "Bladed propulsor"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CODAD
 :CODAD rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system that uses multiple diesel engines in parallel to provide flexible power management and redundancy."@en .
+       rdfs:comment "A combined propulsion system that uses multiple diesel engines in parallel to provide flexible power management and redundancy."@en ;
+       rdfs:label "CODAD"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CODAG
 :CODAG rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system that can use both a diesel engine and a gas turbine simultaneously for increased power output."@en .
+       rdfs:comment "A combined propulsion system that can use both a diesel engine and a gas turbine simultaneously for increased power output."@en ;
+       rdfs:label "CODAG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CODLAG
 :CODLAG rdf:type owl:Class ;
         rdfs:subClassOf :CombinedEngine ;
-        rdfs:comment "A combined propulsion system that integrates diesel-electric drive for cruising and a gas turbine for greater speed when needed."@en .
+        rdfs:comment "A combined propulsion system that integrates diesel-electric drive for cruising and a gas turbine for greater speed when needed."@en ;
+        rdfs:label "CODLAG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CODOG
 :CODOG rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system that uses either a diesel engine for efficient cruising or a gas turbine for high-speed operation."@en .
+       rdfs:comment "A combined propulsion system that uses either a diesel engine for efficient cruising or a gas turbine for high-speed operation."@en ;
+       rdfs:label "CODOG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/COGAG
 :COGAG rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system using multiple gas turbines, with smaller units for efficient cruising and additional turbines engaged for high-speed operation."@en .
+       rdfs:comment "A combined propulsion system using multiple gas turbines, with smaller units for efficient cruising and additional turbines engaged for high-speed operation."@en ;
+       rdfs:label "COGAG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/COGAS
 :COGAS rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system that integrates a gas turbine and a steam turbine, often in a combined-cycle configuration for efficiency."@en .
+       rdfs:comment "A combined propulsion system that integrates a gas turbine and a steam turbine, often in a combined-cycle configuration for efficiency."@en ;
+       rdfs:label "COGAS"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/COGES
 :COGES rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system using gas and steam turbines to generate electricity, which powers electric motors for propulsion."@en .
+       rdfs:comment "A combined propulsion system using gas and steam turbines to generate electricity, which powers electric motors for propulsion."@en ;
+       rdfs:label "COGES"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/COGOG
 :COGOG rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system with two gas turbines, where only one operates at a time depending on the desired speed profile."@en .
+       rdfs:comment "A combined propulsion system with two gas turbines, where only one operates at a time depending on the desired speed profile."@en ;
+       rdfs:label "COGOG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CONAG
 :CONAG rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "An experimental propulsion system combining a nuclear reactor with a gas turbine, typically used in advanced naval vessels."@en .
+       rdfs:comment "An experimental propulsion system combining a nuclear reactor with a gas turbine, typically used in advanced naval vessels."@en ;
+       rdfs:label "CONAG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CONAN
 :CONAN rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "An experimental propulsion system using two nuclear reactors for increased redundancy and sustained power output."@en .
+       rdfs:comment "An experimental propulsion system using two nuclear reactors for increased redundancy and sustained power output."@en ;
+       rdfs:label "CONAN"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CONAS
 :CONAS rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system that uses a nuclear reactor to generate steam, which drives a steam turbine for propulsion."@en .
+       rdfs:comment "A combined propulsion system that uses a nuclear reactor to generate steam, which drives a steam turbine for propulsion."@en ;
+       rdfs:label "CONAS"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/COSAG
 :COSAG rdf:type owl:Class ;
        rdfs:subClassOf :CombinedEngine ;
-       rdfs:comment "A combined propulsion system using a steam turbine for cruising and a gas turbine for rapid acceleration, with optional simultaneous operation."@en .
+       rdfs:comment "A combined propulsion system using a steam turbine for cruising and a gas turbine for rapid acceleration, with optional simultaneous operation."@en ;
+       rdfs:label "COSAG"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/CombinedEngine
 :CombinedEngine rdf:type owl:Class ;
                 rdfs:subClassOf schema:EngineSpecification ;
-                rdfs:comment "A propulsion system that integrates two or more engine types to optimize performance, efficiency, or redundancy."@en .
+                rdfs:comment "A propulsion system that integrates two or more engine types to optimize performance, efficiency, or redundancy."@en ;
+                rdfs:label "Combined engine"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/ControllablePitchPropeller
+:ControllablePitchPropeller rdf:type owl:Class ;
+                            rdfs:subClassOf :ScrewPropeller ;
+                            rdfs:comment "A screw propeller with blades that can adjust their pitch during operation, allowing flexible control of thrust and speed without changing the rotation direction. Frequently used in ships that require frequent speed or direction changes."@en ;
+                            rdfs:label "Controllable pitch propeller"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/CounterRotatingPropeller
+:CounterRotatingPropeller rdf:type owl:Class ;
+                          rdfs:subClassOf :ScrewPropeller ;
+                          rdfs:comment "A screw propeller system that uses two coaxial propellers rotating in opposite directions to improve efficiency and reduce rotational losses. This design enhances thrust and is typically used on high-performance vessels."@en ;
+                          rdfs:label "Counter rotating propeller"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/DieselCombustionUnit
 :DieselCombustionUnit rdf:type owl:Class ;
                       rdfs:subClassOf :PowerGenerationUnit ;
-                      rdfs:comment "A power unit that generates mechanical or electrical energy by combusting diesel fuel. Often used to drive generators or directly coupled engines."@en .
+                      rdfs:comment "A power unit that generates mechanical or electrical energy by combusting diesel fuel. Often used to drive generators or directly coupled engines."@en ;
+                      rdfs:label "Diesel combustion unit"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/DieselEngine
 :DieselEngine rdf:type owl:Class ;
               rdfs:subClassOf :PistonEngine ;
-              rdfs:comment "An internal combustion engine that uses the compression ignition of diesel fuel to produce mechanical motion."@en .
+              rdfs:comment "An internal combustion engine that uses the compression ignition of diesel fuel to produce mechanical motion."@en ;
+              rdfs:label "Diesel engine"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/DuctedPropeller
+:DuctedPropeller rdf:type owl:Class ;
+                 rdfs:subClassOf :ScrewPropeller ;
+                 rdfs:comment "A screw propeller enclosed in a fixed nozzle (duct) to increase thrust and efficiency at lower speeds and provide additional protection. Widely used in tugs and fishing trawlers requiring high bollard pull."@en ;
+                 rdfs:label "Ducted propeller"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/ElectricEngine
 :ElectricEngine rdf:type owl:Class ;
                 rdfs:subClassOf :NonPistonEngine ;
-                rdfs:comment "A motor that converts electrical energy into mechanical rotation."@en .
+                rdfs:comment "A motor that converts electrical energy into mechanical rotation."@en ;
+                rdfs:label "Electric engine"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/FixedPitchPropeller
+:FixedPitchPropeller rdf:type owl:Class ;
+                     rdfs:subClassOf :ScrewPropeller ;
+                     rdfs:comment "A screw propeller with blades fixed at a constant angle. It offers simple and cost-effective design, commonly used in vessels with steady operating conditions where speed and load vary little."@en ;
+                     rdfs:label "Fixed pitch propeller"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/FlettnerRotor
+:FlettnerRotor rdf:type owl:Class ;
+               rdfs:subClassOf :RotorSails ;
+               rdfs:comment "A specific type of rotor sail consisting of a tall, rotating cylinder mounted vertically on the deck. When wind flows across the spinning surface, lift is generated via the Magnus effect, assisting vessel propulsion."@en ;
+               rdfs:label "Flettner rotor"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/GasCombustionUnit
 :GasCombustionUnit rdf:type owl:Class ;
                    rdfs:subClassOf :PowerGenerationUnit ;
-                   rdfs:comment "A power unit that burns gaseous fuels such as natural gas or LNG to produce usable energy for shipboard systems or propulsion."@en .
+                   rdfs:comment "A power unit that burns gaseous fuels such as natural gas or LNG to produce usable energy for shipboard systems or propulsion."@en ;
+                   rdfs:label "Gas combustion unit"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/GasTurbineEngine
 :GasTurbineEngine rdf:type owl:Class ;
                   rdfs:subClassOf :NonPistonEngine ;
-                  rdfs:comment "A rotary engine that generates mechanical power by expanding combustion gases through turbine stages."@en .
+                  rdfs:comment "A rotary engine that generates mechanical power by expanding combustion gases through turbine stages."@en ;
+                  rdfs:label "Gas turbine engine"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/GasWaterJet
+:GasWaterJet rdf:type owl:Class ;
+             rdfs:subClassOf :JetPropulsor ;
+             rdfs:comment "A jet propulsion technology that uses gas (e.g., exhaust gases from a turbine) instead of a pumpt to accelerate water and create thrust. This system combines combustion energy with fluid dynamics for high-performance propulsion."@en ;
+             rdfs:label "Gas-water jet"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/HullForm
+:HullForm rdf:type owl:Class ;
+          rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+          rdfs:comment "A wind-assisted propulsion technology that utilizes the vessel’s hull geometry to generate additional aerodynamic lift or reduce drag, complementing primary propulsion systems."@en ;
+          rdfs:label "Hull form"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/JetPropulsor
+:JetPropulsor rdf:type owl:Class ;
+              rdfs:subClassOf :MotorizedPropulsionTechnology ;
+              rdfs:comment "A motorized propulsion technology that generates thrust by accelerating a fluid (typically water) through a nozzle, creating a jet stream that propels the vessel. Jet propulsors are commonly used for high-speed boats and specialized vessels."@en ;
+              rdfs:label "Jet propulsor"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/Kite
+:Kite rdf:type owl:Class ;
+      rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+      rdfs:comment "A wind-assisted propulsion technology that uses a large controllable kite deployed ahead of the vessel to harness wind energy and reduce engine power requirements."@en ;
+      rdfs:label "Kite"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/MotorizedPropulsionSystem
 :MotorizedPropulsionSystem rdf:type owl:Class ;
                            rdfs:subClassOf :PropulsionSystem ;
-                           rdfs:comment "A propulsion system that relies on internal or external motors or engines to generate mechanical thrust for vessel movement."@en .
+                           rdfs:comment "A propulsion system that relies on internal or external motors or engines to generate mechanical thrust for vessel movement."@en ;
+                           rdfs:label "Motorized propulsion system"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/MotorizedPropulsionTechnology
+:MotorizedPropulsionTechnology rdf:type owl:Class ;
+                               rdfs:subClassOf :PropulsionTechnology ;
+                               rdfs:comment "A propulsion technology that relies on mechanical motors or engine to convert energy into thrust for vessel propulsion."@en ;
+                               rdfs:label "Motorized propulsion technology"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/MusclePoweredPropulsionSystem
 :MusclePoweredPropulsionSystem rdf:type owl:Class ;
                                rdfs:subClassOf :NonMotorizedPropulsionSystem ;
-                               rdfs:comment "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."@en .
+                               rdfs:comment "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."@en ;
+                               rdfs:label "Muscle-powered propulsion system"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/MusclePoweredPropulsionTechnology
 :MusclePoweredPropulsionTechnology rdf:type owl:Class ;
                                    rdfs:subClassOf :PropulsionTechnology ;
-                                   rdfs:comment "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en .
+                                   rdfs:comment "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en ;
+                                   rdfs:label "Muscle-powered propulsion technology"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/NonMotorizedPropulsionSystem
 :NonMotorizedPropulsionSystem rdf:type owl:Class ;
                               rdfs:subClassOf :PropulsionSystem ;
-                              rdfs:comment "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."@en .
+                              rdfs:comment "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."@en ;
+                              rdfs:label "Non-motorized propulsion system"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/NonPistonEngine
 :NonPistonEngine rdf:type owl:Class ;
                  rdfs:subClassOf schema:EngineSpecification ;
-                 rdfs:comment "An engine that generates mechanical power without using pistons, typically through continuous rotational systems such as turbines or electric motors."@en .
+                 rdfs:comment "An engine that generates mechanical power without using pistons, typically through continuous rotational systems such as turbines or electric motors."@en ;
+                 rdfs:label "Non-piston engine"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/NuclearReactor
 :NuclearReactor rdf:type owl:Class ;
                 rdfs:subClassOf :PowerGenerationUnit ;
-                rdfs:comment "A reactor that generates thermal energy through controlled nuclear fission, typically used to power steam turbines in naval or large-scale vessels."@en .
+                rdfs:comment "A reactor that generates thermal energy through controlled nuclear fission, typically used to power steam turbines in naval or large-scale vessels."@en ;
+                rdfs:label "Nuclear reactor"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/Owner
 :Owner rdf:type owl:Class ;
-       rdfs:comment "The owner of a vessel."@en .
+       rdfs:comment "The owner of a vessel."@en ;
+       rdfs:label "Owner"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/Paddle
 :Paddle rdf:type owl:Class ;
         rdfs:subClassOf :MusclePoweredPropulsionTechnology ;
-        rdfs:comment "A simple muscle-powered propulsion technique involving a handheld blade used to push against water and move a vessel forward. Typically associated with canoes, kayaks, or lifeboats."@en .
+        rdfs:comment "A simple muscle-powered propulsion technique involving a handheld blade used to push against water and move a vessel forward. Typically associated with canoes, kayaks, or lifeboats."@en ;
+        rdfs:label "Paddle"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/PaddleWheel
+:PaddleWheel rdf:type owl:Class ;
+             rdfs:subClassOf :BladedPropulsor ;
+             rdfs:comment "A propulsion technology that uses large external wheels with attached blades or paddles to push water and generate thrust. Historically used in riverboats and still applied in some shallow-water or heritage vessels."@en ;
+             rdfs:label "Paddle wheel"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/PistonEngine
 :PistonEngine rdf:type owl:Class ;
               rdfs:subClassOf schema:EngineSpecification ;
-              rdfs:comment "An internal combustion engine that converts the linear motion of pistons into rotational energy via a crankshaft."@en .
+              rdfs:comment "An internal combustion engine that converts the linear motion of pistons into rotational energy via a crankshaft."@en ;
+              rdfs:label "Piston engine"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/PowerGenerationUnit
-:PowerGenerationUnit rdf:type owl:Class .
+:PowerGenerationUnit rdf:type owl:Class ;
+                     rdfs:comment "A power unit that produces usable energy for shipboard systems or propulsion."@en ;
+                     rdfs:label "Power generation unit"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/PredictedTrajectory
 :PredictedTrajectory rdf:type owl:Class ;
                      rdfs:subClassOf vai:SyntheticTrajectory ;
-                     rdfs:comment "A trajectory that is predicted based on the analysis of previous vessel trajectories."@en .
+                     rdfs:comment "A trajectory that is predicted based on the analysis of previous vessel trajectories."@en ;
+                     rdfs:label "Predicted trajectory"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/PropellerPod
+:PropellerPod rdf:type owl:Class ;
+              rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
+              rdfs:comment "A propulsion system where the propeller is mounted on a steerable pod that also contains the drive motor. Podded propulsors allow full 360-degree rotation for excellent maneuverability and are commonly used in cruise ships and offshore vessels."@en ;
+              rdfs:label "Propeller pod"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/PropulsionSystem
 :PropulsionSystem rdf:type owl:Class ;
-                  rdfs:comment "A system that generates thrust to move a vessel forward."@en .
+                  rdfs:comment "A system that generates thrust to move a vessel forward."@en ;
+                  rdfs:label "Propulsion system"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/PropulsionTechnology
+:PropulsionTechnology rdf:type owl:Class ;
+                      rdfs:comment "A general concept representing the method or technology used by a propulsion system to generate thrust for vessel movement. This class provides an abstraction for different approaches such as motor-driven or wind-based techniques."@en ;
+                      rdfs:label "Propulsion technology"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/PureWindPropulsionSystem
 :PureWindPropulsionSystem rdf:type owl:Class ;
                           rdfs:subClassOf :NonMotorizedPropulsionSystem ;
-                          rdfs:comment "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."@en .
+                          rdfs:comment "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."@en ;
+                          rdfs:label "Pure wind propulsion system"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/PureWindPropulsionTechnology
+:PureWindPropulsionTechnology rdf:type owl:Class ;
+                              rdfs:subClassOf :WindPropulsionTechnology ;
+                              rdfs:comment "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."@en ;
+                              rdfs:label "Pure wind propulsion technology"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/RotorSails
+:RotorSails rdf:type owl:Class ;
+            rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+            rdfs:comment "A wind-assisted propulsion technology that uses rotating cylindrical sails (rotors) to create aerodynamic lift through the Magnus effect, reducing engine load and fuel consumption."@en ;
+            rdfs:label "Rotor sails"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/RudderPropeller
+:RudderPropeller rdf:type owl:Class ;
+                 rdfs:subClassOf :ScrewPropeller ;
+                 rdfs:comment "A screw propeller integrated with a steerable drive unit, enabling both propulsion and steering without a separate rudder. Common in azimuth thrusters for offshore vessels and ships needing high maneuverability."@en ;
+                 rdfs:label "Rudder propeller"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/ScrewPropeller
+:ScrewPropeller rdf:type owl:Class ;
+                rdfs:subClassOf :BladedPropulsor ;
+                rdfs:comment "A widely used bladed propulsion technology where helical blades mounted on a rotating hub create thrust by pushing water backwards. Screw propellers are commonly used for most vessel types due to their simplicity and efficiency."@en ;
+                rdfs:label "Screw propeller"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/SolarArray
 :SolarArray rdf:type owl:Class ;
             rdfs:subClassOf :PowerGenerationUnit ;
-            rdfs:comment "A photovoltaic system that converts solar radiation into electrical energy, typically used as a supplementary or auxiliary power source."@en .
+            rdfs:comment "A photovoltaic system that converts solar radiation into electrical energy, typically used as a supplementary or auxiliary power source."@en ;
+            rdfs:label "Solar array"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/SpeciallyDesignedBladedPropulsor
+:SpeciallyDesignedBladedPropulsor rdf:type owl:Class ;
+                                  rdfs:subClassOf :BladedPropulsor ;
+                                  rdfs:comment "A bladed propulsion technology adapted for specific vessel requirements or operational conditions, such as high maneuverability or integrated drive systems."@en ;
+                                  rdfs:label "Specially designed bladed propeller"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/SteamTurbineEngine
 :SteamTurbineEngine rdf:type owl:Class ;
                     rdfs:subClassOf :NonPistonEngine ;
-                    rdfs:comment "A rotary engine that converts thermal energy from pressurized steam into mechanical motion via rotating turbine blades."@en .
+                    rdfs:comment "A rotary engine that converts thermal energy from pressurized steam into mechanical motion via rotating turbine blades."@en ;
+                    rdfs:label "Steam turbine engine"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/SuctionWings
+:SuctionWings rdf:type owl:Class ;
+              rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+              rdfs:comment "A wind-assisted propulsion technology using rigid wing structures with suction or airflow control systems to enhance aerodynamic lift and reduce fuel consumption."@en ;
+              rdfs:label "Suction wings"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/SupercavitatingPropeller
+:SupercavitatingPropeller rdf:type owl:Class ;
+                          rdfs:subClassOf :ScrewPropeller ;
+                          rdfs:comment "A screw propeller designed to operate under conditions of intentional cavitation, reducing drag at very high speeds. Common in fast military or racing vessels where conventional propellers would suffer performance loss."@en ;
+                          rdfs:label "Supercavitating propeller"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/TypicalLocation
 :TypicalLocation rdf:type owl:Class ;
-                 rdfs:comment "The typical location of a vessel that is calculated over a time interval."@en .
+                 rdfs:comment "The typical location of a vessel that is calculated over a time interval."@en ;
+                 rdfs:label "Typical location"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/VoithSchneiderPropeller
+:VoithSchneiderPropeller rdf:type owl:Class ;
+                         rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
+                         rdfs:comment "A highly maneuverable bladed propulsion system using vertical blades that rotate and adjust their pitch cyclically. This design enables precise control in all directions, making it ideal for tugs, ferries, and vessels operating in confined waters."@en ;
+                         rdfs:label "Voith Schneider Propeller"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/WaterJet
+:WaterJet rdf:type owl:Class ;
+          rdfs:subClassOf :JetPropulsor ;
+          rdfs:comment "A jet propulsion technology that draws water into an intake and expels it at high velocity through a nozzle to generate thrust. Water jets are widely used for high-speed ferries, jet boats, and shallow-water applications."@en ;
+          rdfs:label "Water jet"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/WindAssistedPropulsionSystem
 :WindAssistedPropulsionSystem rdf:type owl:Class ;
                               rdfs:subClassOf :NonMotorizedPropulsionSystem ;
-                              rdfs:comment "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."@en .
+                              rdfs:comment "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."@en ;
+                              rdfs:label "Wind-assisted propulsion system" .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/WindAssistedPropulsionTechnology
+:WindAssistedPropulsionTechnology rdf:type owl:Class ;
+                                  rdfs:subClassOf :WindPropulsionTechnology ;
+                                  rdfs:comment "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."@en ;
+                                  rdfs:label "Wind-assisted propulsion technology"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/WindPropulsionTechnology
+:WindPropulsionTechnology rdf:type owl:Class ;
+                          rdfs:subClassOf :PropulsionTechnology ;
+                          rdfs:comment "A propulsion technology that harnesses wind energy, typically through aerodynamic surfaces or devices, to provide thrust for moving a vessel."@en ;
+                          rdfs:label "Wind propulsion technology"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/WindTurbine
+:WindTurbine rdf:type owl:Class ;
+             rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+             rdfs:comment "A wind-assisted propulsion technology using rotor blades similar to wind power generators, converting wind energy into thrust or auxiliary electrical energy for propulsion."@en ;
+             rdfs:label "Wind turbine"@en .
 
 
 ###  http://www.vesselAI-project.eu/ontology#Vessel
-vai:Vessel rdfs:subClassOf schema:Vehicle .
+vai:Vessel rdfs:subClassOf schema:Vehicle ;
+           rdfs:label "Vessel"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
 
 
 ###  https://schema.org/EngineSpecification
 schema:EngineSpecification rdf:type owl:Class ;
-                           rdfs:comment "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities."@en .
+                           rdfs:comment "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities."@en ;
+                           rdfs:label "Engine specification"@en .
 
 
 ###  https://schema.org/Organization
 schema:Organization rdf:type owl:Class ;
                     rdfs:subClassOf :Owner ;
-                    rdfs:comment "An organization such as a school, NGO, corporation, club, etc."@en .
+                    rdfs:comment "An organization such as a school, NGO, corporation, club, etc."@en ;
+                    rdfs:label "Organization"@en .
 
 
 ###  https://schema.org/Person
 schema:Person rdf:type owl:Class ;
               rdfs:subClassOf :Owner ;
-              rdfs:comment "A person (alive, dead, undead, or fictional)."@en .
+              rdfs:comment "A person (alive, dead, undead, or fictional)."@en ;
+              rdfs:label "Person"@en .
 
 
 ###  https://schema.org/Vehicle
 schema:Vehicle rdf:type owl:Class ;
-               rdfs:comment "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en .
+               rdfs:comment "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en ;
+               rdfs:label "Vehicle"@en .
 
 
 ###  https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo
 nexif:Photo rdf:type owl:Class ;
-            rdfs:comment "A photo, an image captured using a camera, an EXIF Image File Directory."@en .
+            rdfs:comment "A photo, an image captured using a camera, an EXIF Image File Directory."@en ;
+            rdfs:label "Photo"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
