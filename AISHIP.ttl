@@ -70,6 +70,78 @@ foaf:name rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasActualHeight
+:hasActualHeight rdf:type owl:ObjectProperty ;
+                 rdfs:domain vai:Vessel ;
+                 rdfs:range qudt:QuantityValue ;
+                 rdfs:comment "Relates a vessel to its actual height. Indicates the actual current height of the vessel, e.g., considering load or structural changes, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasActualHeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+                 rdfs:label "has actual height"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasCourseOverGround
+:hasCourseOverGround rdf:type owl:ObjectProperty ;
+                     rdfs:domain vai:Vessel ;
+                     rdfs:range qudt:QuantityValue ;
+                     rdfs:comment "Relates a vessel to its course over ground. Indicates the actual course of a vessel over the ground, given as an angle relative to true north (in degrees). Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasCourseOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+                     rdfs:label "has course over ground"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasDeadweight
+:hasDeadweight rdf:type owl:ObjectProperty ;
+               rdfs:domain vai:Vessel ;
+               rdfs:range qudt:QuantityValue ;
+               rdfs:comment "Relates a vessel to its deadweight. Deadweight tonnage (DWT) represents the maximum weight of cargo, fuel, crew, provisions, and other supplies the vessel can carry, expressed in metric tons. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasDeadWeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+               rdfs:label "has deadweight"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasGrossTn
+:hasGrossTn rdf:type owl:ObjectProperty ;
+            rdfs:domain vai:Vessel ;
+            rdfs:range qudt:QuantityValue ;
+            rdfs:comment "Relates a vessel to its gross tonnage (GT). Indicates the gross tonnage (GT) of the vessel, a dimensionless index defined by the IMO Tonnage Convention based on the ship's enclosed volume. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasGrossTn. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+            rdfs:label "has gross tn"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasHeading
+:hasHeading rdf:type owl:ObjectProperty ;
+            rdfs:domain vai:Vessel ;
+            rdfs:range qudt:QuantityValue ;
+            rdfs:comment "Relates a vessel to its heading. Indicates the orientation of the vessel's bow relative to true or magnetic north, expressed as an angle in degrees. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeading. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+            rdfs:label "has heading"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasHeight
+:hasHeight rdf:type owl:ObjectProperty ;
+           rdfs:domain vai:Vessel ;
+           rdfs:range qudt:QuantityValue ;
+           rdfs:comment "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+           rdfs:label "has height"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasLength
+:hasLength rdf:type owl:ObjectProperty ;
+           rdfs:domain vai:Vessel ;
+           rdfs:range qudt:QuantityValue ;
+           rdfs:comment "Relates a vessel to its length. Indicates the overall length of the vessel, typically measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasLength. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+           rdfs:label "has length"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasSpeedOverGround
+:hasSpeedOverGround rdf:type owl:ObjectProperty ;
+                    rdfs:domain vai:Vessel ;
+                    rdfs:range qudt:QuantityValue ;
+                    rdfs:comment "Relates a vessel to its speed over ground (SOG). SOG indicates the speed of a vessel relative to the ground surface. Not to be confused with speed through water. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasSpeedOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+                    rdfs:label "has speed over ground"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasWidth
+:hasWidth rdf:type owl:ObjectProperty ;
+          rdfs:domain vai:Vessel ;
+          rdfs:range qudt:QuantityValue ;
+          rdfs:comment "Relates a vessel to its width. Indicates the overall width (beam) of the vessel, measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasWidth. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+          rdfs:label "has width"@en .
+
+
 ###  http://www.semanticweb.org/simonburbach/AISHIP/computedOverTimeInterval
 :computedOverTimeInterval rdf:type owl:ObjectProperty ;
                           rdfs:domain :TypicalLocation ;
@@ -89,7 +161,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/drives
 :drives rdf:type owl:ObjectProperty ;
-        owl:inverseOf :drivenBy ;
         rdfs:domain schema:EngineSpecification ;
         rdfs:range :MotorizedPropulsionTechnology ;
         rdfs:comment "Relates an engine to the motorized propulsion technology it drives."@en ;
@@ -105,20 +176,20 @@ foaf:name rdf:type owl:AnnotationProperty .
                             rdfs:label "has anti-cavitation mechanism"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageSpeed
-:hasAverageSpeed rdf:type owl:ObjectProperty ;
-                 rdfs:domain vai:Vessel ;
-                 rdfs:range qudt:QuantityValue ;
-                 rdfs:comment "Relates a vessel with its overall average speed, typically measured in knots (kn)."@en ;
-                 rdfs:label "has average speed"@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageTrajectorySpeed
-:hasAverageTrajectorySpeed rdf:type owl:ObjectProperty ;
-                           rdfs:domain vai:Trajectory ;
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageSpeedOverGround
+:hasAverageSpeedOverGround rdf:type owl:ObjectProperty ;
+                           rdfs:domain vai:Vessel ;
                            rdfs:range qudt:QuantityValue ;
-                           rdfs:comment "Relates a trajtectory to the average speed of the vessel during that trip, typically measured in knots (kn)."@en ;
-                           rdfs:label "has average trajectory speed"@en .
+                           rdfs:comment "Relates a vessel with its overall average speed over ground, typically measured in knots (kn)."@en ;
+                           rdfs:label "has average speed over ground"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageTrajectorySpeedOverGround
+:hasAverageTrajectorySpeedOverGround rdf:type owl:ObjectProperty ;
+                                     rdfs:domain vai:Trajectory ;
+                                     rdfs:range qudt:QuantityValue ;
+                                     rdfs:comment "Relates a trajtectory to the average speed over ground of the vessel during that trip, typically measured in knots (kn)."@en ;
+                                     rdfs:label "has average trajectory speed over ground"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDescription
@@ -224,7 +295,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isAntiCavitationMechanismFor
 :isAntiCavitationMechanismFor rdf:type owl:ObjectProperty ;
-                              owl:inverseOf :hasAntiCavitationMechanism ;
                               rdfs:domain :AntiCavitationMechanism ;
                               rdfs:range :MotorizedPropulsionTechnology ;
                               rdfs:comment "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."@en ;
@@ -233,7 +303,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isDescriptionOf
 :isDescriptionOf rdf:type owl:ObjectProperty ;
-                 owl:inverseOf :hasDescription ;
                  rdfs:domain nfo:TextDocument ;
                  rdfs:range vai:Vessel ;
                  rdfs:comment "Relates a text document description to a vessel"@en ;
@@ -250,7 +319,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isPhotoOf
 :isPhotoOf rdf:type owl:ObjectProperty ;
-           owl:inverseOf :hasPhoto ;
            rdfs:domain nexif:Photo ;
            rdfs:range vai:Vessel ;
            rdfs:comment "Relates a photo to its vessel."@en ;
@@ -259,7 +327,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/isSonarSignatureOf
 :isSonarSignatureOf rdf:type owl:ObjectProperty ;
-                    owl:inverseOf :hasSonarSignature ;
                     rdfs:domain nfo:Audio ;
                     rdfs:range vai:Vessel ;
                     rdfs:comment "Relates a sonar signature audio file to its vessel."@en ;
@@ -277,7 +344,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/powers
 :powers rdf:type owl:ObjectProperty ;
-        owl:inverseOf :poweredBy ;
         rdfs:domain :PowerGenerationUnit ;
         rdfs:range schema:EngineSpecification ;
         rdfs:comment "Relates a power generation unit to the engine it powers."@en ;
@@ -295,7 +361,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/propells
 :propells rdf:type owl:ObjectProperty ;
-          owl:inverseOf :propelledBy ;
           rdfs:domain :PropulsionSystem ;
           rdfs:range vai:Vessel ;
           rdfs:comment "Relates a propulsion system to the vessel it propells."@en ;
@@ -313,7 +378,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/usesPropulsionTechnology
 :usesPropulsionTechnology rdf:type owl:ObjectProperty ;
-                          owl:inverseOf :usedByPropulsionSystem ;
                           rdfs:domain :PropulsionSystem ;
                           rdfs:range :PropulsionTechnology ;
                           rdfs:comment "Relates a propulsion system to the propulsion technology it uses to create thrust."@en ;
@@ -323,6 +387,14 @@ foaf:name rdf:type owl:AnnotationProperty .
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#hasBuiltDate
+:hasBuiltDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain vai:Vessel ;
+              rdfs:range xsd:gYear ;
+              rdfs:comment "Relates a vessel to the year it was build. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasBuiltDate. However, we specify the datatype."@en ;
+              rdfs:label "has built date"@en .
+
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasHIN
 :hasHIN rdf:type owl:DatatypeProperty ;
