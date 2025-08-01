@@ -22,7 +22,7 @@ Unified representation of vessel data
 ## How to cite
 Please cite the AISHIP ontology as follows:
 
-Burbach, S., Mackert, L., Maleshkova, M. "AISHIP." DOI: tba
+Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. DOI: tba
 
 
 ## Licence
