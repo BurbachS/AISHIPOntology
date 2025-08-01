@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/BurbachS/AISHIPOntology/AISHIP"
+     xml:base="https://burbachs.github.io/AISHIPOntology/AISHIP"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/BurbachS/AISHIPOntology/AISHIP">
-    <Prefix name="" IRI="https://github.com/BurbachS/AISHIPOntology/AISHIP#"/>
+     ontologyIRI="https://burbachs.github.io/AISHIPOntology/AISHIP">
+    <Prefix name="" IRI="https://burbachs.github.io/AISHIPOntology/AISHIP#"/>
     <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="geo" IRI="http://www.opengis.net/ont/geosparql#"/>
     <Prefix name="nfo" IRI="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#"/>
@@ -36,15 +36,15 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147484163"/>
+        <AnonymousIndividual nodeID="_:genid2147483934"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147484164"/>
+        <AnonymousIndividual nodeID="_:genid2147483935"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147484165"/>
+        <AnonymousIndividual nodeID="_:genid2147483936"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:license"/>
@@ -468,346 +468,37 @@
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:BitEncoding"/>
+        <ObjectProperty abbreviatedIRI="vai:hasGeometry"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA"/>
+        <Class abbreviatedIRI="vai:SyntheticTrajectory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ViewGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:BigEndian"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#graphTitle"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdf:Statement"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Category:Units_of_angle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitWeek"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="owl:Class"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:BooleanEncoding"/>
-    </Declaration>
-    <Declaration>
-        <Datatype abbreviatedIRI="xsd:duration"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="qudt:cName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:Aspect"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#DocumentationGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:fieldCode"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:IEEE754_1985RealEncoding"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Wednesday"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:CT_UNCOUNTABLE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:DoublePrecisionEncoding"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:ShortUnsignedIntegerEncoding"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="qudt:length"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#DataGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:exactMatch"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="owl:Ontology"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:UNSIGNED"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="qudt:SignednessType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#LinkSetGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="qudt:EnumeratedQuantity"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Thursday"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#graphName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#QUDT"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dct:isVersionOf"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitMonth"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#SchemaGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:TotallyOrdered"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#TransformsGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#RulesGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:OctetEncoding"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/dtype"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="qudt:StringEncodingType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:EndianType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#FunctionsGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="geo:Geometry"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="qudt:SymmetricRelation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:DerivedUnit"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:hasVocabulary"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:PhysicalConstant"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:LittleEndian"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="qudt:bits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#TopQuadrant"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Tuesday"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:UnsignedIntegerEncoding"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="qudt:protocolBuffersName"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="qudt:vbName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:CT_FINITE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitDay"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Monday"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:Enumeration"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitSecond"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:hasCitation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitYear"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="xsd:gMonthDay"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="qudt:oracleSQLName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://qudt.org/vocab/type/BigEndian"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:SignedIntegerEncoding"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="qudt:ansiSQLName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:Verifiable"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:EnumeratedQuantity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Saturday"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:SIGNED"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:license"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="rdfs:Resource"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:PartiallyOrdered"/>
+        <Class abbreviatedIRI="vai:Trajectory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:SinglePrecisionRealEncoding"/>
+        <Class abbreviatedIRI="time:Interval"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#isMetadataFor"/>
+        <Class abbreviatedIRI="vai:TrajectoryPart"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitHour"/>
+        <Class abbreviatedIRI="vai:Place"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="qudt:pythonName"/>
+        <Class abbreviatedIRI="vai:Vessel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Friday"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:AngleUnit"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:CharEncoding"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.linkedmodel.org/schema/vaem#CatalogEntry"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/dtype#GMD_DTYPE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ConstraintsGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:ISO8601-UTCDateTime-BasicFormat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#GMD_VAEM"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:ScaleType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:CT_COUNTABLY-INFINITE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ProxyGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#CurationGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:unitMinute"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:CardinalityType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#VocabularyGraph"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#website"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:Unordered"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#MappingGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://qudt.org/vocab/type/LittleEndian"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:Quantity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ScriptGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdf:List"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="time:Sunday"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:LongUnsignedIntegerEncoding"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ControllersGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#CollectionGraph"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="qudt:ShortSignedIntegerEncoding"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdfs:Class"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdfs:Datatype"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="qudt:Aspect"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="qudt:Verifiable"/>
+        <Class abbreviatedIRI="geo:Geometry"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#VesselWithMotorizedPropulsionSystem"/>
@@ -1254,15 +945,15 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147484163"/>
+        <AnonymousIndividual nodeID="_:genid2147483934"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147484164"/>
+        <AnonymousIndividual nodeID="_:genid2147483935"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147484165"/>
+        <AnonymousIndividual nodeID="_:genid2147483936"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTypicalGeometry"/>
@@ -3035,42 +2726,42 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147484163"/>
+        <AnonymousIndividual nodeID="_:genid2147483934"/>
         <IRI>https://orcid.org/0009-0009-8373-6622</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
-        <AnonymousIndividual nodeID="_:genid2147484163"/>
+        <AnonymousIndividual nodeID="_:genid2147483934"/>
         <IRI>mailto:burbachs@hsu-hh.de</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147484163"/>
+        <AnonymousIndividual nodeID="_:genid2147483934"/>
         <Literal>Simon Burbach</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
-        <AnonymousIndividual nodeID="_:genid2147484164"/>
+        <AnonymousIndividual nodeID="_:genid2147483935"/>
         <IRI>mailto:lennart.mackert@hsu-hh.de</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147484164"/>
+        <AnonymousIndividual nodeID="_:genid2147483935"/>
         <Literal>Lennart Mackert</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147484165"/>
+        <AnonymousIndividual nodeID="_:genid2147483936"/>
         <IRI>https://orcid.org/0000-0003-3458-4748</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
-        <AnonymousIndividual nodeID="_:genid2147484165"/>
+        <AnonymousIndividual nodeID="_:genid2147483936"/>
         <IRI>mailto:maleshkm@hsu-hh.de</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147484165"/>
+        <AnonymousIndividual nodeID="_:genid2147483936"/>
         <Literal>Maria Maleshkova</Literal>
     </AnnotationAssertion>
 </Ontology>
