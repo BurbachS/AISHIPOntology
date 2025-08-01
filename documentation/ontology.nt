@@ -1,0 +1,1340 @@
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://www.w3.org/2002/07/owl#imports> <http://qudt.org/3.1.2/schema/qudt> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Ontology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/bibliographicCitation> "Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. https://doi.org/10.5281/zenodo.16704863" .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/created> "2025-07-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/creator> _:genid1 .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/creator> _:genid3 .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/creator> _:genid5 .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/dc/terms/title> "AISHIP Ontology" .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.16704863" .
+<https://burbachs.github.io/AISHIPOntology/AISHIP> <http://www.w3.org/2000/01/rdf-schema#comment> "AISHIP is an ontology designed to enable semantic integration and enrichment of heterogeneous maritime data. It extends the VesselAI ontology with enhanced vessel characteristics, detailed propulsion systems, extended trajectory modeling, and multimodal vessel representations."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/unit
+<http://qudt.org/schema/qudt/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.vesselAI-project.eu/ontology#hasGeometry
+<http://www.vesselAI-project.eu/ontology#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval
+<https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "Relatesa typical location with the time interval it was computed over."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "computed over time interval"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#drives> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a motorized propulsion technology with the engine it is driven by."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy> <http://www.w3.org/2000/01/rdf-schema#label> "driven by"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#drives
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drives> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drives> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drives> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an engine to the motorized propulsion technology it drives."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#drives> <http://www.w3.org/2000/01/rdf-schema#label> "drives"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+<http://qudt.org/schema/qudt/numericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its actual height. Indicates the actual current height of the vessel, e.g., considering load or structural changes, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasActualHeight. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight> <http://www.w3.org/2000/01/rdf-schema#label> "has actual height"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a motorized propulsion technology to its anti-cavitation mechanism that reduces its cavitation."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "has anti-cavitation mechanism"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitKN> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel with its overall average speed over ground, typically measured in knots (kn)."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#label> "has average speed over ground"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Trajectory> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitKN> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a trajtectory to the average speed over ground of the vessel during that trip, typically measured in knots (kn)."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#label> "has average trajectory speed over ground"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2001/XMLSchema#maxInclusive> "360.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitDEG> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its course over ground. Indicates the actual course of a vessel over the ground, given as an angle relative to true north (in degrees). Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasCourseOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround> <http://www.w3.org/2000/01/rdf-schema#label> "has course over ground"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid36 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitTON_Metric> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its deadweight. Deadweight tonnage (DWT) represents the maximum weight of cargo, fuel, crew, provisions, and other supplies the vessel can carry, expressed in metric tons. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasDeadWeight. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight> <http://www.w3.org/2000/01/rdf-schema#label> "has deadweight"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its text document description."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter> <http://www.w3.org/2000/01/rdf-schema#range> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid42 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitCentiM> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a bladed propulsor to its diameter."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "has diameter"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA> <http://www.w3.org/2000/01/rdf-schema#range> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid48 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension A"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB> <http://www.w3.org/2000/01/rdf-schema#range> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid54 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension B"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC> <http://www.w3.org/2000/01/rdf-schema#range> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid60 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension C"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD> <http://www.w3.org/2000/01/rdf-schema#range> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension D"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#TrajectoryPart> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught> <http://www.w3.org/2000/01/rdf-schema#range> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid72 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught> <http://www.w3.org/2000/01/rdf-schema#label> "has draught"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn> <http://www.w3.org/2000/01/rdf-schema#range> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid78 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitGT> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its gross tonnage (GT). Indicates the gross tonnage (GT) of the vessel, a dimensionless index defined by the IMO Tonnage Convention based on the ship's enclosed volume. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasGrossTn. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn> <http://www.w3.org/2000/01/rdf-schema#label> "has gross tn"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading> <http://www.w3.org/2000/01/rdf-schema#range> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid84 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/2001/XMLSchema#maxInclusive> "360.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid91 .
+_:genid91 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitDEG> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its heading. Indicates the orientation of the vessel's bow relative to true or magnetic north, expressed as an angle in degrees. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeading. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading> <http://www.w3.org/2000/01/rdf-schema#label> "has heading"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid95 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight> <http://www.w3.org/2000/01/rdf-schema#label> "has height"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength> <http://www.w3.org/2000/01/rdf-schema#range> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid101 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its length. Indicates the overall length of the vessel, typically measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasLength. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength> <http://www.w3.org/2000/01/rdf-schema#label> "has length"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its owner"@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "has owner"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its photo."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto> <http://www.w3.org/2000/01/rdf-schema#label> "has photo"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its sonar signature audio file."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature> <http://www.w3.org/2000/01/rdf-schema#label> "has sonar signature"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#range> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid107 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitKN> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its speed over ground (SOG). SOG indicates the speed of a vessel relative to the ground surface. Not to be confused with speed through water. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasSpeedOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround> <http://www.w3.org/2000/01/rdf-schema#label> "has speed over ground"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.vesselAI-project.eu/ontology#hasGeometry> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a typical location of a vessel with its geometry."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "has typical geometry"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Related a vessel with its typical location."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has typical location"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid113 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/numericValue> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid117 .
+_:genid117 <http://www.w3.org/2002/07/owl#hasValue> <https://qudt.org/3.1.2/vocab/unitM> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/unit> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/QuantityValue> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to its width. Indicates the overall width (beam) of the vessel, measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasWidth. However, we allow the expression as a quantity with numeric value and a unit."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth> <http://www.w3.org/2000/01/rdf-schema#label> "has width"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor> <http://www.w3.org/2000/01/rdf-schema#label> "is anti-cavitation mechanism for"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a text document description to a vessel"@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is description of"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an owner to its vessel."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#label> "is owner of"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a photo to its vessel."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf> <http://www.w3.org/2000/01/rdf-schema#label> "is photo of"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a sonar signature audio file to its vessel."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sonar signature of"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy
+<https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#powers> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an engine to the power generation unit it is powered by."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy> <http://www.w3.org/2000/01/rdf-schema#label> "powered by"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#powers
+<https://burbachs.github.io/AISHIPOntology/AISHIP#powers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#powers> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#powers> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#powers> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a power generation unit to the engine it powers."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#powers> <http://www.w3.org/2000/01/rdf-schema#label> "powers"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#propells> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to the propulsion system it is propelled by."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> <http://www.w3.org/2000/01/rdf-schema#label> "propelled by"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#propells
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propells> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propells> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propells> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propells> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a propulsion system to the vessel it propells."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#propells> <http://www.w3.org/2000/01/rdf-schema#label> "propells"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> <http://www.w3.org/2002/07/owl#inverseOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a propulsion technology to the propulsion system it is used by to create thrust."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "used by propulsion system"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a propulsion system to the propulsion technology it uses to create thrust."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "uses propulsion technology"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/numericValue
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel to the year it was build. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasBuiltDate. However, we specify the datatype."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate> <http://www.w3.org/2000/01/rdf-schema#label> "has built date"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.vesselAI-project.eu/ontology#Vessel> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a vessel with its HIN."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN> <http://www.w3.org/2000/01/rdf-schema#label> "has HIN"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades> <http://www.w3.org/2000/01/rdf-schema#domain> <https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a bladed propulsor to its number of blades."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades> <http://www.w3.org/2000/01/rdf-schema#label> "has number of blades"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/QuantityValue
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> <http://www.w3.org/2000/01/rdf-schema#comment> "A file containing an audio content"@en .
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@en .
+# 
+# http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A text document."@en .
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Text document"@en .
+# 
+# http://www.vesselAI-project.eu/ontology#Place
+<http://www.vesselAI-project.eu/ontology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.vesselAI-project.eu/ontology#SyntheticTrajectory
+<http://www.vesselAI-project.eu/ontology#SyntheticTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.vesselAI-project.eu/ontology#Trajectory
+<http://www.vesselAI-project.eu/ontology#Trajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.vesselAI-project.eu/ontology#TrajectoryPart
+<http://www.vesselAI-project.eu/ontology#TrajectoryPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.vesselAI-project.eu/ontology#Vessel
+<http://www.vesselAI-project.eu/ontology#Vessel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.vesselAI-project.eu/ontology#Vessel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Vehicle> .
+<http://www.vesselAI-project.eu/ontology#Vessel> <http://www.w3.org/2000/01/rdf-schema#label> "Vessel"@en .
+# 
+# http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism
+<https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "A design feature or technology applied to propulsion systems to prevent or reduce cavitation effects on propeller blades or related components. Such mechanisms aim to minimize efficiency loss, noise, and material damage caused by cavitation."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "Anti cavitation mechanism"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy storage system that supplies electrical power for propulsion or auxiliary systems, charged from onboard or external sources."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Battery unit"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> <http://www.w3.org/2000/01/rdf-schema#comment> "A motorized propulsion technology that generates thrust using rotating blades to accelerate water. This category includes conventional propellers and specialized blade-based systems designed for various operational profiles."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> <http://www.w3.org/2000/01/rdf-schema#label> "Bladed propulsor"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system that uses multiple diesel engines in parallel to provide flexible power management and redundancy."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD> <http://www.w3.org/2000/01/rdf-schema#label> "CODAD"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system that can use both a diesel engine and a gas turbine simultaneously for increased power output."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG> <http://www.w3.org/2000/01/rdf-schema#label> "CODAG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system that integrates diesel-electric drive for cruising and a gas turbine for greater speed when needed."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG> <http://www.w3.org/2000/01/rdf-schema#label> "CODLAG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system that uses either a diesel engine for efficient cruising or a gas turbine for high-speed operation."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG> <http://www.w3.org/2000/01/rdf-schema#label> "CODOG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system using multiple gas turbines, with smaller units for efficient cruising and additional turbines engaged for high-speed operation."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG> <http://www.w3.org/2000/01/rdf-schema#label> "COGAG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system that integrates a gas turbine and a steam turbine, often in a combined-cycle configuration for efficiency."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS> <http://www.w3.org/2000/01/rdf-schema#label> "COGAS"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#COGES
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGES> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGES> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system using gas and steam turbines to generate electricity, which powers electric motors for propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGES> <http://www.w3.org/2000/01/rdf-schema#label> "COGES"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system with two gas turbines, where only one operates at a time depending on the desired speed profile."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG> <http://www.w3.org/2000/01/rdf-schema#label> "COGOG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG> <http://www.w3.org/2000/01/rdf-schema#comment> "An experimental propulsion system combining a nuclear reactor with a gas turbine, typically used in advanced naval vessels."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG> <http://www.w3.org/2000/01/rdf-schema#label> "CONAG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN> <http://www.w3.org/2000/01/rdf-schema#comment> "An experimental propulsion system using two nuclear reactors for increased redundancy and sustained power output."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN> <http://www.w3.org/2000/01/rdf-schema#label> "CONAN"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system that uses a nuclear reactor to generate steam, which drives a steam turbine for propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS> <http://www.w3.org/2000/01/rdf-schema#label> "CONAS"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG> <http://www.w3.org/2000/01/rdf-schema#comment> "A combined propulsion system using a steam turbine for cruising and a gas turbine for rapid acceleration, with optional simultaneous operation."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG> <http://www.w3.org/2000/01/rdf-schema#label> "COSAG"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion system that integrates two or more engine types to optimize performance, efficiency, or redundancy."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Combined engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A screw propeller with blades that can adjust their pitch during operation, allowing flexible control of thrust and speed without changing the rotation direction. Frequently used in ships that require frequent speed or direction changes."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Controllable pitch propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A screw propeller system that uses two coaxial propellers rotating in opposite directions to improve efficiency and reduce rotational losses. This design enhances thrust and is typically used on high-performance vessels."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Counter rotating propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A power unit that generates mechanical or electrical energy by combusting diesel fuel. Often used to drive generators or directly coupled engines."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Diesel combustion unit"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "An internal combustion engine that uses the compression ignition of diesel fuel to produce mechanical motion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Diesel engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A screw propeller enclosed in a fixed nozzle (duct) to increase thrust and efficiency at lower speeds and provide additional protection. Widely used in tugs and fishing trawlers requiring high bollard pull."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Ducted propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A motor that converts electrical energy into mechanical rotation."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Electric engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A screw propeller with blades fixed at a constant angle. It offers simple and cost-effective design, commonly used in vessels with steady operating conditions where speed and load vary little."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed pitch propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific type of rotor sail consisting of a tall, rotating cylinder mounted vertically on the deck. When wind flows across the spinning surface, lift is generated via the Magnus effect, assisting vessel propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor> <http://www.w3.org/2000/01/rdf-schema#label> "Flettner rotor"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A power unit that burns gaseous fuels such as natural gas or LNG to produce usable energy for shipboard systems or propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Gas combustion unit"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A rotary engine that generates mechanical power by expanding combustion gases through turbine stages."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Gas turbine engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet> <http://www.w3.org/2000/01/rdf-schema#comment> "A jet propulsion technology that uses gas (e.g., exhaust gases from a turbine) instead of a pumpt to accelerate water and create thrust. This system combines combustion energy with fluid dynamics for high-performance propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet> <http://www.w3.org/2000/01/rdf-schema#label> "Gas-water jet"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#Sail> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail> <http://www.w3.org/2000/01/rdf-schema#comment> "A rigid sail structure, typically resembling an aerofoil, used to harness wind energy for propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail> <http://www.w3.org/2000/01/rdf-schema#label> "Hard sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind-assisted propulsion technology that utilizes the vessel’s hull geometry to generate additional aerodynamic lift or reduce drag, complementing primary propulsion systems."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm> <http://www.w3.org/2000/01/rdf-schema#label> "Hull form"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor
+<https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor> <http://www.w3.org/2000/01/rdf-schema#comment> "A motorized propulsion technology that generates thrust by accelerating a fluid (typically water) through a nozzle, creating a jet stream that propels the vessel. Jet propulsors are commonly used for high-speed boats and specialized vessels."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor> <http://www.w3.org/2000/01/rdf-schema#label> "Jet propulsor"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#Kite
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Kite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Kite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Kite> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind-assisted propulsion technology that uses a large controllable kite deployed ahead of the vessel to harness wind energy and reduce engine power requirements."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Kite> <http://www.w3.org/2000/01/rdf-schema#label> "Kite"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion system that relies on internal or external motors or engines to generate mechanical thrust for vessel movement."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Motorized propulsion system"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion technology that relies on mechanical motors or engine to convert energy into thrust for vessel propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Motorized propulsion technology"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Muscle-powered propulsion system"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Muscle-powered propulsion technology"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Non-motorized propulsion system"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "An engine that generates mechanical power without using pistons, typically through continuous rotational systems such as turbines or electric motors."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Non-piston engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor> <http://www.w3.org/2000/01/rdf-schema#comment> "A reactor that generates thermal energy through controlled nuclear fission, typically used to power steam turbines in naval or large-scale vessels."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor> <http://www.w3.org/2000/01/rdf-schema#label> "Nuclear reactor"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#Owner
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of a vessel."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> <http://www.w3.org/2000/01/rdf-schema#label> "Owner"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle> <http://www.w3.org/2000/01/rdf-schema#comment> "A simple muscle-powered propulsion technique involving a handheld blade used to push against water and move a vessel forward. Typically associated with canoes, kayaks, or lifeboats."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle> <http://www.w3.org/2000/01/rdf-schema#label> "Paddle"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion technology that uses large external wheels with attached blades or paddles to push water and generate thrust. Historically used in riverboats and still applied in some shallow-water or heritage vessels."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel> <http://www.w3.org/2000/01/rdf-schema#label> "Paddle wheel"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/EngineSpecification> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "An internal combustion engine that converts the linear motion of pistons into rotational energy via a crankshaft."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Piston engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A power unit that produces usable energy for shipboard systems or propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Power generation unit"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.vesselAI-project.eu/ontology#SyntheticTrajectory> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "A trajectory that is predicted based on the analysis of previous vessel trajectories."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory> <http://www.w3.org/2000/01/rdf-schema#label> "Predicted trajectory"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion system where the propeller is mounted on a steerable pod that also contains the drive motor. Podded propulsors allow full 360-degree rotation for excellent maneuverability and are commonly used in cruise ships and offshore vessels."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod> <http://www.w3.org/2000/01/rdf-schema#label> "Propeller pod"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A system that generates thrust to move a vessel forward."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Propulsion system"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "A general concept representing the method or technology used by a propulsion system to generate thrust for vessel movement. This class provides an abstraction for different approaches such as motor-driven or wind-based techniques."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Propulsion technology"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail> <http://www.w3.org/2000/01/rdf-schema#comment> "A rigid sail designed to provide the primary propulsion for a vessel using wind energy alone."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail> <http://www.w3.org/2000/01/rdf-schema#label> "Pure wind hard sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Pure wind propulsion system"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Pure wind propulsion technology"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail> <http://www.w3.org/2000/01/rdf-schema#comment> "A traditional or modern soft sail used to provide the primary propulsion for a vessel using wind energy alone."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail> <http://www.w3.org/2000/01/rdf-schema#label> "Pure wind soft sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.vesselAI-project.eu/ontology#Place> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea> <http://www.w3.org/2000/01/rdf-schema#comment> "A maritime region where access or navigation is limited due to security, safety, or legal regulations."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea> <http://www.w3.org/2000/01/rdf-schema#label> "Restricted area"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind-assisted propulsion technology that uses rotating cylindrical sails (rotors) to create aerodynamic lift through the Magnus effect, reducing engine load and fuel consumption."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails> <http://www.w3.org/2000/01/rdf-schema#label> "Rotor sails"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A screw propeller integrated with a steerable drive unit, enabling both propulsion and steering without a separate rudder. Common in azimuth thrusters for offshore vessels and ships needing high maneuverability."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Rudder propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#Sail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Sail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Sail> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic sail that converts wind energy into propulsive force for a vessel."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#Sail> <http://www.w3.org/2000/01/rdf-schema#label> "Sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A widely used bladed propulsion technology where helical blades mounted on a rotating hub create thrust by pushing water backwards. Screw propellers are commonly used for most vessel types due to their simplicity and efficiency."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Screw propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#Sail> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail> <http://www.w3.org/2000/01/rdf-schema#comment> "A flexible sail made from fabric or similar materials, traditionally used for harnessing wind energy."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail> <http://www.w3.org/2000/01/rdf-schema#label> "Soft sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray> <http://www.w3.org/2000/01/rdf-schema#comment> "A photovoltaic system that converts solar radiation into electrical energy, typically used as a supplementary or auxiliary power source."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray> <http://www.w3.org/2000/01/rdf-schema#label> "Solar array"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor> <http://www.w3.org/2000/01/rdf-schema#comment> "A bladed propulsion technology adapted for specific vessel requirements or operational conditions, such as high maneuverability or integrated drive systems."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor> <http://www.w3.org/2000/01/rdf-schema#label> "Specially designed bladed propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A rotary engine that converts thermal energy from pressurized steam into mechanical motion via rotating turbine blades."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Steam turbine engine"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind-assisted propulsion technology using rigid wing structures with suction or airflow control systems to enhance aerodynamic lift and reduce fuel consumption."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings> <http://www.w3.org/2000/01/rdf-schema#label> "Suction wings"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A screw propeller designed to operate under conditions of intentional cavitation, reducing drag at very high speeds. Common in fast military or racing vessels where conventional propellers would suffer performance loss."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Supercavitating propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation
+<https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The typical location of a vessel that is calculated over a time interval."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Typical location"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid125 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.vesselAI-project.eu/ontology#Vessel> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A vessel that is motorized cannot also be classified as having a pure wind propulsion system."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any vessel that has at least one motorized propulsion system."@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid129 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.vesselAI-project.eu/ontology#Vessel> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any vessel that has at least one muscle-powered propulsion system."@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid133 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid135 .
+_:genid135 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> .
+_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid137 .
+_:genid137 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> .
+_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.vesselAI-project.eu/ontology#Vessel> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any vessel that has at least one pure wind propulsion system. These kinds of vessel are purely propulled by wind."@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid139 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.vesselAI-project.eu/ontology#Vessel> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A vessel that is wind-assisted cannot also be classified as having a pure wind propulsion system."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any vessel that has at least one wind-assisted propulsion system and is required to also have a motorized propulsion system, as wind-assisted systems are intended to supplement motorized propulsion."@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller> <http://www.w3.org/2000/01/rdf-schema#comment> "A highly maneuverable bladed propulsion system using vertical blades that rotate and adjust their pitch cyclically. This design enables precise control in all directions, making it ideal for tugs, ferries, and vessels operating in confined waters."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller> <http://www.w3.org/2000/01/rdf-schema#label> "Voith Schneider Propeller"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet> <http://www.w3.org/2000/01/rdf-schema#comment> "A jet propulsion technology that draws water into an intake and expels it at high velocity through a nozzle to generate thrust. Water jets are widely used for high-speed ferries, jet boats, and shallow-water applications."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet> <http://www.w3.org/2000/01/rdf-schema#label> "Water jet"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail> <http://www.w3.org/2000/01/rdf-schema#comment> "A rigid sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail> <http://www.w3.org/2000/01/rdf-schema#label> "Wind-assisted hard sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Wind-assisted propulsion system" .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid145 .
+_:genid145 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> .
+_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Wind-assisted propulsion technology"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail> <http://www.w3.org/2000/01/rdf-schema#comment> "A flexible sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail> <http://www.w3.org/2000/01/rdf-schema#label> "Wind-assisted soft sail"@en .
+# 
+# https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind-assisted propulsion technology using rotor blades similar to wind power generators, converting wind energy into thrust or auxiliary electrical energy for propulsion."@en .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine> <http://www.w3.org/2000/01/rdf-schema#label> "Wind turbine"@en .
+# 
+# https://schema.org/EngineSpecification
+<https://schema.org/EngineSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/EngineSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities."@en .
+<https://schema.org/EngineSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Engine specification"@en .
+# 
+# https://schema.org/Organization
+<https://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> .
+<https://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization such as a school, NGO, corporation, club, etc."@en .
+<https://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# https://schema.org/Person
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#Owner> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person (alive, dead, undead, or fictional)."@en .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://schema.org/Vehicle
+<https://schema.org/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en .
+<https://schema.org/Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+# 
+# https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo
+<https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> <http://www.w3.org/2000/01/rdf-schema#comment> "A photo, an image captured using a camera, an EXIF Image File Directory."@en .
+<https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> <http://www.w3.org/2000/01/rdf-schema#label> "Photo"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://qudt.org/3.1.2/vocab/unitCentiM
+<https://qudt.org/3.1.2/vocab/unitCentiM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://qudt.org/3.1.2/vocab/unitDEG
+<https://qudt.org/3.1.2/vocab/unitDEG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://qudt.org/3.1.2/vocab/unitGT
+<https://qudt.org/3.1.2/vocab/unitGT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://qudt.org/3.1.2/vocab/unitKN
+<https://qudt.org/3.1.2/vocab/unitKN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://qudt.org/3.1.2/vocab/unitM
+<https://qudt.org/3.1.2/vocab/unitM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://qudt.org/3.1.2/vocab/unitTON_Metric
+<https://qudt.org/3.1.2/vocab/unitTON_Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

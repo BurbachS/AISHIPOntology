@@ -1,0 +1,1342 @@
+@prefix : <https://burbachs.github.io/AISHIPOntology/AISHIP#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://burbachs.github.io/AISHIPOntology/AISHIP#> .
+
+<https://burbachs.github.io/AISHIPOntology/AISHIP> rdf:type owl:Ontology ;
+                                                    owl:imports <http://qudt.org/3.1.2/schema/qudt> ,
+                                                                rdf:Ontology ;
+                                                    <http://purl.org/dc/terms/bibliographicCitation> "Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. https://doi.org/10.5281/zenodo.16704863" ;
+                                                    <http://purl.org/dc/terms/created> "2025-07-23"^^xsd:date ;
+                                                    <http://purl.org/dc/terms/creator> _:genid1 ,
+                                                                                       _:genid3 ,
+                                                                                       _:genid5 ;
+                                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+                                                    <http://purl.org/dc/terms/title> "AISHIP Ontology" ;
+                                                    <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.16704863" ;
+                                                    rdfs:comment "AISHIP is an ontology designed to enable semantic integration and enrichment of heterogeneous maritime data. It extends the VesselAI ontology with enhanced vessel characteristics, detailed propulsion systems, extended trajectory modeling, and multimodal vessel representations."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://qudt.org/schema/qudt/unit
+<http://qudt.org/schema/qudt/unit> rdf:type owl:ObjectProperty .
+
+
+###  http://www.vesselAI-project.eu/ontology#hasGeometry
+<http://www.vesselAI-project.eu/ontology#hasGeometry> rdf:type owl:ObjectProperty .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval
+:computedOverTimeInterval rdf:type owl:ObjectProperty ;
+                          rdfs:domain :TypicalLocation ;
+                          rdfs:range <http://www.w3.org/2006/time#Interval> ;
+                          rdfs:comment "Relatesa typical location with the time interval it was computed over."@en ;
+                          rdfs:label "computed over time interval"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy
+:drivenBy rdf:type owl:ObjectProperty ;
+          owl:inverseOf :drives ;
+          rdfs:domain :MotorizedPropulsionSystem ;
+          rdfs:range <https://schema.org/EngineSpecification> ;
+          rdfs:comment "Relates a motorized propulsion technology with the engine it is driven by."@en ;
+          rdfs:label "driven by"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#drives
+:drives rdf:type owl:ObjectProperty ;
+        rdfs:domain <https://schema.org/EngineSpecification> ;
+        rdfs:range :MotorizedPropulsionTechnology ;
+        rdfs:comment "Relates an engine to the motorized propulsion technology it drives."@en ;
+        rdfs:label "drives"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight
+:hasActualHeight rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                 rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                     owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                     owl:allValuesFrom xsd:decimal
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:comment "Relates a vessel to its actual height. Indicates the actual current height of the vessel, e.g., considering load or structural changes, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasActualHeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+                 rdfs:label "has actual height"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism
+:hasAntiCavitationMechanism rdf:type owl:ObjectProperty ;
+                            owl:inverseOf :isAntiCavitationMechanismFor ;
+                            rdfs:domain :MotorizedPropulsionTechnology ;
+                            rdfs:range :AntiCavitationMechanism ;
+                            rdfs:comment "Relates a motorized propulsion technology to its anti-cavitation mechanism that reduces its cavitation."@en ;
+                            rdfs:label "has anti-cavitation mechanism"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround
+:hasAverageSpeedOverGround rdf:type owl:ObjectProperty ;
+                           rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                           rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                               owl:hasValue <https://qudt.org/3.1.2/vocab/unitKN>
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                               owl:allValuesFrom xsd:decimal
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                           rdfs:comment "Relates a vessel with its overall average speed over ground, typically measured in knots (kn)."@en ;
+                           rdfs:label "has average speed over ground"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround
+:hasAverageTrajectorySpeedOverGround rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://www.vesselAI-project.eu/ontology#Trajectory> ;
+                                     rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                                         owl:hasValue <https://qudt.org/3.1.2/vocab/unitKN>
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                                         owl:allValuesFrom xsd:decimal
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                                     rdfs:comment "Relates a trajtectory to the average speed over ground of the vessel during that trip, typically measured in knots (kn)."@en ;
+                                     rdfs:label "has average trajectory speed over ground"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround
+:hasCourseOverGround rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                     rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                         owl:hasValue <https://qudt.org/3.1.2/vocab/unitDEG>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                             owl:onDatatype xsd:decimal ;
+                                                                             owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                    ]
+                                                                                                    [ xsd:maxInclusive 360.0
+                                                                                                    ]
+                                                                                                  )
+                                                                           ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                     rdfs:comment "Relates a vessel to its course over ground. Indicates the actual course of a vessel over the ground, given as an angle relative to true north (in degrees). Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasCourseOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+                     rdfs:label "has course over ground"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight
+:hasDeadweight rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+               rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                   owl:hasValue <https://qudt.org/3.1.2/vocab/unitTON_Metric>
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+               rdfs:comment "Relates a vessel to its deadweight. Deadweight tonnage (DWT) represents the maximum weight of cargo, fuel, crew, provisions, and other supplies the vessel can carry, expressed in metric tons. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasDeadWeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+               rdfs:label "has deadweight"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription
+:hasDescription rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isDescriptionOf ;
+                rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                rdfs:range <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> ;
+                rdfs:comment "Relates a vessel to its text document description."@en ;
+                rdfs:label "has description"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter
+:hasDiameter rdf:type owl:ObjectProperty ;
+             rdfs:domain :BladedPropulsor ;
+             rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                 owl:hasValue <https://qudt.org/3.1.2/vocab/unitCentiM>
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                 owl:allValuesFrom xsd:decimal
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+             rdfs:comment "Relates a bladed propulsor to its diameter."@en ;
+             rdfs:label "has diameter"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA
+:hasDimensionA rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+               rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                   owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+               rdfs:comment "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."@en ;
+               rdfs:label "has dimension A"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB
+:hasDimensionB rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+               rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                   owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+               rdfs:comment "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."@en ;
+               rdfs:label "has dimension B"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC
+:hasDimensionC rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+               rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                   owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+               rdfs:comment "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."@en ;
+               rdfs:label "has dimension C"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD
+:hasDimensionD rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+               rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                   owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+               rdfs:comment "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."@en ;
+               rdfs:label "has dimension D"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught
+:hasDraught rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.vesselAI-project.eu/ontology#TrajectoryPart> ;
+            rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                owl:allValuesFrom xsd:decimal
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+            rdfs:comment "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."@en ;
+            rdfs:label "has draught"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn
+:hasGrossTn rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+            rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                owl:hasValue <https://qudt.org/3.1.2/vocab/unitGT>
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                owl:allValuesFrom xsd:decimal
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+            rdfs:comment "Relates a vessel to its gross tonnage (GT). Indicates the gross tonnage (GT) of the vessel, a dimensionless index defined by the IMO Tonnage Convention based on the ship's enclosed volume. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasGrossTn. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+            rdfs:label "has gross tn"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading
+:hasHeading rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+            rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                owl:hasValue <https://qudt.org/3.1.2/vocab/unitDEG>
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:decimal ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                           ]
+                                                                                           [ xsd:maxInclusive 360.0
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+            rdfs:comment "Relates a vessel to its heading. Indicates the orientation of the vessel's bow relative to true or magnetic north, expressed as an angle in degrees. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeading. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+            rdfs:label "has heading"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight
+:hasHeight rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+           rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                               owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                               owl:allValuesFrom xsd:decimal
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+           rdfs:comment "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+           rdfs:label "has height"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength
+:hasLength rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+           rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                               owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                               owl:allValuesFrom xsd:decimal
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+           rdfs:comment "Relates a vessel to its length. Indicates the overall length of the vessel, typically measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasLength. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+           rdfs:label "has length"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isOwnerOf ;
+          rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+          rdfs:range :Owner ;
+          rdfs:comment "Relates a vessel to its owner"@en ;
+          rdfs:label "has owner"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto
+:hasPhoto rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isPhotoOf ;
+          rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+          rdfs:range <https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> ;
+          rdfs:comment "Relates a vessel to its photo."@en ;
+          rdfs:label "has photo"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature
+:hasSonarSignature rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isSonarSignatureOf ;
+                   rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                   rdfs:range <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> ;
+                   rdfs:comment "Relates a vessel to its sonar signature audio file."@en ;
+                   rdfs:label "has sonar signature"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround
+:hasSpeedOverGround rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                    rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                                        owl:hasValue <https://qudt.org/3.1.2/vocab/unitKN>
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                                        owl:allValuesFrom xsd:decimal
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+                    rdfs:comment "Relates a vessel to its speed over ground (SOG). SOG indicates the speed of a vessel relative to the ground surface. Not to be confused with speed through water. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasSpeedOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+                    rdfs:label "has speed over ground"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry
+:hasTypicalGeometry rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.vesselAI-project.eu/ontology#hasGeometry> ;
+                    rdfs:domain :TypicalLocation ;
+                    rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                    rdfs:comment "Relates a typical location of a vessel with its geometry."@en ;
+                    rdfs:label "has typical geometry"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation
+:hasTypicalLocation rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                    rdfs:range :TypicalLocation ;
+                    rdfs:comment "Related a vessel with its typical location."@en ;
+                    rdfs:label "has typical location"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth
+:hasWidth rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+          rdfs:range [ owl:intersectionOf ( <http://qudt.org/schema/qudt/QuantityValue>
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://qudt.org/schema/qudt/unit> ;
+                                              owl:hasValue <https://qudt.org/3.1.2/vocab/unitM>
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://qudt.org/schema/qudt/numericValue> ;
+                                              owl:allValuesFrom xsd:decimal
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
+                     ] ;
+          rdfs:comment "Relates a vessel to its width. Indicates the overall width (beam) of the vessel, measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasWidth. However, we allow the expression as a quantity with numeric value and a unit."@en ;
+          rdfs:label "has width"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor
+:isAntiCavitationMechanismFor rdf:type owl:ObjectProperty ;
+                              rdfs:domain :AntiCavitationMechanism ;
+                              rdfs:range :MotorizedPropulsionTechnology ;
+                              rdfs:comment "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."@en ;
+                              rdfs:label "is anti-cavitation mechanism for"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf
+:isDescriptionOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> ;
+                 rdfs:range <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                 rdfs:comment "Relates a text document description to a vessel"@en ;
+                 rdfs:label "is description of"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf
+:isOwnerOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :Owner ;
+           rdfs:range <http://www.vesselAI-project.eu/ontology#Vessel> ;
+           rdfs:comment "Relates an owner to its vessel."@en ;
+           rdfs:label "is owner of"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf
+:isPhotoOf rdf:type owl:ObjectProperty ;
+           rdfs:domain <https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> ;
+           rdfs:range <http://www.vesselAI-project.eu/ontology#Vessel> ;
+           rdfs:comment "Relates a photo to its vessel."@en ;
+           rdfs:label "is photo of"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf
+:isSonarSignatureOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> ;
+                    rdfs:range <http://www.vesselAI-project.eu/ontology#Vessel> ;
+                    rdfs:comment "Relates a sonar signature audio file to its vessel."@en ;
+                    rdfs:label "is sonar signature of"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy
+:poweredBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :powers ;
+           rdfs:domain <https://schema.org/EngineSpecification> ;
+           rdfs:range :PowerGenerationUnit ;
+           rdfs:comment "Relates an engine to the power generation unit it is powered by."@en ;
+           rdfs:label "powered by"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#powers
+:powers rdf:type owl:ObjectProperty ;
+        rdfs:domain :PowerGenerationUnit ;
+        rdfs:range <https://schema.org/EngineSpecification> ;
+        rdfs:comment "Relates a power generation unit to the engine it powers."@en ;
+        rdfs:label "powers"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy
+:propelledBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :propells ;
+             rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+             rdfs:range :PropulsionSystem ;
+             rdfs:comment "Relates a vessel to the propulsion system it is propelled by."@en ;
+             rdfs:label "propelled by"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#propells
+:propells rdf:type owl:ObjectProperty ;
+          rdfs:domain :PropulsionSystem ;
+          rdfs:range <http://www.vesselAI-project.eu/ontology#Vessel> ;
+          rdfs:comment "Relates a propulsion system to the vessel it propells."@en ;
+          rdfs:label "propells"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem
+:usedByPropulsionSystem rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :usesPropulsionTechnology ;
+                        rdfs:domain :PropulsionTechnology ;
+                        rdfs:range :PropulsionSystem ;
+                        rdfs:comment "Relates a propulsion technology to the propulsion system it is used by to create thrust."@en ;
+                        rdfs:label "used by propulsion system"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology
+:usesPropulsionTechnology rdf:type owl:ObjectProperty ;
+                          rdfs:domain :PropulsionSystem ;
+                          rdfs:range :PropulsionTechnology ;
+                          rdfs:comment "Relates a propulsion system to the propulsion technology it uses to create thrust."@en ;
+                          rdfs:label "uses propulsion technology"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://qudt.org/schema/qudt/numericValue
+<http://qudt.org/schema/qudt/numericValue> rdf:type owl:DatatypeProperty .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate
+:hasBuiltDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+              rdfs:range xsd:gYear ;
+              rdfs:comment "Relates a vessel to the year it was build. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasBuiltDate. However, we specify the datatype."@en ;
+              rdfs:label "has built date"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN
+:hasHIN rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://www.vesselAI-project.eu/ontology#Vessel> ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Relates a vessel with its HIN."@en ;
+        rdfs:label "has HIN"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades
+:hasNumberOfBlades rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :BladedPropulsor ;
+                   rdfs:range xsd:int ;
+                   rdfs:comment "Relates a bladed propulsor to its number of blades."@en ;
+                   rdfs:label "has number of blades"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://qudt.org/schema/qudt/QuantityValue
+<http://qudt.org/schema/qudt/QuantityValue> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class .
+
+
+###  http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio> rdf:type owl:Class ;
+                                                                 rdfs:comment "A file containing an audio content"@en ;
+                                                                 rdfs:label "Audio"@en .
+
+
+###  http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument
+<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument> rdf:type owl:Class ;
+                                                                        rdfs:comment "A text document."@en ;
+                                                                        rdfs:label "Text document"@en .
+
+
+###  http://www.vesselAI-project.eu/ontology#Place
+<http://www.vesselAI-project.eu/ontology#Place> rdf:type owl:Class .
+
+
+###  http://www.vesselAI-project.eu/ontology#SyntheticTrajectory
+<http://www.vesselAI-project.eu/ontology#SyntheticTrajectory> rdf:type owl:Class .
+
+
+###  http://www.vesselAI-project.eu/ontology#Trajectory
+<http://www.vesselAI-project.eu/ontology#Trajectory> rdf:type owl:Class .
+
+
+###  http://www.vesselAI-project.eu/ontology#TrajectoryPart
+<http://www.vesselAI-project.eu/ontology#TrajectoryPart> rdf:type owl:Class .
+
+
+###  http://www.vesselAI-project.eu/ontology#Vessel
+<http://www.vesselAI-project.eu/ontology#Vessel> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://schema.org/Vehicle> ;
+                                                 rdfs:label "Vessel"@en .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism
+:AntiCavitationMechanism rdf:type owl:Class ;
+                         rdfs:comment "A design feature or technology applied to propulsion systems to prevent or reduce cavitation effects on propeller blades or related components. Such mechanisms aim to minimize efficiency loss, noise, and material damage caused by cavitation."@en ;
+                         rdfs:label "Anti cavitation mechanism"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit
+:BatteryUnit rdf:type owl:Class ;
+             rdfs:subClassOf :PowerGenerationUnit ;
+             rdfs:comment "An energy storage system that supplies electrical power for propulsion or auxiliary systems, charged from onboard or external sources."@en ;
+             rdfs:label "Battery unit"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor
+:BladedPropulsor rdf:type owl:Class ;
+                 rdfs:subClassOf :MotorizedPropulsionTechnology ;
+                 rdfs:comment "A motorized propulsion technology that generates thrust using rotating blades to accelerate water. This category includes conventional propellers and specialized blade-based systems designed for various operational profiles."@en ;
+                 rdfs:label "Bladed propulsor"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD
+:CODAD rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system that uses multiple diesel engines in parallel to provide flexible power management and redundancy."@en ;
+       rdfs:label "CODAD"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG
+:CODAG rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system that can use both a diesel engine and a gas turbine simultaneously for increased power output."@en ;
+       rdfs:label "CODAG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG
+:CODLAG rdf:type owl:Class ;
+        rdfs:subClassOf :CombinedEngine ;
+        rdfs:comment "A combined propulsion system that integrates diesel-electric drive for cruising and a gas turbine for greater speed when needed."@en ;
+        rdfs:label "CODLAG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG
+:CODOG rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system that uses either a diesel engine for efficient cruising or a gas turbine for high-speed operation."@en ;
+       rdfs:label "CODOG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG
+:COGAG rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system using multiple gas turbines, with smaller units for efficient cruising and additional turbines engaged for high-speed operation."@en ;
+       rdfs:label "COGAG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS
+:COGAS rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system that integrates a gas turbine and a steam turbine, often in a combined-cycle configuration for efficiency."@en ;
+       rdfs:label "COGAS"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#COGES
+:COGES rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system using gas and steam turbines to generate electricity, which powers electric motors for propulsion."@en ;
+       rdfs:label "COGES"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG
+:COGOG rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system with two gas turbines, where only one operates at a time depending on the desired speed profile."@en ;
+       rdfs:label "COGOG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG
+:CONAG rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "An experimental propulsion system combining a nuclear reactor with a gas turbine, typically used in advanced naval vessels."@en ;
+       rdfs:label "CONAG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN
+:CONAN rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "An experimental propulsion system using two nuclear reactors for increased redundancy and sustained power output."@en ;
+       rdfs:label "CONAN"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS
+:CONAS rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system that uses a nuclear reactor to generate steam, which drives a steam turbine for propulsion."@en ;
+       rdfs:label "CONAS"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG
+:COSAG rdf:type owl:Class ;
+       rdfs:subClassOf :CombinedEngine ;
+       rdfs:comment "A combined propulsion system using a steam turbine for cruising and a gas turbine for rapid acceleration, with optional simultaneous operation."@en ;
+       rdfs:label "COSAG"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine
+:CombinedEngine rdf:type owl:Class ;
+                rdfs:subClassOf <https://schema.org/EngineSpecification> ;
+                rdfs:comment "A propulsion system that integrates two or more engine types to optimize performance, efficiency, or redundancy."@en ;
+                rdfs:label "Combined engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller
+:ControllablePitchPropeller rdf:type owl:Class ;
+                            rdfs:subClassOf :ScrewPropeller ;
+                            rdfs:comment "A screw propeller with blades that can adjust their pitch during operation, allowing flexible control of thrust and speed without changing the rotation direction. Frequently used in ships that require frequent speed or direction changes."@en ;
+                            rdfs:label "Controllable pitch propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller
+:CounterRotatingPropeller rdf:type owl:Class ;
+                          rdfs:subClassOf :ScrewPropeller ;
+                          rdfs:comment "A screw propeller system that uses two coaxial propellers rotating in opposite directions to improve efficiency and reduce rotational losses. This design enhances thrust and is typically used on high-performance vessels."@en ;
+                          rdfs:label "Counter rotating propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit
+:DieselCombustionUnit rdf:type owl:Class ;
+                      rdfs:subClassOf :PowerGenerationUnit ;
+                      rdfs:comment "A power unit that generates mechanical or electrical energy by combusting diesel fuel. Often used to drive generators or directly coupled engines."@en ;
+                      rdfs:label "Diesel combustion unit"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine
+:DieselEngine rdf:type owl:Class ;
+              rdfs:subClassOf :PistonEngine ;
+              rdfs:comment "An internal combustion engine that uses the compression ignition of diesel fuel to produce mechanical motion."@en ;
+              rdfs:label "Diesel engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller
+:DuctedPropeller rdf:type owl:Class ;
+                 rdfs:subClassOf :ScrewPropeller ;
+                 rdfs:comment "A screw propeller enclosed in a fixed nozzle (duct) to increase thrust and efficiency at lower speeds and provide additional protection. Widely used in tugs and fishing trawlers requiring high bollard pull."@en ;
+                 rdfs:label "Ducted propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine
+:ElectricEngine rdf:type owl:Class ;
+                rdfs:subClassOf :NonPistonEngine ;
+                rdfs:comment "A motor that converts electrical energy into mechanical rotation."@en ;
+                rdfs:label "Electric engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller
+:FixedPitchPropeller rdf:type owl:Class ;
+                     rdfs:subClassOf :ScrewPropeller ;
+                     rdfs:comment "A screw propeller with blades fixed at a constant angle. It offers simple and cost-effective design, commonly used in vessels with steady operating conditions where speed and load vary little."@en ;
+                     rdfs:label "Fixed pitch propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor
+:FlettnerRotor rdf:type owl:Class ;
+               rdfs:subClassOf :RotorSails ;
+               rdfs:comment "A specific type of rotor sail consisting of a tall, rotating cylinder mounted vertically on the deck. When wind flows across the spinning surface, lift is generated via the Magnus effect, assisting vessel propulsion."@en ;
+               rdfs:label "Flettner rotor"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit
+:GasCombustionUnit rdf:type owl:Class ;
+                   rdfs:subClassOf :PowerGenerationUnit ;
+                   rdfs:comment "A power unit that burns gaseous fuels such as natural gas or LNG to produce usable energy for shipboard systems or propulsion."@en ;
+                   rdfs:label "Gas combustion unit"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine
+:GasTurbineEngine rdf:type owl:Class ;
+                  rdfs:subClassOf :NonPistonEngine ;
+                  rdfs:comment "A rotary engine that generates mechanical power by expanding combustion gases through turbine stages."@en ;
+                  rdfs:label "Gas turbine engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet
+:GasWaterJet rdf:type owl:Class ;
+             rdfs:subClassOf :JetPropulsor ;
+             rdfs:comment "A jet propulsion technology that uses gas (e.g., exhaust gases from a turbine) instead of a pumpt to accelerate water and create thrust. This system combines combustion energy with fluid dynamics for high-performance propulsion."@en ;
+             rdfs:label "Gas-water jet"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail
+:HardSail rdf:type owl:Class ;
+          rdfs:subClassOf :Sail ;
+          rdfs:comment "A rigid sail structure, typically resembling an aerofoil, used to harness wind energy for propulsion."@en ;
+          rdfs:label "Hard sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm
+:HullForm rdf:type owl:Class ;
+          rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+          rdfs:comment "A wind-assisted propulsion technology that utilizes the vessel’s hull geometry to generate additional aerodynamic lift or reduce drag, complementing primary propulsion systems."@en ;
+          rdfs:label "Hull form"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor
+:JetPropulsor rdf:type owl:Class ;
+              rdfs:subClassOf :MotorizedPropulsionTechnology ;
+              rdfs:comment "A motorized propulsion technology that generates thrust by accelerating a fluid (typically water) through a nozzle, creating a jet stream that propels the vessel. Jet propulsors are commonly used for high-speed boats and specialized vessels."@en ;
+              rdfs:label "Jet propulsor"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#Kite
+:Kite rdf:type owl:Class ;
+      rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+      rdfs:comment "A wind-assisted propulsion technology that uses a large controllable kite deployed ahead of the vessel to harness wind energy and reduce engine power requirements."@en ;
+      rdfs:label "Kite"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem
+:MotorizedPropulsionSystem rdf:type owl:Class ;
+                           rdfs:subClassOf :PropulsionSystem ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :usesPropulsionTechnology ;
+                                             owl:allValuesFrom :MotorizedPropulsionTechnology
+                                           ] ;
+                           owl:disjointWith :MusclePoweredPropulsionSystem ,
+                                            :PureWindPropulsionSystem ,
+                                            :WindAssistedPropulsionSystem ;
+                           rdfs:comment "A propulsion system that relies on internal or external motors or engines to generate mechanical thrust for vessel movement."@en ;
+                           rdfs:label "Motorized propulsion system"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology
+:MotorizedPropulsionTechnology rdf:type owl:Class ;
+                               rdfs:subClassOf :PropulsionTechnology ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :usedByPropulsionSystem ;
+                                                 owl:allValuesFrom :MotorizedPropulsionSystem
+                                               ] ;
+                               owl:disjointWith :MusclePoweredPropulsionTechnology ,
+                                                :PureWindPropulsionTechnology ,
+                                                :WindAssistedPropulsionTechnology ;
+                               rdfs:comment "A propulsion technology that relies on mechanical motors or engine to convert energy into thrust for vessel propulsion."@en ;
+                               rdfs:label "Motorized propulsion technology"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem
+:MusclePoweredPropulsionSystem rdf:type owl:Class ;
+                               rdfs:subClassOf :NonMotorizedPropulsionSystem ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :usesPropulsionTechnology ;
+                                                 owl:allValuesFrom :MusclePoweredPropulsionTechnology
+                                               ] ;
+                               owl:disjointWith :PureWindPropulsionSystem ,
+                                                :WindAssistedPropulsionSystem ;
+                               rdfs:comment "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."@en ;
+                               rdfs:label "Muscle-powered propulsion system"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology
+:MusclePoweredPropulsionTechnology rdf:type owl:Class ;
+                                   rdfs:subClassOf :PropulsionTechnology ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :usedByPropulsionSystem ;
+                                                     owl:allValuesFrom :MusclePoweredPropulsionSystem
+                                                   ] ;
+                                   owl:disjointWith :PureWindPropulsionTechnology ,
+                                                    :WindAssistedPropulsionTechnology ;
+                                   rdfs:comment "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en ;
+                                   rdfs:label "Muscle-powered propulsion technology"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem
+:NonMotorizedPropulsionSystem rdf:type owl:Class ;
+                              rdfs:subClassOf :PropulsionSystem ;
+                              rdfs:comment "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."@en ;
+                              rdfs:label "Non-motorized propulsion system"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine
+:NonPistonEngine rdf:type owl:Class ;
+                 rdfs:subClassOf <https://schema.org/EngineSpecification> ;
+                 rdfs:comment "An engine that generates mechanical power without using pistons, typically through continuous rotational systems such as turbines or electric motors."@en ;
+                 rdfs:label "Non-piston engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor
+:NuclearReactor rdf:type owl:Class ;
+                rdfs:subClassOf :PowerGenerationUnit ;
+                rdfs:comment "A reactor that generates thermal energy through controlled nuclear fission, typically used to power steam turbines in naval or large-scale vessels."@en ;
+                rdfs:label "Nuclear reactor"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#Owner
+:Owner rdf:type owl:Class ;
+       rdfs:comment "The owner of a vessel."@en ;
+       rdfs:label "Owner"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle
+:Paddle rdf:type owl:Class ;
+        rdfs:subClassOf :MusclePoweredPropulsionTechnology ;
+        rdfs:comment "A simple muscle-powered propulsion technique involving a handheld blade used to push against water and move a vessel forward. Typically associated with canoes, kayaks, or lifeboats."@en ;
+        rdfs:label "Paddle"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel
+:PaddleWheel rdf:type owl:Class ;
+             rdfs:subClassOf :BladedPropulsor ;
+             rdfs:comment "A propulsion technology that uses large external wheels with attached blades or paddles to push water and generate thrust. Historically used in riverboats and still applied in some shallow-water or heritage vessels."@en ;
+             rdfs:label "Paddle wheel"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine
+:PistonEngine rdf:type owl:Class ;
+              rdfs:subClassOf <https://schema.org/EngineSpecification> ;
+              rdfs:comment "An internal combustion engine that converts the linear motion of pistons into rotational energy via a crankshaft."@en ;
+              rdfs:label "Piston engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit
+:PowerGenerationUnit rdf:type owl:Class ;
+                     rdfs:comment "A power unit that produces usable energy for shipboard systems or propulsion."@en ;
+                     rdfs:label "Power generation unit"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory
+:PredictedTrajectory rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.vesselAI-project.eu/ontology#SyntheticTrajectory> ;
+                     rdfs:comment "A trajectory that is predicted based on the analysis of previous vessel trajectories."@en ;
+                     rdfs:label "Predicted trajectory"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod
+:PropellerPod rdf:type owl:Class ;
+              rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
+              rdfs:comment "A propulsion system where the propeller is mounted on a steerable pod that also contains the drive motor. Podded propulsors allow full 360-degree rotation for excellent maneuverability and are commonly used in cruise ships and offshore vessels."@en ;
+              rdfs:label "Propeller pod"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem
+:PropulsionSystem rdf:type owl:Class ;
+                  rdfs:comment "A system that generates thrust to move a vessel forward."@en ;
+                  rdfs:label "Propulsion system"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology
+:PropulsionTechnology rdf:type owl:Class ;
+                      rdfs:comment "A general concept representing the method or technology used by a propulsion system to generate thrust for vessel movement. This class provides an abstraction for different approaches such as motor-driven or wind-based techniques."@en ;
+                      rdfs:label "Propulsion technology"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail
+:PureWindHardSail rdf:type owl:Class ;
+                  rdfs:subClassOf :HardSail ,
+                                  :PureWindPropulsionTechnology ;
+                  rdfs:comment "A rigid sail designed to provide the primary propulsion for a vessel using wind energy alone."@en ;
+                  rdfs:label "Pure wind hard sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem
+:PureWindPropulsionSystem rdf:type owl:Class ;
+                          rdfs:subClassOf :NonMotorizedPropulsionSystem ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :usesPropulsionTechnology ;
+                                            owl:allValuesFrom :PureWindPropulsionTechnology
+                                          ] ;
+                          owl:disjointWith :WindAssistedPropulsionSystem ;
+                          rdfs:comment "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."@en ;
+                          rdfs:label "Pure wind propulsion system"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology
+:PureWindPropulsionTechnology rdf:type owl:Class ;
+                              rdfs:subClassOf :PropulsionTechnology ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :usedByPropulsionSystem ;
+                                                owl:allValuesFrom :PureWindPropulsionSystem
+                                              ] ;
+                              owl:disjointWith :WindAssistedPropulsionTechnology ;
+                              rdfs:comment "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."@en ;
+                              rdfs:label "Pure wind propulsion technology"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail
+:PureWindSoftSail rdf:type owl:Class ;
+                  rdfs:subClassOf :PureWindPropulsionTechnology ,
+                                  :SoftSail ;
+                  rdfs:comment "A traditional or modern soft sail used to provide the primary propulsion for a vessel using wind energy alone."@en ;
+                  rdfs:label "Pure wind soft sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea
+:RestrictedArea rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.vesselAI-project.eu/ontology#Place> ;
+                rdfs:comment "A maritime region where access or navigation is limited due to security, safety, or legal regulations."@en ;
+                rdfs:label "Restricted area"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails
+:RotorSails rdf:type owl:Class ;
+            rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+            rdfs:comment "A wind-assisted propulsion technology that uses rotating cylindrical sails (rotors) to create aerodynamic lift through the Magnus effect, reducing engine load and fuel consumption."@en ;
+            rdfs:label "Rotor sails"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller
+:RudderPropeller rdf:type owl:Class ;
+                 rdfs:subClassOf :ScrewPropeller ;
+                 rdfs:comment "A screw propeller integrated with a steerable drive unit, enabling both propulsion and steering without a separate rudder. Common in azimuth thrusters for offshore vessels and ships needing high maneuverability."@en ;
+                 rdfs:label "Rudder propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#Sail
+:Sail rdf:type owl:Class ;
+      rdfs:comment "A generic sail that converts wind energy into propulsive force for a vessel."@en ;
+      rdfs:label "Sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller
+:ScrewPropeller rdf:type owl:Class ;
+                rdfs:subClassOf :BladedPropulsor ;
+                rdfs:comment "A widely used bladed propulsion technology where helical blades mounted on a rotating hub create thrust by pushing water backwards. Screw propellers are commonly used for most vessel types due to their simplicity and efficiency."@en ;
+                rdfs:label "Screw propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail
+:SoftSail rdf:type owl:Class ;
+          rdfs:subClassOf :Sail ;
+          rdfs:comment "A flexible sail made from fabric or similar materials, traditionally used for harnessing wind energy."@en ;
+          rdfs:label "Soft sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray
+:SolarArray rdf:type owl:Class ;
+            rdfs:subClassOf :PowerGenerationUnit ;
+            rdfs:comment "A photovoltaic system that converts solar radiation into electrical energy, typically used as a supplementary or auxiliary power source."@en ;
+            rdfs:label "Solar array"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor
+:SpeciallyDesignedBladedPropulsor rdf:type owl:Class ;
+                                  rdfs:subClassOf :BladedPropulsor ;
+                                  rdfs:comment "A bladed propulsion technology adapted for specific vessel requirements or operational conditions, such as high maneuverability or integrated drive systems."@en ;
+                                  rdfs:label "Specially designed bladed propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine
+:SteamTurbineEngine rdf:type owl:Class ;
+                    rdfs:subClassOf :NonPistonEngine ;
+                    rdfs:comment "A rotary engine that converts thermal energy from pressurized steam into mechanical motion via rotating turbine blades."@en ;
+                    rdfs:label "Steam turbine engine"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings
+:SuctionWings rdf:type owl:Class ;
+              rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+              rdfs:comment "A wind-assisted propulsion technology using rigid wing structures with suction or airflow control systems to enhance aerodynamic lift and reduce fuel consumption."@en ;
+              rdfs:label "Suction wings"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller
+:SupercavitatingPropeller rdf:type owl:Class ;
+                          rdfs:subClassOf :ScrewPropeller ;
+                          rdfs:comment "A screw propeller designed to operate under conditions of intentional cavitation, reducing drag at very high speeds. Common in fast military or racing vessels where conventional propellers would suffer performance loss."@en ;
+                          rdfs:label "Supercavitating propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation
+:TypicalLocation rdf:type owl:Class ;
+                 rdfs:comment "The typical location of a vessel that is calculated over a time interval."@en ;
+                 rdfs:label "Typical location"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem
+:VesselWithMotorizedPropulsionSystem rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( <http://www.vesselAI-project.eu/ontology#Vessel>
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :propelledBy ;
+                                                                                  owl:someValuesFrom :MotorizedPropulsionSystem
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     owl:disjointWith :VesselWithPureWindPropulsionSystem ;
+                                     rdfs:comment "A vessel that is motorized cannot also be classified as having a pure wind propulsion system."@en ,
+                                                  "Represents any vessel that has at least one motorized propulsion system."@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem
+:VesselWithMusclePoweredPropulsionSystem rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( <http://www.vesselAI-project.eu/ontology#Vessel>
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :propelledBy ;
+                                                                                      owl:someValuesFrom :MusclePoweredPropulsionSystem
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:comment "Represents any vessel that has at least one muscle-powered propulsion system."@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem
+:VesselWithPureWindPropulsionSystem rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( <http://www.vesselAI-project.eu/ontology#Vessel>
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :propelledBy ;
+                                                                                 owl:someValuesFrom :PureWindPropulsionSystem
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :propelledBy ;
+                                                                                 owl:allValuesFrom :PureWindPropulsionSystem
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    owl:disjointWith :VesselWithWindAssistedPropulsionSystem ;
+                                    rdfs:comment "Represents any vessel that has at least one pure wind propulsion system. These kinds of vessel are purely propulled by wind."@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem
+:VesselWithWindAssistedPropulsionSystem rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( <http://www.vesselAI-project.eu/ontology#Vessel>
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :propelledBy ;
+                                                                                     owl:someValuesFrom :WindAssistedPropulsionSystem
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :propelledBy ;
+                                                          owl:someValuesFrom :MotorizedPropulsionSystem
+                                                        ] ;
+                                        rdfs:comment "A vessel that is wind-assisted cannot also be classified as having a pure wind propulsion system."@en ,
+                                                     "Represents any vessel that has at least one wind-assisted propulsion system and is required to also have a motorized propulsion system, as wind-assisted systems are intended to supplement motorized propulsion."@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller
+:VoithSchneiderPropeller rdf:type owl:Class ;
+                         rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
+                         rdfs:comment "A highly maneuverable bladed propulsion system using vertical blades that rotate and adjust their pitch cyclically. This design enables precise control in all directions, making it ideal for tugs, ferries, and vessels operating in confined waters."@en ;
+                         rdfs:label "Voith Schneider Propeller"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet
+:WaterJet rdf:type owl:Class ;
+          rdfs:subClassOf :JetPropulsor ;
+          rdfs:comment "A jet propulsion technology that draws water into an intake and expels it at high velocity through a nozzle to generate thrust. Water jets are widely used for high-speed ferries, jet boats, and shallow-water applications."@en ;
+          rdfs:label "Water jet"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail
+:WindAssistedHardSail rdf:type owl:Class ;
+                      rdfs:subClassOf :HardSail ,
+                                      :WindAssistedPropulsionTechnology ;
+                      rdfs:comment "A rigid sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."@en ;
+                      rdfs:label "Wind-assisted hard sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem
+:WindAssistedPropulsionSystem rdf:type owl:Class ;
+                              rdfs:subClassOf :NonMotorizedPropulsionSystem ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :usesPropulsionTechnology ;
+                                                owl:allValuesFrom :WindAssistedPropulsionTechnology
+                                              ] ;
+                              rdfs:comment "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."@en ;
+                              rdfs:label "Wind-assisted propulsion system" .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology
+:WindAssistedPropulsionTechnology rdf:type owl:Class ;
+                                  rdfs:subClassOf :PropulsionTechnology ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :usedByPropulsionSystem ;
+                                                    owl:allValuesFrom :WindAssistedPropulsionSystem
+                                                  ] ;
+                                  rdfs:comment "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."@en ;
+                                  rdfs:label "Wind-assisted propulsion technology"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail
+:WindAssistedSoftSail rdf:type owl:Class ;
+                      rdfs:subClassOf :SoftSail ,
+                                      :WindAssistedPropulsionTechnology ;
+                      rdfs:comment "A flexible sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."@en ;
+                      rdfs:label "Wind-assisted soft sail"@en .
+
+
+###  https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine
+:WindTurbine rdf:type owl:Class ;
+             rdfs:subClassOf :WindAssistedPropulsionTechnology ;
+             rdfs:comment "A wind-assisted propulsion technology using rotor blades similar to wind power generators, converting wind energy into thrust or auxiliary electrical energy for propulsion."@en ;
+             rdfs:label "Wind turbine"@en .
+
+
+###  https://schema.org/EngineSpecification
+<https://schema.org/EngineSpecification> rdf:type owl:Class ;
+                                         rdfs:comment "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities."@en ;
+                                         rdfs:label "Engine specification"@en .
+
+
+###  https://schema.org/Organization
+<https://schema.org/Organization> rdf:type owl:Class ;
+                                  rdfs:subClassOf :Owner ;
+                                  rdfs:comment "An organization such as a school, NGO, corporation, club, etc."@en ;
+                                  rdfs:label "Organization"@en .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class ;
+                            rdfs:subClassOf :Owner ;
+                            rdfs:comment "A person (alive, dead, undead, or fictional)."@en ;
+                            rdfs:label "Person"@en .
+
+
+###  https://schema.org/Vehicle
+<https://schema.org/Vehicle> rdf:type owl:Class ;
+                             rdfs:comment "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en ;
+                             rdfs:label "Vehicle"@en .
+
+
+###  https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo
+<https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo> rdf:type owl:Class ;
+                                                                    rdfs:comment "A photo, an image captured using a camera, an EXIF Image File Directory."@en ;
+                                                                    rdfs:label "Photo"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://qudt.org/3.1.2/vocab/unitCentiM
+<https://qudt.org/3.1.2/vocab/unitCentiM> rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitDEG
+<https://qudt.org/3.1.2/vocab/unitDEG> rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitGT
+<https://qudt.org/3.1.2/vocab/unitGT> rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitKN
+<https://qudt.org/3.1.2/vocab/unitKN> rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitM
+<https://qudt.org/3.1.2/vocab/unitM> rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitTON_Metric
+<https://qudt.org/3.1.2/vocab/unitTON_Metric> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

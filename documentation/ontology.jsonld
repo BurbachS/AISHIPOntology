@@ -1,0 +1,2735 @@
+[ {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid105"
+    }, {
+      "@id" : "_:genid103"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid111"
+    }, {
+      "@id" : "_:genid109"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitKN"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid117"
+    }, {
+      "@id" : "_:genid115"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+    }, {
+      "@id" : "_:genid127"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+    }, {
+      "@id" : "_:genid131"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+    }, {
+      "@id" : "_:genid137"
+    }, {
+      "@id" : "_:genid135"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+    }, {
+      "@id" : "_:genid141"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid144",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitKN"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitKN"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid34"
+    }, {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid30"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "360.0"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitDEG"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitTON_Metric"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid44"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitCentiM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid52"
+    }, {
+      "@id" : "_:genid50"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid58"
+    }, {
+      "@id" : "_:genid56"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid64"
+    }, {
+      "@id" : "_:genid62"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid70"
+    }, {
+      "@id" : "_:genid68"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid11"
+    }, {
+      "@id" : "_:genid9"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid76"
+    }, {
+      "@id" : "_:genid74"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid82"
+    }, {
+      "@id" : "_:genid80"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitGT"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid93"
+    }, {
+      "@id" : "_:genid86"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid87"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid91"
+    }, {
+      "@id" : "_:genid89"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "360.0"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitDEG"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://qudt.org/schema/qudt/QuantityValue"
+    }, {
+      "@id" : "_:genid99"
+    }, {
+      "@id" : "_:genid97"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/numericValue"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://qudt.org/3.1.2/vocab/unitM"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/unit"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/QuantityValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/numericValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A file containing an audio content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Audio"
+  } ]
+}, {
+  "@id" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A text document."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Text document"
+  } ]
+}, {
+  "@id" : "http://www.vesselAI-project.eu/ontology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.vesselAI-project.eu/ontology#SyntheticTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.vesselAI-project.eu/ontology#Trajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.vesselAI-project.eu/ontology#TrajectoryPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.vesselAI-project.eu/ontology#Vessel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Vehicle"
+  } ]
+}, {
+  "@id" : "http://www.vesselAI-project.eu/ontology#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. https://doi.org/10.5281/zenodo.16704863"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-07-23"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "AISHIP Ontology"
+  } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@value" : "10.5281/zenodo.16704863"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AISHIP is an ontology designed to enable semantic integration and enrichment of heterogeneous maritime data. It extends the VesselAI ontology with enhanced vessel characteristics, detailed propulsion systems, extended trajectory modeling, and multimodal vessel representations."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://qudt.org/3.1.2/schema/qudt"
+  }, {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Ontology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A design feature or technology applied to propulsion systems to prevent or reduce cavitation effects on propeller blades or related components. Such mechanisms aim to minimize efficiency loss, noise, and material damage caused by cavitation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anti cavitation mechanism"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An energy storage system that supplies electrical power for propulsion or auxiliary systems, charged from onboard or external sources."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A motorized propulsion technology that generates thrust using rotating blades to accelerate water. This category includes conventional propellers and specialized blade-based systems designed for various operational profiles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bladed propulsor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system that uses multiple diesel engines in parallel to provide flexible power management and redundancy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CODAD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system that can use both a diesel engine and a gas turbine simultaneously for increased power output."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CODAG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system that integrates diesel-electric drive for cruising and a gas turbine for greater speed when needed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CODLAG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system that uses either a diesel engine for efficient cruising or a gas turbine for high-speed operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CODOG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system using multiple gas turbines, with smaller units for efficient cruising and additional turbines engaged for high-speed operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "COGAG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGAS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system that integrates a gas turbine and a steam turbine, often in a combined-cycle configuration for efficiency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "COGAS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system using gas and steam turbines to generate electricity, which powers electric motors for propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "COGES"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system with two gas turbines, where only one operates at a time depending on the desired speed profile."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "COGOG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An experimental propulsion system combining a nuclear reactor with a gas turbine, typically used in advanced naval vessels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CONAG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An experimental propulsion system using two nuclear reactors for increased redundancy and sustained power output."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CONAN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system that uses a nuclear reactor to generate steam, which drives a steam turbine for propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CONAS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A combined propulsion system using a steam turbine for cruising and a gas turbine for rapid acceleration, with optional simultaneous operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "COSAG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion system that integrates two or more engine types to optimize performance, efficiency, or redundancy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Combined engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A screw propeller with blades that can adjust their pitch during operation, allowing flexible control of thrust and speed without changing the rotation direction. Frequently used in ships that require frequent speed or direction changes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Controllable pitch propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A screw propeller system that uses two coaxial propellers rotating in opposite directions to improve efficiency and reduce rotational losses. This design enhances thrust and is typically used on high-performance vessels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Counter rotating propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A power unit that generates mechanical or electrical energy by combusting diesel fuel. Often used to drive generators or directly coupled engines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diesel combustion unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An internal combustion engine that uses the compression ignition of diesel fuel to produce mechanical motion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diesel engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A screw propeller enclosed in a fixed nozzle (duct) to increase thrust and efficiency at lower speeds and provide additional protection. Widely used in tugs and fishing trawlers requiring high bollard pull."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ducted propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A motor that converts electrical energy into mechanical rotation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A screw propeller with blades fixed at a constant angle. It offers simple and cost-effective design, commonly used in vessels with steady operating conditions where speed and load vary little."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fixed pitch propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#FlettnerRotor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific type of rotor sail consisting of a tall, rotating cylinder mounted vertically on the deck. When wind flows across the spinning surface, lift is generated via the Magnus effect, assisting vessel propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flettner rotor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A power unit that burns gaseous fuels such as natural gas or LNG to produce usable energy for shipboard systems or propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas combustion unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rotary engine that generates mechanical power by expanding combustion gases through turbine stages."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas turbine engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A jet propulsion technology that uses gas (e.g., exhaust gases from a turbine) instead of a pumpt to accelerate water and create thrust. This system combines combustion energy with fluid dynamics for high-performance propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas-water jet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rigid sail structure, typically resembling an aerofoil, used to harness wind energy for propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hard sail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Sail"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wind-assisted propulsion technology that utilizes the vessel’s hull geometry to generate additional aerodynamic lift or reduce drag, complementing primary propulsion systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hull form"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A motorized propulsion technology that generates thrust by accelerating a fluid (typically water) through a nozzle, creating a jet stream that propels the vessel. Jet propulsors are commonly used for high-speed boats and specialized vessels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jet propulsor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Kite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wind-assisted propulsion technology that uses a large controllable kite deployed ahead of the vessel to harness wind energy and reduce engine power requirements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Kite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion system that relies on internal or external motors or engines to generate mechanical thrust for vessel movement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Motorized propulsion system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"
+  }, {
+    "@id" : "_:genid119"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion technology that relies on mechanical motors or engine to convert energy into thrust for vessel propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Motorized propulsion technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology"
+  }, {
+    "@id" : "_:genid120"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Muscle-powered propulsion system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem"
+  }, {
+    "@id" : "_:genid121"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Muscle-powered propulsion technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology"
+  }, {
+    "@id" : "_:genid122"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non-motorized propulsion system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An engine that generates mechanical power without using pistons, typically through continuous rotational systems such as turbines or electric motors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non-piston engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A reactor that generates thermal energy through controlled nuclear fission, typically used to power steam turbines in naval or large-scale vessels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nuclear reactor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The owner of a vessel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Owner"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simple muscle-powered propulsion technique involving a handheld blade used to push against water and move a vessel forward. Typically associated with canoes, kayaks, or lifeboats."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Paddle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion technology that uses large external wheels with attached blades or paddles to push water and generate thrust. Historically used in riverboats and still applied in some shallow-water or heritage vessels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Paddle wheel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An internal combustion engine that converts the linear motion of pistons into rotational energy via a crankshaft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Piston engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A power unit that produces usable energy for shipboard systems or propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power generation unit"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A trajectory that is predicted based on the analysis of previous vessel trajectories."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Predicted trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#SyntheticTrajectory"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion system where the propeller is mounted on a steerable pod that also contains the drive motor. Podded propulsors allow full 360-degree rotation for excellent maneuverability and are commonly used in cruise ships and offshore vessels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Propeller pod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A system that generates thrust to move a vessel forward."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Propulsion system"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A general concept representing the method or technology used by a propulsion system to generate thrust for vessel movement. This class provides an abstraction for different approaches such as motor-driven or wind-based techniques."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Propulsion technology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rigid sail designed to provide the primary propulsion for a vessel using wind energy alone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pure wind hard sail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pure wind propulsion system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem"
+  }, {
+    "@id" : "_:genid123"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pure wind propulsion technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology"
+  }, {
+    "@id" : "_:genid124"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A traditional or modern soft sail used to provide the primary propulsion for a vessel using wind energy alone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pure wind soft sail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A maritime region where access or navigation is limited due to security, safety, or legal regulations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Restricted area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Place"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wind-assisted propulsion technology that uses rotating cylindrical sails (rotors) to create aerodynamic lift through the Magnus effect, reducing engine load and fuel consumption."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rotor sails"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A screw propeller integrated with a steerable drive unit, enabling both propulsion and steering without a separate rudder. Common in azimuth thrusters for offshore vessels and ships needing high maneuverability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rudder propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Sail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A generic sail that converts wind energy into propulsive force for a vessel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sail"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A widely used bladed propulsion technology where helical blades mounted on a rotating hub create thrust by pushing water backwards. Screw propellers are commonly used for most vessel types due to their simplicity and efficiency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Screw propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A flexible sail made from fabric or similar materials, traditionally used for harnessing wind energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soft sail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Sail"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A photovoltaic system that converts solar radiation into electrical energy, typically used as a supplementary or auxiliary power source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Solar array"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A bladed propulsion technology adapted for specific vessel requirements or operational conditions, such as high maneuverability or integrated drive systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Specially designed bladed propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rotary engine that converts thermal energy from pressurized steam into mechanical motion via rotating turbine blades."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Steam turbine engine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wind-assisted propulsion technology using rigid wing structures with suction or airflow control systems to enhance aerodynamic lift and reduce fuel consumption."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Suction wings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A screw propeller designed to operate under conditions of intentional cavitation, reducing drag at very high speeds. Common in fast military or racing vessels where conventional propellers would suffer performance loss."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supercavitating propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The typical location of a vessel that is calculated over a time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Typical location"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A vessel that is motorized cannot also be classified as having a pure wind propulsion system."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents any vessel that has at least one motorized propulsion system."
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid125"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents any vessel that has at least one muscle-powered propulsion system."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid129"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents any vessel that has at least one pure wind propulsion system. These kinds of vessel are purely propulled by wind."
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid133"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A vessel that is wind-assisted cannot also be classified as having a pure wind propulsion system."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents any vessel that has at least one wind-assisted propulsion system and is required to also have a motorized propulsion system, as wind-assisted systems are intended to supplement motorized propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid143"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid139"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VoithSchneiderPropeller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A highly maneuverable bladed propulsion system using vertical blades that rotate and adjust their pitch cyclically. This design enables precise control in all directions, making it ideal for tugs, ferries, and vessels operating in confined waters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Voith Schneider Propeller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A jet propulsion technology that draws water into an intake and expels it at high velocity through a nozzle to generate thrust. Water jets are widely used for high-speed ferries, jet boats, and shallow-water applications."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Water jet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rigid sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind-assisted hard sail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wind-assisted propulsion system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem"
+  }, {
+    "@id" : "_:genid144"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind-assisted propulsion technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology"
+  }, {
+    "@id" : "_:genid145"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A flexible sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind-assisted soft sail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail"
+  }, {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wind-assisted propulsion technology using rotor blades similar to wind power generators, converting wind energy into thrust or auxiliary electrical energy for propulsion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind turbine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relatesa typical location with the time interval it was computed over."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "computed over time interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a motorized propulsion technology with the engine it is driven by."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "driven by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#drives"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#drives",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an engine to the motorized propulsion technology it drives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "drives"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its actual height. Indicates the actual current height of the vessel, e.g., considering load or structural changes, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasActualHeight. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has actual height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a motorized propulsion technology to its anti-cavitation mechanism that reduces its cavitation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has anti-cavitation mechanism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel with its overall average speed over ground, typically measured in knots (kn)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has average speed over ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a trajtectory to the average speed over ground of the vessel during that trip, typically measured in knots (kn)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has average trajectory speed over ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to the year it was build. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasBuiltDate. However, we specify the datatype."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has built date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its course over ground. Indicates the actual course of a vessel over the ground, given as an angle relative to true north (in degrees). Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasCourseOverGround. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has course over ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its deadweight. Deadweight tonnage (DWT) represents the maximum weight of cargo, fuel, crew, provisions, and other supplies the vessel can carry, expressed in metric tons. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasDeadWeight. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has deadweight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its text document description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a bladed propulsor to its diameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has diameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dimension A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dimension B"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid54"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dimension C"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid60"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dimension D"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#TrajectoryPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has draught"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid72"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its gross tonnage (GT). Indicates the gross tonnage (GT) of the vessel, a dimensionless index defined by the IMO Tonnage Convention based on the ship's enclosed volume. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasGrossTn. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has gross tn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid78"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel with its HIN."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has HIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its heading. Indicates the orientation of the vessel's bow relative to true or magnetic north, expressed as an angle in degrees. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeading. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has heading"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid84"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid95"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its length. Indicates the overall length of the vessel, typically measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasLength. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has length"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid101"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a bladed propulsor to its number of blades."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has number of blades"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Owner"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its photo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has photo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its sonar signature audio file."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has sonar signature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its speed over ground (SOG). SOG indicates the speed of a vessel relative to the ground surface. Not to be confused with speed through water. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasSpeedOverGround. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has speed over ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid107"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a typical location of a vessel with its geometry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has typical geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#hasGeometry"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Related a vessel with its typical location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has typical location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to its width. Indicates the overall width (beam) of the vessel, measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasWidth. However, we allow the expression as a quantity with numeric value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid113"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is anti-cavitation mechanism for"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a text document description to a vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is description of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an owner to its vessel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is owner of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a photo to its vessel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is photo of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a sonar signature audio file to its vessel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is sonar signature of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an engine to the power generation unit it is powered by."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "powered by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#powers"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#powers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a power generation unit to the engine it powers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "powers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/EngineSpecification"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a vessel to the propulsion system it is propelled by."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "propelled by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propells"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propells",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a propulsion system to the vessel it propells."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "propells"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.vesselAI-project.eu/ontology#Vessel"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "used by propulsion system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a propulsion system to the propulsion technology it uses to create thrust."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses propulsion technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology"
+  } ]
+}, {
+  "@id" : "https://qudt.org/3.1.2/vocab/unitCentiM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://qudt.org/3.1.2/vocab/unitDEG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://qudt.org/3.1.2/vocab/unitGT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://qudt.org/3.1.2/vocab/unitKN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://qudt.org/3.1.2/vocab/unitM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://qudt.org/3.1.2/vocab/unitTON_Metric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://schema.org/EngineSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Engine specification"
+  } ]
+}, {
+  "@id" : "https://schema.org/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organization such as a school, NGO, corporation, club, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Owner"
+  } ]
+}, {
+  "@id" : "https://schema.org/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person (alive, dead, undead, or fictional)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Owner"
+  } ]
+}, {
+  "@id" : "https://schema.org/Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vehicle"
+  } ]
+}, {
+  "@id" : "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A photo, an image captured using a camera, an EXIF Image File Directory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photo"
+  } ]
+} ]
