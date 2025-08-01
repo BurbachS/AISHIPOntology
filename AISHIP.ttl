@@ -21,7 +21,7 @@
 <https://github.com/BurbachS/AISHIPOntology/AISHIP> rdf:type owl:Ontology ;
                                                      owl:imports <http://qudt.org/3.1.2/schema/qudt> ,
                                                                  rdf:Ontology ;
-                                                     dct:bibliographicCitation "Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. https://doi.org/10.5281/zenodo.15390282" ;
+                                                     dct:bibliographicCitation "Simon Burbach, Lennart Mackert, Maria Maleshkova (2025): AISHIP Ontology. https://doi.org/10.5281/zenodo.16704863" ;
                                                      dct:created "2025-07-23"^^xsd:date ;
                                                      dct:creator [ rdf:type foaf:Person ;
                                                                    foaf:homepage <https://orcid.org/0009-0009-8373-6622> ;
@@ -37,10 +37,10 @@
                                                                    foaf:mbox <mailto:maleshkm@hsu-hh.de> ;
                                                                    foaf:name "Maria Maleshkova"
                                                                  ] ;
-                                                     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                     dct:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
                                                      dct:title "AISHIP Ontology" ;
-                                                     bibo:doi "10.5281/zenodo.15390282" ;
-                                                     rdfs:comment "Description of AISHIP Ontology. Also adapt DOIs below."@en .
+                                                     bibo:doi "10.5281/zenodo.16704863" ;
+                                                     rdfs:comment "AISHIP is an ontology designed to enable semantic integration and enrichment of heterogeneous maritime data. It extends the VesselAI ontology with enhanced vessel characteristics, detailed propulsion systems, extended trajectory modeling, and multimodal vessel representations."@en .
 
 #################################################################
 #    Annotation properties
