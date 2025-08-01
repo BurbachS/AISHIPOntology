@@ -1,0 +1,84 @@
+Compentecy Questions (CQs)
+
+#####################################
+### C01: Ship-related Information ###
+#####################################
+
+General
+1.	How are ships clearly identified?
+2.	How are a ship’s dimensions described?
+3.	What information can be provided about the typical location of a ship?
+4.	Who can be the owner of a ship?
+5.	How is a ship’s average speed over ground specified?
+
+Use case
+1.	How many container ships are registered under the German flag?
+2.	How is the GPS antenna placed relatively to the ship’s structure (bow, stern, port, starboard)?
+3.	Which organization owns the most ships?
+
+
+############################
+### C02: Trajectory Data ###
+############################
+
+General
+1.	What information can be provided about a ship route?
+2.	What information is known about a single trajectory part?
+3.	What types of trajectories are distinguished?
+
+Use case
+1.	What unit does the draught of a ship have?
+2.	What was the average speed over ground of the ship on route on day X?
+3.	What route is predicted for ship X?
+
+
+#########################
+### C03: Motorization ###
+#########################
+
+General
+1.	What types of engines are used in ships?
+2.	What combinations of engines can exist?
+3.	What powers these ship engines?
+4.	What is driven by ship engines?
+5.	What types of propulsion systems can ships have?
+6.	What propulsion systems don’t rely on an engine?
+7.	Which propulsion technologies are used by each individual propulsion system?
+8.	What falls under the category of propulsion technologies powered by engines?
+9.	What types of jet propulsors exist?
+10.	What types of bladed propulsors exist?
+11.	What types of blade propulsors follow a special design?
+12.	What properties describe a bladed propulsor?
+13.	What types of screw propellers can be used?
+14.	What is used to prevent cavitation on technologies for motorized propulsion?
+15.	What type of wingsails exist? (If we stick to the classification)
+16.	Which type of propulsion technologies can assist a motorized ship?
+
+Use case
+1.	What fuel does ship X use to drive?
+2.	How many engines power ship X?
+3.	What types of propellers are installed on ship X?
+4.	What is the most common type of propeller?
+5.	How many ships have sails?
+6.	Which whips use electric engines exclusively?
+7.	What motorized propulsion does a ship use that is assisted by wind propulsion?
+8.	How many supercavitating propellers does ship X use?
+9.	What diameter and how many blades does the fixed pitch propeller Y of ship X have?
+10.	What is the least utilized wind assisted propulsion system?
+
+
+###########################################
+### C04: Multimodal Data Representation ###
+###########################################
+
+General
+1.	What different kinds of data can be used to represent a ship?
+2.	How is sonar data of ships stored?
+3.	What image resources are available for a ship?
+4.	What textual information about a ship is available?
+
+Use case
+1.	What does ship X look like?
+2.	How does ship X sound like on a sonar?
+3.	What is the textual description of ship X?
+4.	Are there ships without sonar signatures?
