@@ -70,6 +70,10 @@ foaf:name rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://qudt.org/schema/qudt/unit
+qudt:unit rdf:type owl:ObjectProperty .
+
+
 ###  http://www.semanticweb.org/simonburbach/AISHIP/computedOverTimeInterval
 :computedOverTimeInterval rdf:type owl:ObjectProperty ;
                           rdfs:domain :TypicalLocation ;
@@ -98,20 +102,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasActualHeight
 :hasActualHeight rdf:type owl:ObjectProperty ;
                  rdfs:domain vai:Vessel ;
-                 rdfs:range [
-                        a owl:Class ;
-                        owl:intersectionOf (
-                        qudt:QuantityValue
-                        [ a owl:Restriction ;
-                               owl:onProperty qudt:numericValue ;
-                               owl:allValuesFrom xsd:decimal
-                        ]
-                        [ a owl:Restriction ;
-                               owl:onProperty qudt:unit ;
-                               owl:hasValue unit:M
-                        ]
-                        )
-                 ] ;
+                 rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty qudt:unit ;
+                                                     owl:hasValue unit:M
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty qudt:numericValue ;
+                                                     owl:allValuesFrom xsd:decimal
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
                  rdfs:comment "Relates a vessel to its actual height. Indicates the actual current height of the vessel, e.g., considering load or structural changes, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasActualHeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
                  rdfs:label "has actual height"@en .
 
@@ -128,20 +130,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageSpeedOverGround
 :hasAverageSpeedOverGround rdf:type owl:ObjectProperty ;
                            rdfs:domain vai:Vessel ;
-                           rdfs:range [
-                                  a owl:Class ;
-                                  owl:intersectionOf (
-                                  qudt:QuantityValue
-                                  [ a owl:Restriction ;
-                                         owl:onProperty qudt:numericValue ;
-                                         owl:allValuesFrom xsd:decimal
-                                  ]
-                                  [ a owl:Restriction ;
-                                         owl:onProperty qudt:unit ;
-                                         owl:hasValue unit:KN
-                                  ]
-                                  )
-                           ] ;
+                           rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty qudt:unit ;
+                                                               owl:hasValue unit:KN
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty qudt:numericValue ;
+                                                               owl:allValuesFrom xsd:decimal
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                            rdfs:comment "Relates a vessel with its overall average speed over ground, typically measured in knots (kn)."@en ;
                            rdfs:label "has average speed over ground"@en .
 
@@ -149,20 +149,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasAverageTrajectorySpeedOverGround
 :hasAverageTrajectorySpeedOverGround rdf:type owl:ObjectProperty ;
                                      rdfs:domain vai:Trajectory ;
-                                     rdfs:range [
-                                            a owl:Class ;
-                                            owl:intersectionOf (
-                                            qudt:QuantityValue
-                                            [ a owl:Restriction ;
-                                                   owl:onProperty qudt:numericValue ;
-                                                   owl:allValuesFrom xsd:decimal
-                                            ]
-                                            [ a owl:Restriction ;
-                                                   owl:onProperty qudt:unit ;
-                                                   owl:hasValue unit:KN
-                                            ]
-                                            )
-                                     ] ;
+                                     rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty qudt:unit ;
+                                                                         owl:hasValue unit:KN
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty qudt:numericValue ;
+                                                                         owl:allValuesFrom xsd:decimal
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
                                      rdfs:comment "Relates a trajtectory to the average speed over ground of the vessel during that trip, typically measured in knots (kn)."@en ;
                                      rdfs:label "has average trajectory speed over ground"@en .
 
@@ -170,27 +168,25 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasCourseOverGround
 :hasCourseOverGround rdf:type owl:ObjectProperty ;
                      rdfs:domain vai:Vessel ;
-                     rdfs:range [
-                            a owl:Class ;
-                            owl:intersectionOf (
-                            qudt:QuantityValue
-                            [ a owl:Restriction ;
-                                   owl:onProperty qudt:numericValue ;
-                                   owl:allValuesFrom [
-                                   a rdfs:Datatype ;
-                                   owl:onDatatype xsd:decimal ;
-                                   owl:withRestrictions (
-                                          [ xsd:minInclusive "0.0"^^xsd:decimal ]
-                                          [ xsd:maxInclusive "360.0"^^xsd:decimal ]
-                                   )
-                                   ]
-                            ]
-                            [ a owl:Restriction ;
-                                   owl:onProperty qudt:unit ;
-                                   owl:hasValue unit:DEG
-                            ]
-                            )
-                     ] ;
+                     rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty qudt:unit ;
+                                                         owl:hasValue unit:DEG
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty qudt:numericValue ;
+                                                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                             owl:onDatatype xsd:decimal ;
+                                                                             owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                    ]
+                                                                                                    [ xsd:maxInclusive 360.0
+                                                                                                    ]
+                                                                                                  )
+                                                                           ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                      rdfs:comment "Relates a vessel to its course over ground. Indicates the actual course of a vessel over the ground, given as an angle relative to true north (in degrees). Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasCourseOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en ;
                      rdfs:label "has course over ground"@en .
 
@@ -198,20 +194,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDeadweight
 :hasDeadweight rdf:type owl:ObjectProperty ;
                rdfs:domain vai:Vessel ;
-               rdfs:range [
-                      a owl:Class ;
-                      owl:intersectionOf (
-                      qudt:QuantityValue
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:numericValue ;
-                             owl:allValuesFrom xsd:decimal
-                      ]
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:unit ;
-                             owl:hasValue unit:TON_Metric
-                      ]
-                      )
-               ] ;
+               rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:unit ;
+                                                   owl:hasValue unit:TON_Metric
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:numericValue ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
                rdfs:comment "Relates a vessel to its deadweight. Deadweight tonnage (DWT) represents the maximum weight of cargo, fuel, crew, provisions, and other supplies the vessel can carry, expressed in metric tons. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasDeadWeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
                rdfs:label "has deadweight"@en .
 
@@ -228,20 +222,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDiameter
 :hasDiameter rdf:type owl:ObjectProperty ;
              rdfs:domain :BladedPropulsor ;
-             rdfs:range [
-                    a owl:Class ;
-                    owl:intersectionOf (
-                    qudt:QuantityValue
-                    [ a owl:Restriction ;
-                           owl:onProperty qudt:numericValue ;
-                           owl:allValuesFrom xsd:decimal
-                    ]
-                    [ a owl:Restriction ;
-                           owl:onProperty qudt:unit ;
-                           owl:hasValue unit:CentiM
-                    ]
-                    )
-             ] ;
+             rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty qudt:unit ;
+                                                 owl:hasValue unit:CentiM
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty qudt:numericValue ;
+                                                 owl:allValuesFrom xsd:decimal
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
              rdfs:comment "Relates a bladed propulsor to its diameter."@en ;
              rdfs:label "has diameter"@en .
 
@@ -249,20 +241,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionA
 :hasDimensionA rdf:type owl:ObjectProperty ;
                rdfs:domain vai:Vessel ;
-               rdfs:range [
-                      a owl:Class ;
-                      owl:intersectionOf (
-                      qudt:QuantityValue
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:numericValue ;
-                             owl:allValuesFrom xsd:decimal
-                      ]
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:unit ;
-                             owl:hasValue unit:M
-                      ]
-                      )
-               ] ;
+               rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:unit ;
+                                                   owl:hasValue unit:M
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:numericValue ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
                rdfs:comment "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."@en ;
                rdfs:label "has dimension A"@en .
 
@@ -270,20 +260,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionB
 :hasDimensionB rdf:type owl:ObjectProperty ;
                rdfs:domain vai:Vessel ;
-               rdfs:range [
-                      a owl:Class ;
-                      owl:intersectionOf (
-                      qudt:QuantityValue
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:numericValue ;
-                             owl:allValuesFrom xsd:decimal
-                      ]
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:unit ;
-                             owl:hasValue unit:M
-                      ]
-                      )
-               ] ;
+               rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:unit ;
+                                                   owl:hasValue unit:M
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:numericValue ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
                rdfs:comment "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."@en ;
                rdfs:label "has dimension B"@en .
 
@@ -291,20 +279,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionC
 :hasDimensionC rdf:type owl:ObjectProperty ;
                rdfs:domain vai:Vessel ;
-               rdfs:range [
-                      a owl:Class ;
-                      owl:intersectionOf (
-                      qudt:QuantityValue
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:numericValue ;
-                             owl:allValuesFrom xsd:decimal
-                      ]
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:unit ;
-                             owl:hasValue unit:M
-                      ]
-                      )
-               ] ;
+               rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:unit ;
+                                                   owl:hasValue unit:M
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:numericValue ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
                rdfs:comment "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."@en ;
                rdfs:label "has dimension C"@en .
 
@@ -312,20 +298,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDimensionD
 :hasDimensionD rdf:type owl:ObjectProperty ;
                rdfs:domain vai:Vessel ;
-               rdfs:range [
-                      a owl:Class ;
-                      owl:intersectionOf (
-                      qudt:QuantityValue
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:numericValue ;
-                             owl:allValuesFrom xsd:decimal
-                      ]
-                      [ a owl:Restriction ;
-                             owl:onProperty qudt:unit ;
-                             owl:hasValue unit:M
-                      ]
-                      )
-               ] ;
+               rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:unit ;
+                                                   owl:hasValue unit:M
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty qudt:numericValue ;
+                                                   owl:allValuesFrom xsd:decimal
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
                rdfs:comment "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."@en ;
                rdfs:label "has dimension D"@en .
 
@@ -333,20 +317,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasDraught
 :hasDraught rdf:type owl:ObjectProperty ;
             rdfs:domain vai:TrajectoryPart ;
-            rdfs:range [
-                   a owl:Class ;
-                   owl:intersectionOf (
-                   qudt:QuantityValue
-                   [ a owl:Restriction ;
-                          owl:onProperty qudt:numericValue ;
-                          owl:allValuesFrom xsd:decimal
-                   ]
-                   [ a owl:Restriction ;
-                          owl:onProperty qudt:unit ;
-                          owl:hasValue unit:M
-                   ]
-                   )
-            ] ;
+            rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qudt:unit ;
+                                                owl:hasValue unit:M
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qudt:numericValue ;
+                                                owl:allValuesFrom xsd:decimal
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
             rdfs:comment "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."@en ;
             rdfs:label "has draught"@en .
 
@@ -354,20 +336,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasGrossTn
 :hasGrossTn rdf:type owl:ObjectProperty ;
             rdfs:domain vai:Vessel ;
-            rdfs:range [
-                   a owl:Class ;
-                   owl:intersectionOf (
-                   qudt:QuantityValue
-                   [ a owl:Restriction ;
-                          owl:onProperty qudt:numericValue ;
-                          owl:allValuesFrom xsd:decimal
-                   ]
-                   [ a owl:Restriction ;
-                          owl:onProperty qudt:unit ;
-                          owl:hasValue unit:GT
-                   ]
-                   )
-            ] ;
+            rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qudt:unit ;
+                                                owl:hasValue unit:GT
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qudt:numericValue ;
+                                                owl:allValuesFrom xsd:decimal
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
             rdfs:comment "Relates a vessel to its gross tonnage (GT). Indicates the gross tonnage (GT) of the vessel, a dimensionless index defined by the IMO Tonnage Convention based on the ship's enclosed volume. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasGrossTn. However, we allow the expression as a quantity with numeric value and a unit."@en ;
             rdfs:label "has gross tn"@en .
 
@@ -375,27 +355,25 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasHeading
 :hasHeading rdf:type owl:ObjectProperty ;
             rdfs:domain vai:Vessel ;
-            rdfs:range [
-                   a owl:Class ;
-                   owl:intersectionOf (
-                   qudt:QuantityValue
-                   [ a owl:Restriction ;
-                          owl:onProperty qudt:numericValue ;
-                          owl:allValuesFrom [
-                          a rdfs:Datatype ;
-                          owl:onDatatype xsd:decimal ;
-                          owl:withRestrictions (
-                                 [ xsd:minInclusive "0.0"^^xsd:decimal ]
-                                 [ xsd:maxInclusive "360.0"^^xsd:decimal ]
-                          )
-                          ]
-                   ]
-                   [ a owl:Restriction ;
-                          owl:onProperty qudt:unit ;
-                          owl:hasValue unit:DEG
-                   ]
-                   )
-            ] ;
+            rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qudt:unit ;
+                                                owl:hasValue unit:DEG
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qudt:numericValue ;
+                                                owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:decimal ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                           ]
+                                                                                           [ xsd:maxInclusive 360.0
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
             rdfs:comment "Relates a vessel to its heading. Indicates the orientation of the vessel's bow relative to true or magnetic north, expressed as an angle in degrees. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeading. However, we allow the expression as a quantity with numeric value and a unit."@en ;
             rdfs:label "has heading"@en .
 
@@ -403,20 +381,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasHeight
 :hasHeight rdf:type owl:ObjectProperty ;
            rdfs:domain vai:Vessel ;
-           rdfs:range [
-                  a owl:Class ;
-                  owl:intersectionOf (
-                  qudt:QuantityValue
-                  [ a owl:Restriction ;
-                         owl:onProperty qudt:numericValue ;
-                         owl:allValuesFrom xsd:decimal
-                  ]
-                  [ a owl:Restriction ;
-                         owl:onProperty qudt:unit ;
-                         owl:hasValue unit:M
-                  ]
-                  )
-           ] ;
+           rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty qudt:unit ;
+                                               owl:hasValue unit:M
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty qudt:numericValue ;
+                                               owl:allValuesFrom xsd:decimal
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
            rdfs:comment "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."@en ;
            rdfs:label "has height"@en .
 
@@ -424,20 +400,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasLength
 :hasLength rdf:type owl:ObjectProperty ;
            rdfs:domain vai:Vessel ;
-           rdfs:range [
-                  a owl:Class ;
-                  owl:intersectionOf (
-                  qudt:QuantityValue
-                  [ a owl:Restriction ;
-                         owl:onProperty qudt:numericValue ;
-                         owl:allValuesFrom xsd:decimal
-                  ]
-                  [ a owl:Restriction ;
-                         owl:onProperty qudt:unit ;
-                         owl:hasValue unit:M
-                  ]
-                  )
-           ] ;
+           rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty qudt:unit ;
+                                               owl:hasValue unit:M
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty qudt:numericValue ;
+                                               owl:allValuesFrom xsd:decimal
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
            rdfs:comment "Relates a vessel to its length. Indicates the overall length of the vessel, typically measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasLength. However, we allow the expression as a quantity with numeric value and a unit."@en ;
            rdfs:label "has length"@en .
 
@@ -472,20 +446,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasSpeedOverGround
 :hasSpeedOverGround rdf:type owl:ObjectProperty ;
                     rdfs:domain vai:Vessel ;
-                    rdfs:range [
-                           a owl:Class ;
-                           owl:intersectionOf (
-                           qudt:QuantityValue
-                           [ a owl:Restriction ;
-                                  owl:onProperty qudt:numericValue ;
-                                  owl:allValuesFrom xsd:decimal
-                           ]
-                           [ a owl:Restriction ;
-                                  owl:onProperty qudt:unit ;
-                                  owl:hasValue unit:KN
-                           ]
-                           )
-                    ] ;
+                    rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty qudt:unit ;
+                                                        owl:hasValue unit:KN
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty qudt:numericValue ;
+                                                        owl:allValuesFrom xsd:decimal
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
                     rdfs:comment "Relates a vessel to its speed over ground (SOG). SOG indicates the speed of a vessel relative to the ground surface. Not to be confused with speed through water. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasSpeedOverGround. However, we allow the expression as a quantity with numeric value and a unit."@en ;
                     rdfs:label "has speed over ground"@en .
 
@@ -510,20 +482,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/simonburbach/AISHIP/hasWidth
 :hasWidth rdf:type owl:ObjectProperty ;
           rdfs:domain vai:Vessel ;
-          rdfs:range [
-                  a owl:Class ;
-                  owl:intersectionOf (
-                  qudt:QuantityValue
-                  [ a owl:Restriction ;
-                         owl:onProperty qudt:numericValue ;
-                         owl:allValuesFrom xsd:decimal
-                  ]
-                  [ a owl:Restriction ;
-                         owl:onProperty qudt:unit ;
-                         owl:hasValue unit:M
-                  ]
-                  )
-           ] ;
+          rdfs:range [ owl:intersectionOf ( qudt:QuantityValue
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty qudt:unit ;
+                                              owl:hasValue unit:M
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty qudt:numericValue ;
+                                              owl:allValuesFrom xsd:decimal
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
+                     ] ;
           rdfs:comment "Relates a vessel to its width. Indicates the overall width (beam) of the vessel, measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasWidth. However, we allow the expression as a quantity with numeric value and a unit."@en ;
           rdfs:label "has width"@en .
 
@@ -663,11 +633,56 @@ nfo:TextDocument rdf:type owl:Class ;
                  rdfs:label "Text document"@en .
 
 
-###  http://www.semanticweb.org/simonburbach/AISHIP#RestrictedArea
-:RestrictedArea rdf:type owl:Class ;
-                rdfs:subClassOf vai:Place ;
-                rdfs:comment "A maritime region where access or navigation is limited due to security, safety, or legal regulations."@en ;
-                rdfs:label "Restricted area"@en .
+###  http://www.semanticweb.org/simonburbach/AISHIP#HardSail
+:HardSail rdf:type owl:Class ;
+          rdfs:subClassOf :Sail ;
+          rdfs:comment "A rigid sail structure, typically resembling an aerofoil, used to harness wind energy for propulsion."@en ;
+          rdfs:label "Hard sail"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#PureWindHardSail
+:PureWindHardSail rdf:type owl:Class ;
+                  rdfs:subClassOf :HardSail ,
+                                  :PureWindPropulsionTechnology ;
+                  rdfs:comment "A rigid sail designed to provide the primary propulsion for a vessel using wind energy alone."@en ;
+                  rdfs:label "Pure wind hard sail"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#PureWindSoftSail
+:PureWindSoftSail rdf:type owl:Class ;
+                  rdfs:subClassOf :SoftSail ,
+                                  :PureWindPropulsionTechnology ;
+                  rdfs:comment "A traditional or modern soft sail used to provide the primary propulsion for a vessel using wind energy alone."@en ;
+                  rdfs:label "Pure wind soft sail"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#Sail
+:Sail rdf:type owl:Class ;
+      rdfs:comment "A generic sail that converts wind energy into propulsive force for a vessel."@en ;
+      rdfs:label "Sail"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#SoftSail
+:SoftSail rdf:type owl:Class ;
+          rdfs:subClassOf :Sail ;
+          rdfs:comment "A flexible sail made from fabric or similar materials, traditionally used for harnessing wind energy."@en ;
+          rdfs:label "Soft sail"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#WindAssistedHardSail
+:WindAssistedHardSail rdf:type owl:Class ;
+                      rdfs:subClassOf :HardSail ,
+                                      :WindAssistedPropulsionTechnology ;
+                      rdfs:comment "A rigid sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."@en ;
+                      rdfs:label "Wind-assisted hard sail"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP#WindAssistedSoftSail
+:WindAssistedSoftSail rdf:type owl:Class ;
+                      rdfs:subClassOf :SoftSail ,
+                                      :WindAssistedPropulsionTechnology ;
+                      rdfs:comment "A flexible sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."@en ;
+                      rdfs:label "Wind-assisted soft sail"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/AntiCavitationMechanism
@@ -915,8 +930,7 @@ nfo:TextDocument rdf:type owl:Class ;
                                                  owl:allValuesFrom :MusclePoweredPropulsionTechnology
                                                ] ;
                                owl:disjointWith :PureWindPropulsionSystem ,
-                                                :WindAssistedPropulsionSystem ,
-                                                :MotorizedPropulsionSystem ;
+                                                :WindAssistedPropulsionSystem ;
                                rdfs:comment "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."@en ;
                                rdfs:label "Muscle-powered propulsion system"@en .
 
@@ -929,8 +943,7 @@ nfo:TextDocument rdf:type owl:Class ;
                                                      owl:allValuesFrom :MusclePoweredPropulsionSystem
                                                    ] ;
                                    owl:disjointWith :PureWindPropulsionTechnology ,
-                                                    :WindAssistedPropulsionTechnology ,
-                                                    :MotorizedPropulsionTechnology ;
+                                                    :WindAssistedPropulsionTechnology ;
                                    rdfs:comment "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en ;
                                    rdfs:label "Muscle-powered propulsion technology"@en .
 
@@ -1022,25 +1035,28 @@ nfo:TextDocument rdf:type owl:Class ;
                                             owl:onProperty :usesPropulsionTechnology ;
                                             owl:allValuesFrom :PureWindPropulsionTechnology
                                           ] ;
-                          owl:disjointWith :WindAssistedPropulsionSystem ,
-                                           :MusclePoweredPropulsionSystem ,
-                                           :MotorizedPropulsionSystem ;
+                          owl:disjointWith :WindAssistedPropulsionSystem ;
                           rdfs:comment "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."@en ;
                           rdfs:label "Pure wind propulsion system"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/PureWindPropulsionTechnology
 :PureWindPropulsionTechnology rdf:type owl:Class ;
-                              rdfs:subClassOf :WindPropulsionTechnology ,
+                              rdfs:subClassOf :PropulsionTechnology ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty :usedByPropulsionSystem ;
                                                 owl:allValuesFrom :PureWindPropulsionSystem
                                               ] ;
-                              owl:disjointWith :WindAssistedPropulsionTechnology ,
-                                               :MusclePoweredPropulsionTechnology ,
-                                               :MotorizedPropulsionTechnology ;
+                              owl:disjointWith :WindAssistedPropulsionTechnology ;
                               rdfs:comment "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."@en ;
                               rdfs:label "Pure wind propulsion technology"@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/RestrictedArea
+:RestrictedArea rdf:type owl:Class ;
+                rdfs:subClassOf vai:Place ;
+                rdfs:comment "A maritime region where access or navigation is limited due to security, safety, or legal regulations."@en ;
+                rdfs:label "Restricted area"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/RotorSails
@@ -1105,6 +1121,70 @@ nfo:TextDocument rdf:type owl:Class ;
                  rdfs:label "Typical location"@en .
 
 
+###  http://www.semanticweb.org/simonburbach/AISHIP/VesselWithMotorizedPropulsionSystem
+:VesselWithMotorizedPropulsionSystem rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( vai:Vessel
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :propelledBy ;
+                                                                                  owl:someValuesFrom :MotorizedPropulsionSystem
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     owl:disjointWith :VesselWithPureWindPropulsionSystem ;
+                                     rdfs:comment "A vessel that is motorized cannot also be classified as having a pure wind propulsion system."@en ,
+                                                  "Represents any vessel that has at least one motorized propulsion system."@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/VesselWithMusclePoweredPropulsionSystem
+:VesselWithMusclePoweredPropulsionSystem rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( vai:Vessel
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :propelledBy ;
+                                                                                      owl:someValuesFrom :MusclePoweredPropulsionSystem
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:comment "Represents any vessel that has at least one muscle-powered propulsion system."@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/VesselWithPureWindPropulsionSystem
+:VesselWithPureWindPropulsionSystem rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( vai:Vessel
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :propelledBy ;
+                                                                                 owl:someValuesFrom :PureWindPropulsionSystem
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :propelledBy ;
+                                                                                 owl:allValuesFrom :PureWindPropulsionSystem
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    owl:disjointWith :VesselWithWindAssistedPropulsionSystem ;
+                                    rdfs:comment "Represents any vessel that has at least one pure wind propulsion system. These kinds of vessel are purely propulled by wind."@en .
+
+
+###  http://www.semanticweb.org/simonburbach/AISHIP/VesselWithWindAssistedPropulsionSystem
+:VesselWithWindAssistedPropulsionSystem rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( vai:Vessel
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :propelledBy ;
+                                                                                     owl:someValuesFrom :WindAssistedPropulsionSystem
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :propelledBy ;
+                                                          owl:someValuesFrom :MotorizedPropulsionSystem
+                                                        ] ;
+                                        rdfs:comment "A vessel that is wind-assisted cannot also be classified as having a pure wind propulsion system."@en ,
+                                                     "Represents any vessel that has at least one wind-assisted propulsion system and is required to also have a motorized propulsion system, as wind-assisted systems are intended to supplement motorized propulsion."@en .
+
+
 ###  http://www.semanticweb.org/simonburbach/AISHIP/VoithSchneiderPropeller
 :VoithSchneiderPropeller rdf:type owl:Class ;
                          rdfs:subClassOf :SpeciallyDesignedBladedPropulsor ;
@@ -1126,32 +1206,19 @@ nfo:TextDocument rdf:type owl:Class ;
                                                 owl:onProperty :usesPropulsionTechnology ;
                                                 owl:allValuesFrom :WindAssistedPropulsionTechnology
                                               ] ;
-                              owl:disjointWith :PureWindPropulsionSystem ,
-                                               :MusclePoweredPropulsionSystem ,
-                                               :MotorizedPropulsionSystem ;
                               rdfs:comment "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."@en ;
                               rdfs:label "Wind-assisted propulsion system" .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/WindAssistedPropulsionTechnology
 :WindAssistedPropulsionTechnology rdf:type owl:Class ;
-                                  rdfs:subClassOf :WindPropulsionTechnology ,
+                                  rdfs:subClassOf :PropulsionTechnology ,
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty :usedByPropulsionSystem ;
                                                     owl:allValuesFrom :WindAssistedPropulsionSystem
                                                   ] ;
-                                  owl:disjointWith :PureWindPropulsionTechnology ,
-                                                   :MusclePoweredPropulsionTechnology ,
-                                                   :MotorizedPropulsionTechnology ;
                                   rdfs:comment "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."@en ;
                                   rdfs:label "Wind-assisted propulsion technology"@en .
-
-
-###  http://www.semanticweb.org/simonburbach/AISHIP/WindPropulsionTechnology
-:WindPropulsionTechnology rdf:type owl:Class ;
-                          rdfs:subClassOf :PropulsionTechnology ;
-                          rdfs:comment "A propulsion technology that harnesses wind energy, typically through aerodynamic surfaces or devices, to provide thrust for moving a vessel."@en ;
-                          rdfs:label "Wind propulsion technology"@en .
 
 
 ###  http://www.semanticweb.org/simonburbach/AISHIP/WindTurbine
@@ -1203,74 +1270,31 @@ nexif:Photo rdf:type owl:Class ;
 
 
 #################################################################
-#    Further Classes and Axioms
+#    Individuals
 #################################################################
 
-:VesselWithMotorizedPropulsionSystem a owl:Class ;
-    owl:equivalentClass [
-        a owl:Class ;
-        owl:intersectionOf (
-            vai:Vessel
-            [ a owl:Restriction ;
-              owl:onProperty :propelledBy ;
-              owl:someValuesFrom :MotorizedPropulsionSystem
-            ]
-        )
-    ] ;
-    rdfs:comment "Represents any vessel that has at least one motorized propulsion system."@en .
+###  https://qudt.org/3.1.2/vocab/unitCentiM
+unit:CentiM rdf:type owl:NamedIndividual .
 
-:VesselWithPureWindPropulsionSystem a owl:Class ;
-    owl:equivalentClass [
-        a owl:Class ;
-        owl:intersectionOf (
-            vai:Vessel
-            [ a owl:Restriction ;
-              owl:onProperty :propelledBy ;
-              owl:someValuesFrom :PureWindPropulsionSystem
-            ]
-            [ a owl:Restriction ;
-              owl:onProperty :propelledBy ;
-              owl:allValuesFrom :PureWindPropulsionSystem
-            ]
-        )
-    ] ;
-    rdfs:comment "Represents any vessel that has at least one pure wind propulsion system. These kinds of vessel are purely propulled by wind."@en .
 
-:VesselWithWindAssistedPropulsionSystem a owl:Class ;
-    owl:equivalentClass [
-        a owl:Class ;
-        owl:intersectionOf (
-            vai:Vessel
-            [ a owl:Restriction ;
-              owl:onProperty :propelledBy ;
-              owl:someValuesFrom :WindAssistedPropulsionSystem
-            ]
-        )
-    ] ;
-    rdfs:subClassOf [
-        a owl:Restriction ;
-        owl:onProperty :propelledBy ;
-        owl:someValuesFrom :MotorizedPropulsionSystem
-    ] ;
-    rdfs:comment "Represents any vessel that has at least one wind-assisted propulsion system and is required to also have a motorized propulsion system, as wind-assisted systems are intended to supplement motorized propulsion."@en .
+###  https://qudt.org/3.1.2/vocab/unitDEG
+unit:DEG rdf:type owl:NamedIndividual .
 
-:VesselWithMusclePoweredPropulsionSystem a owl:Class ;
-    owl:equivalentClass [
-        a owl:Class ;
-        owl:intersectionOf (
-            vai:Vessel
-            [ a owl:Restriction ;
-              owl:onProperty :propelledBy ;
-              owl:someValuesFrom :MusclePoweredPropulsionSystem
-            ]
-        )
-    ] ;
-    rdfs:comment "Represents any vessel that has at least one muscle-powered propulsion system."@en .
 
-:VesselWithMotorizedPropulsionSystem owl:disjointWith :VesselWithPureWindPropulsionSystem ;
-    rdfs:comment "A vessel that is motorized cannot also be classified as having a pure wind propulsion system."@en .
+###  https://qudt.org/3.1.2/vocab/unitGT
+unit:GT rdf:type owl:NamedIndividual .
 
-:VesselWithWindAssistedPropulsionSystem owl:disjointWith :VesselWithPureWindPropulsionSystem ;
-    rdfs:comment "A vessel that is wind-assisted cannot also be classified as having a pure wind propulsion system."@en .
+
+###  https://qudt.org/3.1.2/vocab/unitKN
+unit:KN rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitM
+unit:M rdf:type owl:NamedIndividual .
+
+
+###  https://qudt.org/3.1.2/vocab/unitTON_Metric
+unit:TON_Metric rdf:type owl:NamedIndividual .
+
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
