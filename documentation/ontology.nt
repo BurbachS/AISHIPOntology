@@ -19,6 +19,15 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -36,6 +45,27 @@
 # 
 # http://purl.org/ontology/bibo/doi
 <http://purl.org/ontology/bibo/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.linkedmodel.org/schema/vaem#graphName
+<http://www.linkedmodel.org/schema/vaem#graphName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.linkedmodel.org/schema/vaem#graphTitle
+<http://www.linkedmodel.org/schema/vaem#graphTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.linkedmodel.org/schema/vaem#isMetadataFor
+<http://www.linkedmodel.org/schema/vaem#isMetadataFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.linkedmodel.org/schema/vaem#website
+<http://www.linkedmodel.org/schema/vaem#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#direction
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#direction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#language
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/XMLSchema#pattern
+<http://www.w3.org/2001/XMLSchema#pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -70,11 +100,53 @@
 # #################################################################
 # 
 # 
+# http://qudt.org/schema/qudt/ansiSQLName
+<http://qudt.org/schema/qudt/ansiSQLName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://qudt.org/schema/qudt/cName
+<http://qudt.org/schema/qudt/cName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://qudt.org/schema/qudt/oracleSQLName
+<http://qudt.org/schema/qudt/oracleSQLName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://qudt.org/schema/qudt/protocolBuffersName
+<http://qudt.org/schema/qudt/protocolBuffersName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://qudt.org/schema/qudt/pythonName
+<http://qudt.org/schema/qudt/pythonName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://qudt.org/schema/qudt/unit
 <http://qudt.org/schema/qudt/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://qudt.org/schema/qudt/vbName
+<http://qudt.org/schema/qudt/vbName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.vesselAI-project.eu/ontology#hasGeometry
 <http://www.vesselAI-project.eu/ontology#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval
 <https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -674,6 +746,12 @@ _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # #################################################################
 # 
 # 
+# http://qudt.org/schema/qudt/bits
+<http://qudt.org/schema/qudt/bits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://qudt.org/schema/qudt/length
+<http://qudt.org/schema/qudt/length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
 # http://qudt.org/schema/qudt/numericValue
 # 
 # https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate
@@ -706,7 +784,28 @@ _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # #################################################################
 # 
 # 
+# http://qudt.org/schema/qudt/Aspect
+<http://qudt.org/schema/qudt/Aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/EnumeratedQuantity
+<http://qudt.org/schema/qudt/EnumeratedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://qudt.org/schema/qudt/QuantityValue
+# 
+# http://qudt.org/schema/qudt/SignednessType
+<http://qudt.org/schema/qudt/SignednessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/StringEncodingType
+<http://qudt.org/schema/qudt/StringEncodingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/SymmetricRelation
+<http://qudt.org/schema/qudt/SymmetricRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Verifiable
+<http://qudt.org/schema/qudt/Verifiable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.linkedmodel.org/schema/vaem#CatalogEntry
+<http://www.linkedmodel.org/schema/vaem#CatalogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.opengis.net/ont/geosparql#Geometry
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -737,6 +836,36 @@ _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://www.vesselAI-project.eu/ontology#Vessel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.vesselAI-project.eu/ontology#Vessel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Vehicle> .
 <http://www.vesselAI-project.eu/ontology#Vessel> <http://www.w3.org/2000/01/rdf-schema#label> "Vessel"@en .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Class
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Container
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Datatype
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#gDay
+<http://www.w3.org/2001/XMLSchema#gDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#gMonth
+<http://www.w3.org/2001/XMLSchema#gMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#gMonthDay
+<http://www.w3.org/2001/XMLSchema#gMonthDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYearMonth
+<http://www.w3.org/2001/XMLSchema#gYearMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#Class
+<http://www.w3.org/2002/07/owl#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#Ontology
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2006/time#Interval
 <http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -957,7 +1086,7 @@ _:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem
 <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
 <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
 _:genid121 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> .
 _:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
@@ -978,12 +1107,6 @@ _:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2002/07/owl#disjointWith> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
 <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en .
 <https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Muscle-powered propulsion technology"@en .
-# 
-# https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem
-<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
-<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."@en .
-<https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Non-motorized propulsion system"@en .
 # 
 # https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine
 <https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1056,7 +1179,7 @@ _:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem
 <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
 <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
 _:genid123 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology> .
 _:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
@@ -1252,7 +1375,7 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem
 <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem> .
+<https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem> .
 <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
 _:genid144 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology> .
 _:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology> .
@@ -1318,6 +1441,201 @@ _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # #
 # #################################################################
 # 
+# 
+# http://dbpedia.org/resource/Category:Units_of_angle
+<http://dbpedia.org/resource/Category:Units_of_angle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/AngleUnit
+<http://qudt.org/schema/qudt/AngleUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/Aspect
+<http://qudt.org/schema/qudt/Aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/BigEndian
+<http://qudt.org/schema/qudt/BigEndian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/BitEncoding
+<http://qudt.org/schema/qudt/BitEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/BooleanEncoding
+<http://qudt.org/schema/qudt/BooleanEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE
+<http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/CT_FINITE
+<http://qudt.org/schema/qudt/CT_FINITE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/CT_UNCOUNTABLE
+<http://qudt.org/schema/qudt/CT_UNCOUNTABLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/CardinalityType
+<http://qudt.org/schema/qudt/CardinalityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/CharEncoding
+<http://qudt.org/schema/qudt/CharEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/DerivedUnit
+<http://qudt.org/schema/qudt/DerivedUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/DoublePrecisionEncoding
+<http://qudt.org/schema/qudt/DoublePrecisionEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/EndianType
+<http://qudt.org/schema/qudt/EndianType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/EnumeratedQuantity
+<http://qudt.org/schema/qudt/EnumeratedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/Enumeration
+<http://qudt.org/schema/qudt/Enumeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/IEEE754_1985RealEncoding
+<http://qudt.org/schema/qudt/IEEE754_1985RealEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat
+<http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/LittleEndian
+<http://qudt.org/schema/qudt/LittleEndian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding
+<http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/OctetEncoding
+<http://qudt.org/schema/qudt/OctetEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/PartiallyOrdered
+<http://qudt.org/schema/qudt/PartiallyOrdered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/PhysicalConstant
+<http://qudt.org/schema/qudt/PhysicalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/SIGNED
+<http://qudt.org/schema/qudt/SIGNED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/ScaleType
+<http://qudt.org/schema/qudt/ScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/ShortSignedIntegerEncoding
+<http://qudt.org/schema/qudt/ShortSignedIntegerEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/ShortUnsignedIntegerEncoding
+<http://qudt.org/schema/qudt/ShortUnsignedIntegerEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/SignedIntegerEncoding
+<http://qudt.org/schema/qudt/SignedIntegerEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/SinglePrecisionRealEncoding
+<http://qudt.org/schema/qudt/SinglePrecisionRealEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/TotallyOrdered
+<http://qudt.org/schema/qudt/TotallyOrdered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/UNSIGNED
+<http://qudt.org/schema/qudt/UNSIGNED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/Unordered
+<http://qudt.org/schema/qudt/Unordered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/UnsignedIntegerEncoding
+<http://qudt.org/schema/qudt/UnsignedIntegerEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/Verifiable
+<http://qudt.org/schema/qudt/Verifiable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/exactMatch
+<http://qudt.org/schema/qudt/exactMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/fieldCode
+<http://qudt.org/schema/qudt/fieldCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/hasCitation
+<http://qudt.org/schema/qudt/hasCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/schema/qudt/hasVocabulary
+<http://qudt.org/schema/qudt/hasVocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/type/BigEndian
+<http://qudt.org/vocab/type/BigEndian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/type/LittleEndian
+<http://qudt.org/vocab/type/LittleEndian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry
+<http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US
+<http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/dtype
+<http://www.linkedmodel.org/schema/dtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/dtype#GMD_DTYPE
+<http://www.linkedmodel.org/schema/dtype#GMD_DTYPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#CollectionGraph
+<http://www.linkedmodel.org/schema/vaem#CollectionGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#ConstraintsGraph
+<http://www.linkedmodel.org/schema/vaem#ConstraintsGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#ControllersGraph
+<http://www.linkedmodel.org/schema/vaem#ControllersGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#CurationGraph
+<http://www.linkedmodel.org/schema/vaem#CurationGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#DataGraph
+<http://www.linkedmodel.org/schema/vaem#DataGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#DocumentationGraph
+<http://www.linkedmodel.org/schema/vaem#DocumentationGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#FunctionsGraph
+<http://www.linkedmodel.org/schema/vaem#FunctionsGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA
+<http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#GMD_VAEM
+<http://www.linkedmodel.org/schema/vaem#GMD_VAEM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#LinkSetGraph
+<http://www.linkedmodel.org/schema/vaem#LinkSetGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#MappingGraph
+<http://www.linkedmodel.org/schema/vaem#MappingGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#ProxyGraph
+<http://www.linkedmodel.org/schema/vaem#ProxyGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#QUDT
+<http://www.linkedmodel.org/schema/vaem#QUDT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#RulesGraph
+<http://www.linkedmodel.org/schema/vaem#RulesGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#SchemaGraph
+<http://www.linkedmodel.org/schema/vaem#SchemaGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#ScriptGraph
+<http://www.linkedmodel.org/schema/vaem#ScriptGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#TopQuadrant
+<http://www.linkedmodel.org/schema/vaem#TopQuadrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#TransformsGraph
+<http://www.linkedmodel.org/schema/vaem#TransformsGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#ViewGraph
+<http://www.linkedmodel.org/schema/vaem#ViewGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.linkedmodel.org/schema/vaem#VocabularyGraph
+<http://www.linkedmodel.org/schema/vaem#VocabularyGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://qudt.org/3.1.2/vocab/unitCentiM
 <https://qudt.org/3.1.2/vocab/unitCentiM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

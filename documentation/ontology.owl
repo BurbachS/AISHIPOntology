@@ -9,6 +9,7 @@
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://burbachs.github.io/AISHIPOntology/AISHIP">
         <owl:imports rdf:resource="http://qudt.org/3.1.2/schema/qudt"/>
@@ -38,6 +39,27 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -80,6 +102,55 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#graphName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.linkedmodel.org/schema/vaem#graphName"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#graphTitle -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.linkedmodel.org/schema/vaem#graphTitle"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#isMetadataFor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.linkedmodel.org/schema/vaem#isMetadataFor"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#website -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.linkedmodel.org/schema/vaem#website"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#direction -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#direction"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#language"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#pattern -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#pattern"/>
     
 
 
@@ -142,6 +213,41 @@
     
 
 
+    <!-- http://qudt.org/schema/qudt/ansiSQLName -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/ansiSQLName"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/cName -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/cName"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/oracleSQLName -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/oracleSQLName"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/protocolBuffersName -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/protocolBuffersName"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/pythonName -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/pythonName"/>
+    
+
+
     <!-- http://qudt.org/schema/qudt/unit -->
 
 
@@ -149,10 +255,73 @@
     
 
 
+    <!-- http://qudt.org/schema/qudt/vbName -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/vbName"/>
+    
+
+
     <!-- http://www.vesselAI-project.eu/ontology#hasGeometry -->
 
 
     <owl:ObjectProperty rdf:about="http://www.vesselAI-project.eu/ontology#hasGeometry"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#first -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#object -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#rest -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#subject -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
     
 
 
@@ -896,6 +1065,20 @@
     
 
 
+    <!-- http://qudt.org/schema/qudt/bits -->
+
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt/bits"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/length -->
+
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt/length"/>
+    
+
+
     <!-- http://qudt.org/schema/qudt/numericValue -->
 
 
@@ -951,10 +1134,59 @@
     
 
 
+    <!-- http://qudt.org/schema/qudt/Aspect -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Aspect"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/EnumeratedQuantity -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/EnumeratedQuantity"/>
+    
+
+
     <!-- http://qudt.org/schema/qudt/QuantityValue -->
 
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityValue"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/SignednessType -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/SignednessType"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/StringEncodingType -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/StringEncodingType"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/SymmetricRelation -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/SymmetricRelation"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Verifiable -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Verifiable"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#CatalogEntry -->
+
+
+    <owl:Class rdf:about="http://www.linkedmodel.org/schema/vaem#CatalogEntry"/>
     
 
 
@@ -1020,6 +1252,76 @@
         <rdfs:subClassOf rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:label xml:lang="en">Vessel</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Container -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Datatype -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gDay -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#gDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonth -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonthDay -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Class -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Ontology -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Ontology"/>
     
 
 
@@ -1421,7 +1723,7 @@
 
 
     <owl:Class rdf:about="https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem">
-        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem"/>
+        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"/>
@@ -1451,17 +1753,6 @@
         <owl:disjointWith rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology"/>
         <rdfs:comment xml:lang="en">A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization.</rdfs:comment>
         <rdfs:label xml:lang="en">Muscle-powered propulsion technology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem -->
-
-
-    <owl:Class rdf:about="https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem">
-        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"/>
-        <rdfs:comment xml:lang="en">A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power.</rdfs:comment>
-        <rdfs:label xml:lang="en">Non-motorized propulsion system</rdfs:label>
     </owl:Class>
     
 
@@ -1599,7 +1890,7 @@
 
 
     <owl:Class rdf:about="https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem">
-        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem"/>
+        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"/>
@@ -1905,7 +2196,7 @@
 
 
     <owl:Class rdf:about="https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem">
-        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem"/>
+        <rdfs:subClassOf rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology"/>
@@ -2019,6 +2310,461 @@
      -->
 
 
+    
+
+
+    <!-- http://dbpedia.org/resource/Category:Units_of_angle -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Category:Units_of_angle"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/AngleUnit -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/AngleUnit"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Aspect -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/Aspect"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/BigEndian -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/BigEndian"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/BitEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/BitEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/BooleanEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/BooleanEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/CT_FINITE -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/CT_FINITE"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/CT_UNCOUNTABLE -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/CT_UNCOUNTABLE"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/CardinalityType -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/CardinalityType"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/CharEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/CharEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/DerivedUnit -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/DerivedUnit"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/DoublePrecisionEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/DoublePrecisionEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/EndianType -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/EndianType"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/EnumeratedQuantity -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/EnumeratedQuantity"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Enumeration -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/Enumeration"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/IEEE754_1985RealEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/IEEE754_1985RealEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/LittleEndian -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/LittleEndian"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/LongUnsignedIntegerEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/OctetEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/OctetEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/PartiallyOrdered -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/PartiallyOrdered"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/PhysicalConstant -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/PhysicalConstant"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Quantity -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/Quantity"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/SIGNED -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/SIGNED"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/ScaleType -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/ScaleType"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/ShortSignedIntegerEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/ShortSignedIntegerEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/ShortUnsignedIntegerEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/ShortUnsignedIntegerEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/SignedIntegerEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/SignedIntegerEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/SinglePrecisionRealEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/SinglePrecisionRealEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/TotallyOrdered -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/TotallyOrdered"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/UNSIGNED -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/UNSIGNED"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unordered -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/Unordered"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/UnsignedIntegerEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/UnsignedIntegerEncoding"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Verifiable -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/Verifiable"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/exactMatch -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/exactMatch"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/fieldCode -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/fieldCode"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasCitation -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/hasCitation"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasVocabulary -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/schema/qudt/hasVocabulary"/>
+    
+
+
+    <!-- http://qudt.org/vocab/type/BigEndian -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/type/BigEndian"/>
+    
+
+
+    <!-- http://qudt.org/vocab/type/LittleEndian -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/type/LittleEndian"/>
+    
+
+
+    <!-- http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry -->
+
+
+    <owl:NamedIndividual rdf:about="http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry"/>
+    
+
+
+    <!-- http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US -->
+
+
+    <owl:NamedIndividual rdf:about="http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/dtype -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/dtype"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/dtype#GMD_DTYPE -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/dtype#GMD_DTYPE"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#CollectionGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#CollectionGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#ConstraintsGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#ConstraintsGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#ControllersGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#ControllersGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#CurationGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#CurationGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#DataGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#DataGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#DocumentationGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#DocumentationGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#FunctionsGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#FunctionsGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#GMD_VAEM -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#GMD_VAEM"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#LinkSetGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#LinkSetGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#MappingGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#MappingGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#ProxyGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#ProxyGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#QUDT -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#QUDT"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#RulesGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#RulesGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#SchemaGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#SchemaGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#ScriptGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#ScriptGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#TopQuadrant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#TopQuadrant"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#TransformsGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#TransformsGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#ViewGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#ViewGraph"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#VocabularyGraph -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.linkedmodel.org/schema/vaem#VocabularyGraph"/>
     
 
 

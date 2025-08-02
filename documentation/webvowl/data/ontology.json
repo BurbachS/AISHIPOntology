@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://www.vesselAI-project.eu/ontology", "https://burbachs.github.io/AISHIPOntology/AISHIP", "http://www.w3.org/2006/time", "http://www.opengis.net/ont/geosparql" ],
+    "baseIris" : [ "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "http://www.w3.org/2002/07/owl", "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif", "http://www.w3.org/2001/XMLSchema", "http://www.linkedmodel.org/schema/vaem", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/ns/prov", "http://xmlns.com/foaf/0.1", "http://www.vesselAI-project.eu/ontology", "https://burbachs.github.io/AISHIPOntology/AISHIP", "http://www.w3.org/2006/time", "http://www.opengis.net/ont/geosparql" ],
     "title" : {
       "undefined" : "AISHIP Ontology"
     },
@@ -65,70 +65,67 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "61",
+    "id" : "63",
     "type" : "owl:Class"
   }, {
-    "id" : "62",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "71",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
+    "id" : "73",
     "type" : "owl:Class"
   }, {
     "id" : "79",
     "type" : "owl:Class"
   }, {
-    "id" : "80",
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
     "type" : "owl:Class"
   }, {
     "id" : "82",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "85",
     "type" : "owl:Class"
   }, {
-    "id" : "86",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "89",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "91",
@@ -137,259 +134,319 @@
     "id" : "93",
     "type" : "owl:Class"
   }, {
-    "id" : "90",
-    "type" : "owl:Class"
-  }, {
-    "id" : "97",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "99",
-    "type" : "owl:Class"
-  }, {
-    "id" : "87",
+    "id" : "96",
     "type" : "owl:Class"
   }, {
     "id" : "92",
     "type" : "owl:Class"
   }, {
-    "id" : "102",
-    "type" : "owl:Class"
-  }, {
-    "id" : "103",
-    "type" : "owl:Class"
-  }, {
-    "id" : "78",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "111",
+    "id" : "99",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "63",
+    "id" : "59",
     "type" : "owl:Class"
   }, {
-    "id" : "116",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "123",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
+    "id" : "102",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "129",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "115",
+    "id" : "89",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "103",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "94",
     "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:intersectionOf"
   }, {
     "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "134",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "135",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "55",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "108",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "139",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "60",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "76",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "110",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
+    "id" : "126",
     "type" : "owl:Class"
   }, {
     "id" : "74",
     "type" : "owl:Class"
   }, {
-    "id" : "142",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "121",
+    "id" : "130",
     "type" : "owl:Class"
   }, {
-    "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "167",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "114",
-    "type" : "owl:Class"
-  }, {
-    "id" : "104",
-    "type" : "owl:Class"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "190",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "113",
-    "type" : "owl:Class"
-  }, {
-    "id" : "149",
-    "type" : "owl:Class"
-  }, {
-    "id" : "98",
-    "type" : "owl:Class"
-  }, {
-    "id" : "204",
-    "type" : "owl:Class"
-  }, {
-    "id" : "197",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "148",
+    "id" : "110",
     "type" : "owl:Class"
   }, {
     "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "139",
     "type" : "owl:Class"
   }, {
-    "id" : "184",
+    "id" : "125",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "157",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "100",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
-    "id" : "172",
+    "id" : "141",
     "type" : "owl:Class"
   }, {
-    "id" : "212",
+    "id" : "115",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "143",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "128",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "145",
     "type" : "owl:Class"
   }, {
-    "id" : "158",
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "57",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "161",
     "type" : "owl:Class"
   }, {
-    "id" : "112",
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "199",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "227",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "240",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "245",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
     "type" : "owl:Class"
   }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "265",
+    "id" : "147",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "277",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "282",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "287",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "290",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -416,8 +473,8 @@
     "comment" : {
       "en" : "A specific type of rotor sail consisting of a tall, rotating cylinder mounted vertically on the deck. When wind flows across the spinning surface, lift is generated via the Magnus effect, assisting vessel propulsion."
     },
-    "id" : "8",
-    "superClasses" : [ "9" ]
+    "id" : "1",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -426,12 +483,12 @@
       "IRI-based" : "WindAssistedPropulsionTechnology",
       "en" : "Wind-assisted propulsion technology"
     },
-    "subClasses" : [ "12", "13", "14", "15", "16", "9", "17" ],
+    "subClasses" : [ "13", "14", "15", "16", "17", "2", "18" ],
     "comment" : {
       "en" : "A hybrid propulsion technology where wind energy supplements motorized propulsion to reduce fuel consumption and improve efficiency. Examples include rotor sails, suction wings, or kites."
     },
-    "id" : "10",
-    "superClasses" : [ "11" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGAG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -443,7 +500,7 @@
     "comment" : {
       "en" : "A combined propulsion system using multiple gas turbines, with smaller units for efficient cruising and additional turbines engaged for high-speed operation."
     },
-    "id" : "18",
+    "id" : "19",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#HullForm",
@@ -456,8 +513,8 @@
     "comment" : {
       "en" : "A wind-assisted propulsion technology that utilizes the vessel’s hull geometry to generate additional aerodynamic lift or reduce drag, complementing primary propulsion systems."
     },
-    "id" : "16",
-    "superClasses" : [ "10" ]
+    "id" : "17",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -469,8 +526,8 @@
     "comment" : {
       "en" : "A non-motorized propulsion system that generates thrust through human or animal muscular effort, such as rowing with paddles or pedaling mechanisms."
     },
-    "id" : "19",
-    "superClasses" : [ "20" ]
+    "id" : "20",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SoftSail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -479,12 +536,12 @@
       "IRI-based" : "SoftSail",
       "en" : "Soft sail"
     },
-    "subClasses" : [ "15", "23" ],
+    "subClasses" : [ "16", "24" ],
     "comment" : {
       "en" : "A flexible sail made from fabric or similar materials, traditionally used for harnessing wind energy."
     },
-    "id" : "21",
-    "superClasses" : [ "22" ]
+    "id" : "22",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BatteryUnit",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -496,8 +553,8 @@
     "comment" : {
       "en" : "An energy storage system that supplies electrical power for propulsion or auxiliary systems, charged from onboard or external sources."
     },
-    "id" : "49",
-    "superClasses" : [ "50" ]
+    "id" : "51",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#GasCombustionUnit",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -509,8 +566,8 @@
     "comment" : {
       "en" : "A power unit that burns gaseous fuels such as natural gas or LNG to produce usable energy for shipboard systems or propulsion."
     },
-    "id" : "51",
-    "superClasses" : [ "50" ]
+    "id" : "53",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMusclePoweredPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -518,12 +575,12 @@
     "label" : {
       "IRI-based" : "VesselWithMusclePoweredPropulsionSystem"
     },
-    "intersection" : [ "53" ],
+    "intersection" : [ "55" ],
     "comment" : {
       "en" : "Represents any vessel that has at least one muscle-powered propulsion system."
     },
     "attributes" : [ "intersection" ],
-    "id" : "52"
+    "id" : "54"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -544,8 +601,8 @@
       "undefined" : "The class of RDF Lists."
     },
     "attributes" : [ "external" ],
-    "id" : "61",
-    "superClasses" : [ "43" ]
+    "id" : "63",
+    "superClasses" : [ "44" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#FixedPitchPropeller",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -557,8 +614,8 @@
     "comment" : {
       "en" : "A screw propeller with blades fixed at a constant angle. It offers simple and cost-effective design, commonly used in vessels with steady operating conditions where speed and load vary little."
     },
-    "id" : "62",
-    "superClasses" : [ "63" ]
+    "id" : "64",
+    "superClasses" : [ "65" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -567,11 +624,11 @@
       "IRI-based" : "NonPistonEngine",
       "en" : "Non-piston engine"
     },
-    "subClasses" : [ "72", "73", "74" ],
+    "subClasses" : [ "74", "75", "76" ],
     "comment" : {
       "en" : "An engine that generates mechanical power without using pistons, typically through continuous rotational systems such as turbines or electric motors."
     },
-    "id" : "71",
+    "id" : "73",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "http://www.vesselAI-project.eu/ontology#Trajectory",
@@ -581,7 +638,7 @@
       "IRI-based" : "Trajectory"
     },
     "attributes" : [ "external" ],
-    "id" : "77"
+    "id" : "79"
   }, {
     "iri" : "https://schema.org/EngineSpecification",
     "baseIri" : "https://schema.org",
@@ -590,7 +647,7 @@
       "IRI-based" : "EngineSpecification",
       "en" : "Engine specification"
     },
-    "subClasses" : [ "71", "7", "78" ],
+    "subClasses" : [ "73", "7", "80" ],
     "comment" : {
       "en" : "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities."
     },
@@ -604,7 +661,7 @@
       "IRI-based" : "TrajectoryPart"
     },
     "attributes" : [ "external" ],
-    "id" : "79"
+    "id" : "81"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropellerPod",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -616,8 +673,8 @@
     "comment" : {
       "en" : "A propulsion system where the propeller is mounted on a steerable pod that also contains the drive motor. Podded propulsors allow full 360-degree rotation for excellent maneuverability and are commonly used in cruise ships and offshore vessels."
     },
-    "id" : "80",
-    "superClasses" : [ "81" ]
+    "id" : "82",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#TextDocument",
     "baseIri" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo",
@@ -630,7 +687,7 @@
       "en" : "A text document."
     },
     "attributes" : [ "external" ],
-    "id" : "82"
+    "id" : "84"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SolarArray",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -642,8 +699,8 @@
     "comment" : {
       "en" : "A photovoltaic system that converts solar radiation into electrical energy, typically used as a supplementary or auxiliary power source."
     },
-    "id" : "83",
-    "superClasses" : [ "50" ]
+    "id" : "85",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGOG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -655,7 +712,7 @@
     "comment" : {
       "en" : "A combined propulsion system with two gas turbines, where only one operates at a time depending on the desired speed profile."
     },
-    "id" : "39",
+    "id" : "50",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#DieselEngine",
@@ -668,8 +725,8 @@
     "comment" : {
       "en" : "An internal combustion engine that uses the compression ignition of diesel fuel to produce mechanical motion."
     },
-    "id" : "86",
-    "superClasses" : [ "78" ]
+    "id" : "88",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "http://www.vesselAI-project.eu/ontology#Vessel",
     "baseIri" : "http://www.vesselAI-project.eu/ontology",
@@ -679,8 +736,8 @@
       "en" : "Vessel"
     },
     "attributes" : [ "external" ],
-    "id" : "53",
-    "superClasses" : [ "87" ]
+    "id" : "55",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#HardSail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -689,12 +746,12 @@
       "IRI-based" : "HardSail",
       "en" : "Hard sail"
     },
-    "subClasses" : [ "90", "17" ],
+    "subClasses" : [ "92", "18" ],
     "comment" : {
       "en" : "A rigid sail structure, typically resembling an aerofoil, used to harness wind energy for propulsion."
     },
-    "id" : "89",
-    "superClasses" : [ "22" ]
+    "id" : "91",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#GasWaterJet",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -706,8 +763,8 @@
     "comment" : {
       "en" : "A jet propulsion technology that uses gas (e.g., exhaust gases from a turbine) instead of a pumpt to accelerate water and create thrust. This system combines combustion energy with fluid dynamics for high-performance propulsion."
     },
-    "id" : "91",
-    "superClasses" : [ "92" ]
+    "id" : "93",
+    "superClasses" : [ "94" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#AntiCavitationMechanism",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -719,7 +776,7 @@
     "comment" : {
       "en" : "A design feature or technology applied to propulsion systems to prevent or reduce cavitation effects on propeller blades or related components. Such mechanisms aim to minimize efficiency loss, noise, and material damage caused by cavitation."
     },
-    "id" : "93"
+    "id" : "96"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindHardSail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -731,8 +788,8 @@
     "comment" : {
       "en" : "A rigid sail designed to provide the primary propulsion for a vessel using wind energy alone."
     },
-    "id" : "90",
-    "superClasses" : [ "89", "96" ]
+    "id" : "92",
+    "superClasses" : [ "91", "97" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithPureWindPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -740,12 +797,12 @@
     "label" : {
       "IRI-based" : "VesselWithPureWindPropulsionSystem"
     },
-    "intersection" : [ "53" ],
+    "intersection" : [ "55" ],
     "comment" : {
       "en" : "Represents any vessel that has at least one pure wind propulsion system. These kinds of vessel are purely propulled by wind."
     },
     "attributes" : [ "intersection" ],
-    "id" : "97"
+    "id" : "99"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#BladedPropulsor",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -754,11 +811,11 @@
       "IRI-based" : "BladedPropulsor",
       "en" : "Bladed propulsor"
     },
-    "subClasses" : [ "98", "81", "63" ],
+    "subClasses" : [ "100", "83", "65" ],
     "comment" : {
       "en" : "A motorized propulsion technology that generates thrust using rotating blades to accelerate water. This category includes conventional propellers and specialized blade-based systems designed for various operational profiles."
     },
-    "id" : "57",
+    "id" : "59",
     "superClasses" : [ "28" ]
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -780,8 +837,17 @@
       "undefined" : "The class of RDF statements."
     },
     "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "43" ]
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/SignednessType",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SignednessType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "102"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Paddle",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -793,8 +859,8 @@
     "comment" : {
       "en" : "A simple muscle-powered propulsion technique involving a handheld blade used to push against water and move a vessel forward. Typically associated with canoes, kayaks, or lifeboats."
     },
-    "id" : "1",
-    "superClasses" : [ "2" ]
+    "id" : "4",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#CompoundLiteral",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -821,8 +887,8 @@
       "undefined" : "A class representing a compound literal."
     },
     "attributes" : [ "external" ],
-    "id" : "99",
-    "superClasses" : [ "43" ]
+    "id" : "67",
+    "superClasses" : [ "44" ]
   }, {
     "iri" : "https://schema.org/Vehicle",
     "baseIri" : "https://schema.org",
@@ -831,12 +897,24 @@
       "IRI-based" : "Vehicle",
       "en" : "Vehicle"
     },
-    "subClasses" : [ "53" ],
+    "subClasses" : [ "55" ],
     "comment" : {
       "en" : "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."
     },
     "attributes" : [ "external" ],
-    "id" : "87"
+    "id" : "89"
+  }, {
+    "iri" : "http://www.linkedmodel.org/schema/vaem#CatalogEntry",
+    "baseIri" : "http://www.linkedmodel.org/schema/vaem",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "VAEM Governed Object class is a placeholder for concepts that are fully defined by the voag:GovernedObject concept hierarchy for building a catalog of ontologies and graphs"
+    },
+    "label" : {
+      "IRI-based" : "CatalogEntry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#JetPropulsor",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -845,11 +923,11 @@
       "IRI-based" : "JetPropulsor",
       "en" : "Jet propulsor"
     },
-    "subClasses" : [ "100", "91" ],
+    "subClasses" : [ "104", "93" ],
     "comment" : {
       "en" : "A motorized propulsion technology that generates thrust by accelerating a fluid (typically water) through a nozzle, creating a jet stream that propels the vessel. Jet propulsors are commonly used for high-speed boats and specialized vessels."
     },
-    "id" : "92",
+    "id" : "94",
     "superClasses" : [ "28" ]
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
@@ -871,8 +949,8 @@
       "undefined" : "The class of ordered containers."
     },
     "attributes" : [ "external" ],
-    "id" : "102",
-    "superClasses" : [ "103" ]
+    "id" : "106",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Container",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -880,9 +958,26 @@
     "label" : {
       "IRI-based" : "Container"
     },
-    "subClasses" : [ "104", "105", "102" ],
+    "subClasses" : [ "109", "110", "106" ],
     "attributes" : [ "external" ],
-    "id" : "103"
+    "id" : "107"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Ontology",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "annotations" : {
+      "hasGraphMetadata" : [ {
+        "identifier" : "hasGraphMetadata",
+        "language" : "undefined",
+        "value" : "http://www.linkedmodel.org/schema/vaem#GMD_VAEM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PistonEngine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -891,11 +986,11 @@
       "IRI-based" : "PistonEngine",
       "en" : "Piston engine"
     },
-    "subClasses" : [ "86" ],
+    "subClasses" : [ "88" ],
     "comment" : {
       "en" : "An internal combustion engine that converts the linear motion of pistons into rotational energy via a crankshaft."
     },
-    "id" : "78",
+    "id" : "80",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionSystem",
@@ -905,11 +1000,39 @@
       "IRI-based" : "PropulsionSystem",
       "en" : "Propulsion system"
     },
-    "subClasses" : [ "109", "20" ],
+    "subClasses" : [ "114", "115", "116", "20" ],
     "comment" : {
       "en" : "A system that generates thrust to move a vessel forward."
     },
-    "id" : "95"
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/rdf-plain-literal/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlainLiteral",
+      "undefined" : "PlainLiteral"
+    },
+    "comment" : {
+      "undefined" : "The class of plain (i.e. untyped) literal values, as used in RIF and OWL 2"
+    },
+    "attributes" : [ "external" ],
+    "id" : "118",
+    "superClasses" : [ "119" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SpeciallyDesignedBladedPropulsor",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -918,12 +1041,12 @@
       "IRI-based" : "SpeciallyDesignedBladedPropulsor",
       "en" : "Specially designed bladed propeller"
     },
-    "subClasses" : [ "110", "80" ],
+    "subClasses" : [ "120", "82" ],
     "comment" : {
       "en" : "A bladed propulsion technology adapted for specific vessel requirements or operational conditions, such as high maneuverability or integrated drive systems."
     },
-    "id" : "81",
-    "superClasses" : [ "57" ]
+    "id" : "83",
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithMotorizedPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -931,12 +1054,12 @@
     "label" : {
       "IRI-based" : "VesselWithMotorizedPropulsionSystem"
     },
-    "intersection" : [ "53" ],
+    "intersection" : [ "55" ],
     "comment" : {
-      "en" : "A vessel that is motorized cannot also be classified as having a pure wind propulsion system."
+      "en" : "Represents any vessel that has at least one motorized propulsion system."
     },
     "attributes" : [ "intersection" ],
-    "id" : "111"
+    "id" : "121"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ScrewPropeller",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -945,12 +1068,12 @@
       "IRI-based" : "ScrewPropeller",
       "en" : "Screw propeller"
     },
-    "subClasses" : [ "112", "113", "114", "115", "62", "116" ],
+    "subClasses" : [ "122", "123", "124", "125", "64", "126" ],
     "comment" : {
       "en" : "A widely used bladed propulsion technology where helical blades mounted on a rotating hub create thrust by pushing water backwards. Screw propellers are commonly used for most vessel types due to their simplicity and efficiency."
     },
-    "id" : "63",
-    "superClasses" : [ "57" ]
+    "id" : "65",
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#DuctedPropeller",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -962,8 +1085,8 @@
     "comment" : {
       "en" : "A screw propeller enclosed in a fixed nozzle (duct) to increase thrust and efficiency at lower speeds and provide additional protection. Widely used in tugs and fishing trawlers requiring high bollard pull."
     },
-    "id" : "116",
-    "superClasses" : [ "63" ]
+    "id" : "126",
+    "superClasses" : [ "65" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#GasTurbineEngine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -975,8 +1098,8 @@
     "comment" : {
       "en" : "A rotary engine that generates mechanical power by expanding combustion gases through turbine stages."
     },
-    "id" : "72",
-    "superClasses" : [ "71" ]
+    "id" : "74",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Audio",
     "baseIri" : "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo",
@@ -989,7 +1112,7 @@
       "en" : "A file containing an audio content"
     },
     "attributes" : [ "external" ],
-    "id" : "123"
+    "id" : "130"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -1010,8 +1133,8 @@
       "undefined" : "The class of unordered containers."
     },
     "attributes" : [ "external" ],
-    "id" : "105",
-    "superClasses" : [ "103" ]
+    "id" : "110",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RestrictedArea",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1023,8 +1146,8 @@
     "comment" : {
       "en" : "A maritime region where access or navigation is limited due to security, safety, or legal regulations."
     },
-    "id" : "4",
-    "superClasses" : [ "5" ]
+    "id" : "9",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -1033,7 +1156,7 @@
       "IRI-based" : "Class"
     },
     "attributes" : [ "external" ],
-    "id" : "129"
+    "id" : "139"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ControllablePitchPropeller",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1045,8 +1168,8 @@
     "comment" : {
       "en" : "A screw propeller with blades that can adjust their pitch during operation, allowing flexible control of thrust and speed without changing the rotation direction. Frequently used in ships that require frequent speed or direction changes."
     },
-    "id" : "115",
-    "superClasses" : [ "63" ]
+    "id" : "125",
+    "superClasses" : [ "65" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1055,12 +1178,12 @@
       "IRI-based" : "MotorizedPropulsionTechnology",
       "en" : "Motorized propulsion technology"
     },
-    "subClasses" : [ "92", "57" ],
+    "subClasses" : [ "94", "59" ],
     "comment" : {
       "en" : "A propulsion technology that relies on mechanical motors or engine to convert energy into thrust for vessel propulsion."
     },
     "id" : "28",
-    "superClasses" : [ "11" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindSoftSail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1072,8 +1195,8 @@
     "comment" : {
       "en" : "A traditional or modern soft sail used to provide the primary propulsion for a vessel using wind energy alone."
     },
-    "id" : "23",
-    "superClasses" : [ "21", "96" ]
+    "id" : "24",
+    "superClasses" : [ "22", "97" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODLAG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1085,8 +1208,17 @@
     "comment" : {
       "en" : "A combined propulsion system that integrates diesel-electric drive for cruising and a gas turbine for greater speed when needed."
     },
-    "id" : "65",
+    "id" : "34",
     "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gDay"
+    },
+    "attributes" : [ "external" ],
+    "id" : "141"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1098,8 +1230,17 @@
     "comment" : {
       "en" : "A propulsion system that exclusively uses wind energy, captured via sails or other aerodynamic surfaces, to generate forward thrust without auxiliary engines."
     },
-    "id" : "48",
-    "superClasses" : [ "20" ]
+    "id" : "115",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/SymmetricRelation",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SymmetricRelation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "143"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COSAG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1111,13 +1252,14 @@
     "comment" : {
       "en" : "A combined propulsion system using a steam turbine for cruising and a gas turbine for rapid acceleration, with optional simultaneous operation."
     },
-    "id" : "70",
+    "id" : "37",
     "superClasses" : [ "7" ]
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "133",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "128",
     "label" : {
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2006/time#Interval",
@@ -1127,7 +1269,7 @@
       "IRI-based" : "Interval"
     },
     "attributes" : [ "external" ],
-    "id" : "134"
+    "id" : "145"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedSoftSail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1139,8 +1281,8 @@
     "comment" : {
       "en" : "A flexible sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."
     },
-    "id" : "15",
-    "superClasses" : [ "10", "21" ]
+    "id" : "16",
+    "superClasses" : [ "11", "22" ]
   }, {
     "iri" : "http://www.vesselAI-project.eu/ontology#SyntheticTrajectory",
     "baseIri" : "http://www.vesselAI-project.eu/ontology",
@@ -1148,9 +1290,9 @@
     "label" : {
       "IRI-based" : "SyntheticTrajectory"
     },
-    "subClasses" : [ "136" ],
+    "subClasses" : [ "147" ],
     "attributes" : [ "external" ],
-    "id" : "135"
+    "id" : "146"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Sail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1159,57 +1301,65 @@
       "IRI-based" : "Sail",
       "en" : "Sail"
     },
-    "subClasses" : [ "89", "21" ],
+    "subClasses" : [ "91", "22" ],
     "comment" : {
       "en" : "A generic sail that converts wind energy into propulsive force for a vessel."
     },
-    "id" : "22"
+    "id" : "23"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "118",
+    "id" : "150",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "55",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "151",
     "label" : {
-      "undefined" : "Thing"
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "58",
+    "id" : "60",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "108",
+    "id" : "113",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "139",
+    "id" : "62",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "60",
+    "id" : "57",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
+    "iri" : "http://qudt.org/schema/qudt/StringEncodingType",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StringEncodingType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "153"
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "78",
     "label" : {
       "IRI-based" : "gYear"
     }
@@ -1224,8 +1374,8 @@
     "comment" : {
       "en" : "A highly maneuverable bladed propulsion system using vertical blades that rotate and adjust their pitch cyclically. This design enables precise control in all directions, making it ideal for tugs, ferries, and vessels operating in confined waters."
     },
-    "id" : "110",
-    "superClasses" : [ "81" ]
+    "id" : "120",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1234,11 +1384,39 @@
       "IRI-based" : "PropulsionTechnology",
       "en" : "Propulsion technology"
     },
-    "subClasses" : [ "2", "28", "10", "96" ],
+    "subClasses" : [ "5", "28", "11", "97" ],
     "comment" : {
       "en" : "A general concept representing the method or technology used by a propulsion system to generate thrust for vessel movement. This class provides an abstraction for different approaches such as motor-driven or wind-based techniques."
     },
-    "id" : "11"
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/rdf11-concepts/#section-html",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HTML",
+      "undefined" : "HTML"
+    },
+    "comment" : {
+      "undefined" : "The datatype of RDF literals storing fragments of HTML content"
+    },
+    "attributes" : [ "external" ],
+    "id" : "161",
+    "superClasses" : [ "119" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PowerGenerationUnit",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1247,11 +1425,11 @@
       "IRI-based" : "PowerGenerationUnit",
       "en" : "Power generation unit"
     },
-    "subClasses" : [ "148", "149", "83", "49", "51" ],
+    "subClasses" : [ "162", "163", "85", "51", "53" ],
     "comment" : {
       "en" : "A power unit that produces usable energy for shipboard systems or propulsion."
     },
-    "id" : "50"
+    "id" : "52"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#ElectricEngine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1263,8 +1441,8 @@
     "comment" : {
       "en" : "A motor that converts electrical energy into mechanical rotation."
     },
-    "id" : "74",
-    "superClasses" : [ "71" ]
+    "id" : "76",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#VesselWithWindAssistedPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1272,12 +1450,12 @@
     "label" : {
       "IRI-based" : "VesselWithWindAssistedPropulsionSystem"
     },
-    "intersection" : [ "53" ],
+    "intersection" : [ "55" ],
     "comment" : {
       "en" : "A vessel that is wind-assisted cannot also be classified as having a pure wind propulsion system."
     },
     "attributes" : [ "intersection" ],
-    "id" : "142"
+    "id" : "155"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Owner",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1286,11 +1464,11 @@
       "IRI-based" : "Owner",
       "en" : "Owner"
     },
-    "subClasses" : [ "157", "158" ],
+    "subClasses" : [ "172", "173" ],
     "comment" : {
       "en" : "The owner of a vessel."
     },
-    "id" : "121"
+    "id" : "132"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1299,12 +1477,12 @@
       "IRI-based" : "PureWindPropulsionTechnology",
       "en" : "Pure wind propulsion technology"
     },
-    "subClasses" : [ "90", "23" ],
+    "subClasses" : [ "92", "24" ],
     "comment" : {
       "en" : "A wind propulsion technology that exclusively uses wind as the energy source for generating thrust, without assistance from motorized systems. Typical implementation involves sails or other aerodynamic devices."
     },
-    "id" : "96",
-    "superClasses" : [ "11" ]
+    "id" : "97",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -1313,7 +1491,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "167"
+    "id" : "182"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1325,8 +1503,8 @@
     "comment" : {
       "en" : "A hybrid propulsion system that supplements motorized thrust with aerodynamic lift generated from wind-driven devices, such as rotor sails, suction wings, or kite sails."
     },
-    "id" : "25",
-    "superClasses" : [ "20" ]
+    "id" : "116",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODAG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1338,7 +1516,7 @@
     "comment" : {
       "en" : "A combined propulsion system that can use both a diesel engine and a gas turbine simultaneously for increased power output."
     },
-    "id" : "67",
+    "id" : "32",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#Kite",
@@ -1351,8 +1529,8 @@
     "comment" : {
       "en" : "A wind-assisted propulsion technology that uses a large controllable kite deployed ahead of the vessel to harness wind energy and reduce engine power requirements."
     },
-    "id" : "13",
-    "superClasses" : [ "10" ]
+    "id" : "14",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SuctionWings",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1364,8 +1542,8 @@
     "comment" : {
       "en" : "A wind-assisted propulsion technology using rigid wing structures with suction or airflow control systems to enhance aerodynamic lift and reduce fuel consumption."
     },
-    "id" : "14",
-    "superClasses" : [ "10" ]
+    "id" : "15",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODAD",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1377,7 +1555,7 @@
     "comment" : {
       "en" : "A combined propulsion system that uses multiple diesel engines in parallel to provide flexible power management and redundancy."
     },
-    "id" : "31",
+    "id" : "39",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SupercavitatingPropeller",
@@ -1390,8 +1568,30 @@
     "comment" : {
       "en" : "A screw propeller designed to operate under conditions of intentional cavitation, reducing drag at very high speeds. Common in fast military or racing vessels where conventional propellers would suffer performance loss."
     },
-    "id" : "114",
-    "superClasses" : [ "63" ]
+    "id" : "124",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "XMLLiteral",
+      "undefined" : "XMLLiteral"
+    },
+    "comment" : {
+      "undefined" : "The datatype of XML literal values."
+    },
+    "attributes" : [ "external" ],
+    "id" : "199",
+    "superClasses" : [ "119" ]
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -1412,8 +1612,8 @@
       "undefined" : "The class of containers of alternatives."
     },
     "attributes" : [ "external" ],
-    "id" : "104",
-    "superClasses" : [ "103" ]
+    "id" : "109",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedHardSail",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1425,8 +1625,8 @@
     "comment" : {
       "en" : "A rigid sail used to supplement the main propulsion system, reducing fuel consumption by utilizing wind energy."
     },
-    "id" : "17",
-    "superClasses" : [ "89", "10" ]
+    "id" : "18",
+    "superClasses" : [ "91", "11" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -1434,9 +1634,9 @@
     "label" : {
       "IRI-based" : "Literal"
     },
-    "subClasses" : [ "191", "192", "193", "194", "195" ],
+    "subClasses" : [ "210", "161", "211", "118", "199" ],
     "attributes" : [ "external" ],
-    "id" : "190"
+    "id" : "119"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WindTurbine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1448,8 +1648,8 @@
     "comment" : {
       "en" : "A wind-assisted propulsion technology using rotor blades similar to wind power generators, converting wind energy into thrust or auxiliary electrical energy for propulsion."
     },
-    "id" : "12",
-    "superClasses" : [ "10" ]
+    "id" : "13",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MotorizedPropulsionSystem",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1461,8 +1661,8 @@
     "comment" : {
       "en" : "A propulsion system that relies on internal or external motors or engines to generate mechanical thrust for vessel movement."
     },
-    "id" : "109",
-    "superClasses" : [ "95" ]
+    "id" : "114",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CounterRotatingPropeller",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1474,8 +1674,8 @@
     "comment" : {
       "en" : "A screw propeller system that uses two coaxial propellers rotating in opposite directions to improve efficiency and reduce rotational losses. This design enhances thrust and is typically used on high-performance vessels."
     },
-    "id" : "113",
-    "superClasses" : [ "63" ]
+    "id" : "123",
+    "superClasses" : [ "65" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NuclearReactor",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1487,8 +1687,8 @@
     "comment" : {
       "en" : "A reactor that generates thermal energy through controlled nuclear fission, typically used to power steam turbines in naval or large-scale vessels."
     },
-    "id" : "149",
-    "superClasses" : [ "50" ]
+    "id" : "163",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PaddleWheel",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1500,8 +1700,14 @@
     "comment" : {
       "en" : "A propulsion technology that uses large external wheels with attached blades or paddles to push water and generate thrust. Historically used in riverboats and still applied in some shallow-water or heritage vessels."
     },
-    "id" : "98",
-    "superClasses" : [ "57" ]
+    "id" : "100",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "209",
+    "label" : {
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -1522,14 +1728,13 @@
       "undefined" : "The class of RDF properties."
     },
     "attributes" : [ "external" ],
-    "id" : "204",
-    "superClasses" : [ "43" ]
+    "id" : "70",
+    "superClasses" : [ "44" ]
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "197",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "192",
     "label" : {
-      "undefined" : "Thing"
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
@@ -1538,9 +1743,25 @@
     "label" : {
       "IRI-based" : "Resource"
     },
-    "subClasses" : [ "42", "61", "99", "204" ],
+    "subClasses" : [ "43", "63", "67", "70" ],
     "attributes" : [ "external" ],
-    "id" : "43"
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Class",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "213",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#COGES",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1552,8 +1773,17 @@
     "comment" : {
       "en" : "A combined propulsion system using gas and steam turbines to generate electricity, which powers electric motors for propulsion."
     },
-    "id" : "33",
+    "id" : "41",
     "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Verifiable",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Verifiable"
+    },
+    "attributes" : [ "external" ],
+    "id" : "226"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#SteamTurbineEngine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1565,8 +1795,8 @@
     "comment" : {
       "en" : "A rotary engine that converts thermal energy from pressurized steam into mechanical motion via rotating turbine blades."
     },
-    "id" : "73",
-    "superClasses" : [ "71" ]
+    "id" : "75",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CombinedEngine",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1575,12 +1805,21 @@
       "IRI-based" : "CombinedEngine",
       "en" : "Combined engine"
     },
-    "subClasses" : [ "212", "67", "65", "6", "70", "31", "33", "35", "37", "39", "18", "45" ],
+    "subClasses" : [ "72", "32", "34", "6", "37", "39", "41", "46", "48", "50", "19", "30" ],
     "comment" : {
       "en" : "A propulsion system that integrates two or more engine types to optimize performance, efficiency, or redundancy."
     },
     "id" : "7",
     "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Aspect",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aspect"
+    },
+    "attributes" : [ "external" ],
+    "id" : "227"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#DieselCombustionUnit",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1592,8 +1831,8 @@
     "comment" : {
       "en" : "A power unit that generates mechanical or electrical energy by combusting diesel fuel. Often used to drive generators or directly coupled engines."
     },
-    "id" : "148",
-    "superClasses" : [ "50" ]
+    "id" : "162",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RotorSails",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1602,26 +1841,12 @@
       "IRI-based" : "RotorSails",
       "en" : "Rotor sails"
     },
-    "subClasses" : [ "8" ],
+    "subClasses" : [ "1" ],
     "comment" : {
       "en" : "A wind-assisted propulsion technology that uses rotating cylindrical sails (rotors) to create aerodynamic lift through the Magnus effect, reducing engine load and fuel consumption."
     },
-    "id" : "9",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem",
-    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "NonMotorizedPropulsionSystem",
-      "en" : "Non-motorized propulsion system"
-    },
-    "subClasses" : [ "48", "25", "19" ],
-    "comment" : {
-      "en" : "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."
-    },
-    "id" : "20",
-    "superClasses" : [ "95" ]
+    "id" : "2",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif/Photo",
     "baseIri" : "https://www.semanticdesktop.org/ontologies/2007/05/10/nexif",
@@ -1634,7 +1859,7 @@
       "en" : "A photo, an image captured using a camera, an EXIF Image File Directory."
     },
     "attributes" : [ "external" ],
-    "id" : "184"
+    "id" : "201"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CODOG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1646,8 +1871,17 @@
     "comment" : {
       "en" : "A combined propulsion system that uses either a diesel engine for efficient cruising or a gas turbine for high-speed operation."
     },
-    "id" : "45",
+    "id" : "30",
     "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Datatype"
+    },
+    "attributes" : [ "external" ],
+    "id" : "240"
   }, {
     "iri" : "https://schema.org/Organization",
     "baseIri" : "https://schema.org",
@@ -1660,8 +1894,17 @@
       "en" : "An organization such as a school, NGO, corporation, club, etc."
     },
     "attributes" : [ "external" ],
-    "id" : "157",
-    "superClasses" : [ "121" ]
+    "id" : "172",
+    "superClasses" : [ "132" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gMonth"
+    },
+    "attributes" : [ "external" ],
+    "id" : "245"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#WaterJet",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1673,8 +1916,8 @@
     "comment" : {
       "en" : "A jet propulsion technology that draws water into an intake and expels it at high velocity through a nozzle to generate thrust. Water jets are widely used for high-speed ferries, jet boats, and shallow-water applications."
     },
-    "id" : "100",
-    "superClasses" : [ "92" ]
+    "id" : "104",
+    "superClasses" : [ "94" ]
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#Geometry",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
@@ -1683,7 +1926,7 @@
       "IRI-based" : "Geometry"
     },
     "attributes" : [ "external" ],
-    "id" : "172"
+    "id" : "186"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CONAN",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1695,7 +1938,7 @@
     "comment" : {
       "en" : "An experimental propulsion system using two nuclear reactors for increased redundancy and sustained power output."
     },
-    "id" : "212",
+    "id" : "72",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionTechnology",
@@ -1705,12 +1948,12 @@
       "IRI-based" : "MusclePoweredPropulsionTechnology",
       "en" : "Muscle-powered propulsion technology"
     },
-    "subClasses" : [ "1" ],
+    "subClasses" : [ "4" ],
     "comment" : {
       "en" : "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."
     },
-    "id" : "2",
-    "superClasses" : [ "11" ]
+    "id" : "5",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#PredictedTrajectory",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1722,8 +1965,8 @@
     "comment" : {
       "en" : "A trajectory that is predicted based on the analysis of previous vessel trajectories."
     },
-    "id" : "136",
-    "superClasses" : [ "135" ]
+    "id" : "147",
+    "superClasses" : [ "146" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CONAG",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1735,7 +1978,7 @@
     "comment" : {
       "en" : "An experimental propulsion system combining a nuclear reactor with a gas turbine, typically used in advanced naval vessels."
     },
-    "id" : "35",
+    "id" : "46",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://schema.org/Person",
@@ -1749,8 +1992,8 @@
       "en" : "A person (alive, dead, undead, or fictional)."
     },
     "attributes" : [ "external" ],
-    "id" : "158",
-    "superClasses" : [ "121" ]
+    "id" : "173",
+    "superClasses" : [ "132" ]
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#TypicalLocation",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1762,7 +2005,16 @@
     "comment" : {
       "en" : "The typical location of a vessel that is calculated over a time interval."
     },
-    "id" : "161"
+    "id" : "176"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gYearMonth"
+    },
+    "attributes" : [ "external" ],
+    "id" : "277"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#RudderPropeller",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1774,8 +2026,45 @@
     "comment" : {
       "en" : "A screw propeller integrated with a steerable drive unit, enabling both propulsion and steering without a separate rudder. Common in azimuth thrusters for offshore vessels and ships needing high maneuverability."
     },
-    "id" : "112",
-    "superClasses" : [ "63" ]
+    "id" : "122",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/EnumeratedQuantity",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnumeratedQuantity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "282"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/json-ld11/#the-rdf-json-datatype",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JSON",
+      "undefined" : "JSON"
+    },
+    "comment" : {
+      "undefined" : "The datatype of RDF literals storing JSON content."
+    },
+    "attributes" : [ "external" ],
+    "id" : "211",
+    "superClasses" : [ "119" ]
   }, {
     "iri" : "http://www.vesselAI-project.eu/ontology#Place",
     "baseIri" : "http://www.vesselAI-project.eu/ontology",
@@ -1783,9 +2072,9 @@
     "label" : {
       "IRI-based" : "Place"
     },
-    "subClasses" : [ "4" ],
+    "subClasses" : [ "9" ],
     "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "10"
   }, {
     "iri" : "http://qudt.org/schema/qudt/QuantityValue",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -1794,7 +2083,7 @@
       "IRI-based" : "QuantityValue"
     },
     "attributes" : [ "external" ],
-    "id" : "265"
+    "id" : "287"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#CONAS",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -1806,8 +2095,17 @@
     "comment" : {
       "en" : "A combined propulsion system that uses a nuclear reactor to generate steam, which drives a steam turbine for propulsion."
     },
-    "id" : "37",
+    "id" : "48",
     "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gMonthDay"
+    },
+    "attributes" : [ "external" ],
+    "id" : "290"
   } ],
   "property" : [ {
     "id" : "0",
@@ -1816,7 +2114,10 @@
     "id" : "3",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "24",
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
@@ -1825,13 +2126,13 @@
     "id" : "29",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "30",
+    "id" : "31",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "32",
+    "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "34",
+    "id" : "35",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "36",
@@ -1843,29 +2144,26 @@
     "id" : "40",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "41",
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "47",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "54",
-    "type" : "owl:objectProperty"
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "56",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "64",
-    "type" : "rdfs:SubClassOf"
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "66",
     "type" : "rdfs:SubClassOf"
@@ -1876,179 +2174,155 @@
     "id" : "69",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "75",
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "84",
+    "id" : "86",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "85",
+    "id" : "87",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "88",
+    "id" : "90",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "94",
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
     "type" : "owl:objectProperty"
   }, {
     "id" : "101",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "106",
+    "id" : "105",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "107",
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "117",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "119",
+    "id" : "127",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "120",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "124",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "125",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "126",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "128",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "122",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "130",
+    "id" : "129",
     "type" : "owl:objectProperty"
   }, {
     "id" : "131",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "132",
+    "id" : "134",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "137",
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
     "type" : "owl:objectProperty"
   }, {
     "id" : "138",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "140",
-    "type" : "owl:allValuesFrom"
+    "id" : "133",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "141",
-    "type" : "owl:someValuesFrom"
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "144",
-    "type" : "owl:allValuesFrom"
-  }, {
-    "id" : "145",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "146",
+    "id" : "148",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "150",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "151",
+    "id" : "149",
     "type" : "owl:objectProperty"
   }, {
     "id" : "152",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "153",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "154",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "155",
-    "type" : "owl:disjointWith"
+    "id" : "157",
+    "type" : "owl:allValuesFrom"
   }, {
-    "id" : "156",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "159",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "160",
+    "id" : "158",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "162",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "163",
-    "type" : "owl:allValuesFrom"
+    "id" : "159",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "164",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "165",
     "type" : "owl:objectProperty"
   }, {
     "id" : "166",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "168",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "169",
     "type" : "owl:disjointWith"
   }, {
     "id" : "170",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "171",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "127",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "173",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "174",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "175",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "176",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "177",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "178",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "179",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "180",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "181",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "182",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "183",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "186",
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "185",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "187",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "188",
     "type" : "rdfs:SubClassOf"
@@ -2056,29 +2330,41 @@
     "id" : "189",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "196",
+    "id" : "190",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "198",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "199",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "200",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "201",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "202",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "203",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "205",
+    "id" : "204",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "206",
     "type" : "rdfs:SubClassOf"
@@ -2087,22 +2373,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "208",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "209",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "210",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "211",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "213",
+    "id" : "212",
     "type" : "owl:objectProperty"
   }, {
     "id" : "214",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "215",
     "type" : "rdfs:SubClassOf"
@@ -2119,9 +2396,6 @@
     "id" : "219",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "220",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "221",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -2135,25 +2409,16 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "225",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "226",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "227",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "228",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "143",
+    "id" : "229",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "229",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "230",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "231",
     "type" : "rdfs:SubClassOf"
@@ -2182,53 +2447,44 @@
     "id" : "239",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "240",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "241",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "242",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "243",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "244",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "245",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "246",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "247",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "248",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "249",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "250",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "185",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "147",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "251",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "252",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "253",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "254",
     "type" : "rdfs:SubClassOf"
@@ -2258,24 +2514,90 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "263",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "264",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "266",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "267",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "268",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "269",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "271",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "272",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "273",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "289",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -2289,10 +2611,15 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
-    "range" : "20",
-    "domain" : "25",
+    "range" : "10",
+    "domain" : "9",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "id" : "8"
+  }, {
+    "range" : "7",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#drives",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -2308,25 +2635,25 @@
     "attributes" : [ "object" ],
     "id" : "26"
   }, {
-    "range" : "20",
-    "domain" : "19",
+    "range" : "7",
+    "domain" : "30",
     "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "7",
-    "domain" : "31",
+    "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
+    "id" : "31"
   }, {
     "range" : "7",
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "32"
+    "id" : "33"
   }, {
     "range" : "7",
-    "domain" : "35",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
+    "id" : "35"
   }, {
     "range" : "7",
     "domain" : "37",
@@ -2339,13 +2666,13 @@
     "id" : "38"
   }, {
     "range" : "7",
-    "domain" : "18",
+    "domain" : "41",
     "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "43",
+    "range" : "44",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2358,117 +2685,117 @@
       "IRI-based" : "subject",
       "undefined" : "subject"
     },
-    "domain" : "42",
+    "domain" : "43",
     "comment" : {
       "undefined" : "The subject of the subject RDF statement."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "41"
+    "id" : "42"
   }, {
     "range" : "7",
-    "domain" : "45",
+    "domain" : "46",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "44"
+    "id" : "45"
   }, {
-    "range" : "9",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "46"
-  }, {
-    "range" : "20",
+    "range" : "7",
     "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
+    "range" : "7",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
     "iri" : "http://qudt.org/schema/qudt/unit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "55",
+    "range" : "57",
     "label" : {
       "IRI-based" : "unit"
     },
-    "domain" : "55",
+    "domain" : "57",
     "attributes" : [ "external", "object" ],
-    "id" : "54"
+    "id" : "56"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasNumberOfBlades",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "58",
+    "range" : "60",
     "label" : {
       "IRI-based" : "hasNumberOfBlades",
       "en" : "has number of blades"
     },
-    "domain" : "57",
+    "domain" : "59",
     "comment" : {
       "en" : "Relates a bladed propulsor to its number of blades."
     },
     "attributes" : [ "datatype" ],
-    "id" : "56"
+    "id" : "58"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasLength",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasLength",
       "en" : "has length"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its length. Indicates the overall length of the vessel, typically measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasLength. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "61"
   }, {
-    "range" : "7",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "64"
-  }, {
-    "range" : "7",
+    "range" : "44",
     "domain" : "67",
     "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
-    "range" : "7",
-    "domain" : "6",
+    "range" : "44",
+    "domain" : "63",
     "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
-    "range" : "7",
+    "range" : "44",
     "domain" : "70",
     "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
+    "range" : "7",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasBuiltDate",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "76",
+    "range" : "78",
     "label" : {
       "IRI-based" : "hasBuiltDate",
       "en" : "has built date"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to the year it was build. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasBuiltDate. However, we specify the datatype."
     },
     "attributes" : [ "datatype" ],
-    "id" : "75"
+    "id" : "77"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasGrossTn",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasGrossTn",
       "en" : "has gross tn"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its gross tonnage (GT). Indicates the gross tonnage (GT) of the vessel, a dimensionless index defined by the IMO Tonnage Convention based on the ship's enclosed volume. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasGrossTn. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "84"
+    "id" : "86"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "43",
+    "range" : "44",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2481,12 +2808,12 @@
       "IRI-based" : "first",
       "undefined" : "first"
     },
-    "domain" : "61",
+    "domain" : "63",
     "comment" : {
       "undefined" : "The first item in the subject RDF list."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "85"
+    "id" : "87"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#powers",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -2495,31 +2822,51 @@
       "IRI-based" : "powers",
       "en" : "powers"
     },
-    "domain" : "50",
+    "domain" : "52",
     "comment" : {
       "en" : "Relates a power generation unit to the engine it powers."
     },
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "90"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "11",
+    "range" : "12",
     "label" : {
       "IRI-based" : "usesPropulsionTechnology",
       "en" : "uses propulsion technology"
     },
-    "domain" : "95",
+    "domain" : "21",
     "comment" : {
       "en" : "Relates a propulsion system to the propulsion technology it uses to create thrust."
     },
     "attributes" : [ "object" ],
-    "id" : "94"
+    "id" : "95"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/oracleSQLName",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "oracleSQLName"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "wasDerivedFrom"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "101"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#poweredBy",
-    "inverse" : "88",
+    "inverse" : "90",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "50",
+    "range" : "52",
     "label" : {
       "IRI-based" : "poweredBy",
       "en" : "powered by"
@@ -2529,11 +2876,11 @@
       "en" : "Relates an engine to the power generation unit it is powered by."
     },
     "attributes" : [ "object" ],
-    "id" : "101"
+    "id" : "105"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "43",
+    "range" : "44",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2546,83 +2893,93 @@
       "IRI-based" : "object",
       "undefined" : "object"
     },
-    "domain" : "42",
+    "domain" : "43",
     "comment" : {
       "undefined" : "The object of the subject RDF statement."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "106"
+    "id" : "108"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHIN",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "108",
+    "range" : "113",
     "label" : {
       "IRI-based" : "hasHIN",
       "en" : "has HIN"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel with its HIN."
     },
     "attributes" : [ "datatype" ],
-    "id" : "107"
+    "id" : "112"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/ansiSQLName",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "ansiSQLName"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "117"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageTrajectorySpeedOverGround",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "118",
+    "range" : "128",
     "label" : {
       "IRI-based" : "hasAverageTrajectorySpeedOverGround",
       "en" : "has average trajectory speed over ground"
     },
-    "domain" : "77",
+    "domain" : "79",
     "comment" : {
       "en" : "Relates a trajtectory to the average speed over ground of the vessel during that trip, typically measured in knots (kn)."
     },
     "attributes" : [ "object" ],
-    "id" : "117"
+    "id" : "127"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDeadweight",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasDeadweight",
       "en" : "has deadweight"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its deadweight. Deadweight tonnage (DWT) represents the maximum weight of cargo, fuel, crew, provisions, and other supplies the vessel can carry, expressed in metric tons. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasDeadWeight. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "119"
+    "id" : "129"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasOwner",
-    "inverse" : "122",
+    "inverse" : "133",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "121",
+    "range" : "132",
     "label" : {
       "IRI-based" : "hasOwner",
       "en" : "has owner"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its owner"
     },
     "attributes" : [ "object" ],
-    "id" : "120"
+    "id" : "131"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isSonarSignatureOf",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "53",
+    "range" : "55",
     "label" : {
       "IRI-based" : "isSonarSignatureOf",
       "en" : "is sonar signature of"
     },
-    "domain" : "123",
+    "domain" : "130",
     "comment" : {
       "en" : "Relates a sonar signature audio file to its vessel."
     },
     "attributes" : [ "object" ],
-    "id" : "124"
+    "id" : "134"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#drivenBy",
     "inverse" : "26",
@@ -2632,70 +2989,70 @@
       "IRI-based" : "drivenBy",
       "en" : "driven by"
     },
-    "domain" : "109",
+    "domain" : "114",
     "comment" : {
       "en" : "Relates a motorized propulsion technology with the engine it is driven by."
     },
     "attributes" : [ "object" ],
-    "id" : "125"
+    "id" : "135"
   }, {
     "iri" : "http://www.vesselAI-project.eu/ontology#hasGeometry",
     "baseIri" : "http://www.vesselAI-project.eu/ontology",
-    "range" : "55",
+    "range" : "57",
     "label" : {
       "IRI-based" : "hasGeometry"
     },
-    "domain" : "55",
-    "subproperty" : [ "127" ],
+    "domain" : "57",
+    "subproperty" : [ "137" ],
     "attributes" : [ "external", "object" ],
-    "id" : "126"
+    "id" : "136"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
-    "inverse" : "94",
+    "inverse" : "95",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "95",
+    "range" : "21",
     "label" : {
       "IRI-based" : "usedByPropulsionSystem",
       "en" : "used by propulsion system"
     },
-    "domain" : "11",
+    "domain" : "12",
     "comment" : {
       "en" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
     },
     "attributes" : [ "object" ],
-    "id" : "128"
+    "id" : "138"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isOwnerOf",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "53",
+    "range" : "55",
     "label" : {
       "IRI-based" : "isOwnerOf",
       "en" : "is owner of"
     },
-    "domain" : "121",
+    "domain" : "132",
     "comment" : {
       "en" : "Relates an owner to its vessel."
     },
     "attributes" : [ "object" ],
-    "id" : "122"
+    "id" : "133"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasAverageSpeedOverGround",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasAverageSpeedOverGround",
       "en" : "has average speed over ground"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel with its overall average speed over ground, typically measured in knots (kn)."
     },
     "attributes" : [ "object" ],
-    "id" : "130"
+    "id" : "140"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "43",
+    "range" : "44",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2708,16 +3065,16 @@
       "IRI-based" : "value",
       "undefined" : "value"
     },
-    "domain" : "43",
+    "domain" : "44",
     "comment" : {
       "undefined" : "Idiomatic property used for structured values."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "131"
+    "id" : "142"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "61",
+    "range" : "63",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2730,17 +3087,17 @@
       "IRI-based" : "rest",
       "undefined" : "rest"
     },
-    "domain" : "61",
+    "domain" : "63",
     "comment" : {
       "undefined" : "The rest of the subject RDF list after the first item."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "132"
+    "id" : "144"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasAntiCavitationMechanism",
-    "inverse" : "138",
+    "inverse" : "149",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "93",
+    "range" : "96",
     "label" : {
       "IRI-based" : "hasAntiCavitationMechanism",
       "en" : "has anti-cavitation mechanism"
@@ -2750,7 +3107,7 @@
       "en" : "Relates a motorized propulsion technology to its anti-cavitation mechanism that reduces its cavitation."
     },
     "attributes" : [ "object" ],
-    "id" : "137"
+    "id" : "148"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isAntiCavitationMechanismFor",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -2759,557 +3116,597 @@
       "IRI-based" : "isAntiCavitationMechanismFor",
       "en" : "is anti-cavitation mechanism for"
     },
-    "domain" : "93",
+    "domain" : "96",
     "comment" : {
       "en" : "Relates an anti-cavitation mechanism to the motorized propulsion technology it reduces the cavitation of."
     },
     "attributes" : [ "object" ],
-    "id" : "138"
+    "id" : "149"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "10",
+    "range" : "11",
     "label" : {
       "IRI-based" : "usesPropulsionTechnology",
       "en" : "uses propulsion technology"
     },
-    "domain" : "25",
+    "domain" : "116",
     "comment" : {
       "en" : "Relates a propulsion system to the propulsion technology it uses to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "140"
+    "id" : "152"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy",
-    "inverse" : "143",
+    "inverse" : "156",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "109",
+    "range" : "114",
     "label" : {
       "IRI-based" : "propelledBy",
       "en" : "propelled by"
     },
-    "domain" : "142",
+    "domain" : "155",
     "comment" : {
       "en" : "Relates a vessel to the propulsion system it is propelled by."
     },
     "attributes" : [ "someValues", "object" ],
-    "id" : "141"
+    "id" : "154"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
-    "inverse" : "94",
+    "inverse" : "95",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "25",
+    "range" : "116",
     "label" : {
       "IRI-based" : "usedByPropulsionSystem",
       "en" : "used by propulsion system"
     },
-    "domain" : "10",
+    "domain" : "11",
     "comment" : {
       "en" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "144"
+    "id" : "157"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasActualHeight",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasActualHeight",
       "en" : "has actual height"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its actual height. Indicates the actual current height of the vessel, e.g., considering load or structural changes, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasActualHeight. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "145"
+    "id" : "158"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDescription",
-    "inverse" : "147",
+    "inverse" : "160",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "82",
+    "range" : "84",
     "label" : {
       "IRI-based" : "hasDescription",
       "en" : "has description"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its text document description."
     },
     "attributes" : [ "object" ],
-    "id" : "146"
+    "id" : "159"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDiameter",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "139",
+    "range" : "150",
     "label" : {
       "IRI-based" : "hasDiameter",
       "en" : "has diameter"
     },
-    "domain" : "57",
+    "domain" : "59",
     "comment" : {
       "en" : "Relates a bladed propulsor to its diameter."
     },
     "attributes" : [ "object" ],
-    "id" : "150"
+    "id" : "164"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionA",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasDimensionA",
       "en" : "has dimension A"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its dimension A, i. e. the distance from the GPS antenna to the bow."
     },
     "attributes" : [ "object" ],
-    "id" : "151"
+    "id" : "165"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/vbName",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "vbName"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "166"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionB",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasDimensionB",
       "en" : "has dimension B"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its dimension B, i. e. the distance from the GPS antenna to the stern."
     },
     "attributes" : [ "object" ],
-    "id" : "152"
+    "id" : "167"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionC",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasDimensionC",
       "en" : "has dimension C"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its dimension C, i. e. the distance from the GPS antenna to the port side."
     },
     "attributes" : [ "object" ],
-    "id" : "153"
+    "id" : "168"
   }, {
-    "range" : "97",
-    "domain" : "111",
+    "range" : "99",
+    "domain" : "121",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "154"
+    "id" : "169"
   }, {
-    "range" : "10",
-    "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "155"
-  }, {
-    "range" : "142",
+    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
+    "inverse" : "95",
+    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "usedByPropulsionSystem",
+      "en" : "used by propulsion system"
+    },
     "domain" : "97",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "156"
+    "comment" : {
+      "en" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "170"
   }, {
-    "range" : "25",
-    "domain" : "48",
+    "range" : "155",
+    "domain" : "99",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "159"
+    "id" : "171"
+  }, {
+    "range" : "116",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalLocation",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "161",
+    "range" : "176",
     "label" : {
       "IRI-based" : "hasTypicalLocation",
       "en" : "has typical location"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Related a vessel with its typical location."
     },
     "attributes" : [ "object" ],
-    "id" : "160"
+    "id" : "175"
   }, {
-    "range" : "10",
-    "domain" : "2",
+    "range" : "97",
+    "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "162"
+    "id" : "177"
   }, {
-    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
-    "inverse" : "94",
-    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "48",
-    "label" : {
-      "IRI-based" : "usedByPropulsionSystem",
-      "en" : "used by propulsion system"
-    },
-    "domain" : "96",
-    "comment" : {
-      "en" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
-    },
-    "attributes" : [ "allValues", "object" ],
-    "id" : "163"
+    "range" : "11",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "96",
+    "range" : "97",
     "label" : {
       "IRI-based" : "usesPropulsionTechnology",
       "en" : "uses propulsion technology"
     },
-    "domain" : "48",
+    "domain" : "115",
     "comment" : {
       "en" : "Relates a propulsion system to the propulsion technology it uses to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "164"
+    "id" : "179"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDimensionD",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasDimensionD",
       "en" : "has dimension D"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its dimension D, i. e. the distance from the GPS antenna to the starboard side."
     },
     "attributes" : [ "object" ],
-    "id" : "165"
+    "id" : "180"
   }, {
-    "range" : "25",
-    "domain" : "19",
+    "range" : "115",
+    "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "166"
+    "id" : "181"
+  }, {
+    "range" : "11",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
-    "inverse" : "94",
+    "inverse" : "95",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "19",
+    "range" : "20",
     "label" : {
       "IRI-based" : "usedByPropulsionSystem",
       "en" : "used by propulsion system"
     },
-    "domain" : "2",
+    "domain" : "5",
     "comment" : {
       "en" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "168"
+    "id" : "184"
   }, {
-    "range" : "96",
-    "domain" : "2",
+    "range" : "91",
+    "domain" : "18",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "169"
-  }, {
-    "range" : "57",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "170"
-  }, {
-    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight",
-    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
-    "label" : {
-      "IRI-based" : "hasHeight",
-      "en" : "has height"
-    },
-    "domain" : "53",
-    "comment" : {
-      "en" : "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."
-    },
-    "attributes" : [ "object" ],
-    "id" : "171"
+    "id" : "185"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasTypicalGeometry",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "172",
+    "range" : "186",
     "label" : {
       "IRI-based" : "hasTypicalGeometry",
       "en" : "has typical geometry"
     },
-    "superproperty" : [ "126" ],
-    "domain" : "161",
+    "superproperty" : [ "136" ],
+    "domain" : "176",
     "comment" : {
       "en" : "Relates a typical location of a vessel with its geometry."
     },
     "attributes" : [ "object" ],
-    "id" : "127"
+    "id" : "137"
   }, {
-    "range" : "87",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "173"
+    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeight",
+    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasHeight",
+      "en" : "has height"
+    },
+    "domain" : "55",
+    "comment" : {
+      "en" : "Relates a vessel to its height. Indicates the overall height of the vessel, generally from the keel to the highest point, expressed in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeight. However, we allow the expression as a quantity with numeric value and a unit."
+    },
+    "attributes" : [ "object" ],
+    "id" : "187"
   }, {
-    "range" : "57",
-    "domain" : "63",
+    "range" : "59",
+    "domain" : "83",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "174"
+    "id" : "188"
+  }, {
+    "range" : "59",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasSonarSignature",
-    "inverse" : "124",
+    "inverse" : "134",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "123",
+    "range" : "130",
     "label" : {
       "IRI-based" : "hasSonarSignature",
       "en" : "has sonar signature"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its sonar signature audio file."
     },
     "attributes" : [ "object" ],
-    "id" : "175"
+    "id" : "190"
   }, {
     "iri" : "http://qudt.org/schema/qudt/numericValue",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "133",
+    "range" : "192",
     "label" : {
       "IRI-based" : "numericValue"
     },
-    "domain" : "55",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "176"
-  }, {
-    "range" : "89",
-    "domain" : "90",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "177"
-  }, {
-    "range" : "27",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "178"
-  }, {
-    "range" : "57",
-    "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "179"
-  }, {
-    "range" : "89",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "180"
-  }, {
-    "range" : "71",
-    "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "181"
-  }, {
-    "range" : "71",
-    "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "182"
-  }, {
-    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto",
-    "inverse" : "185",
-    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "184",
-    "label" : {
-      "IRI-based" : "hasPhoto",
-      "en" : "has photo"
-    },
-    "domain" : "53",
-    "comment" : {
-      "en" : "Relates a vessel to its photo."
-    },
-    "attributes" : [ "object" ],
-    "id" : "183"
+    "domain" : "57",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "191"
   }, {
     "range" : "27",
     "domain" : "7",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "186"
+    "id" : "193"
   }, {
     "range" : "27",
-    "domain" : "71",
+    "domain" : "73",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "187"
+    "id" : "194"
   }, {
-    "range" : "71",
-    "domain" : "72",
+    "range" : "91",
+    "domain" : "92",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "188"
+    "id" : "195"
   }, {
-    "range" : "21",
-    "domain" : "23",
+    "range" : "27",
+    "domain" : "80",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "189"
+    "id" : "196"
+  }, {
+    "range" : "73",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "22",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasPhoto",
+    "inverse" : "202",
+    "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
+    "range" : "201",
+    "label" : {
+      "IRI-based" : "hasPhoto",
+      "en" : "has photo"
+    },
+    "domain" : "55",
+    "comment" : {
+      "en" : "Relates a vessel to its photo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "200"
+  }, {
+    "range" : "73",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "73",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/protocolBuffersName",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "protocolBuffersName"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "22",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "11",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/length",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "209",
+    "label" : {
+      "IRI-based" : "length"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "208"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasDraught",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "197",
+    "range" : "213",
     "label" : {
       "IRI-based" : "hasDraught",
       "en" : "has draught"
     },
-    "domain" : "79",
+    "domain" : "81",
     "comment" : {
       "en" : "Relates a vessel to its draught, i.e., the vertical distance between the waterline and the lowest point of the hull (typically the keel), typically measured in meters (m)."
     },
     "attributes" : [ "object" ],
-    "id" : "196"
-  }, {
-    "range" : "21",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "198"
-  }, {
-    "range" : "10",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "199"
-  }, {
-    "range" : "10",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "200"
-  }, {
-    "range" : "10",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "201"
-  }, {
-    "range" : "10",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "202"
-  }, {
-    "range" : "10",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "203"
-  }, {
-    "range" : "10",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "205"
-  }, {
-    "range" : "10",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "206"
-  }, {
-    "range" : "22",
-    "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "207"
-  }, {
-    "range" : "135",
-    "domain" : "136",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "208"
+    "id" : "212"
   }, {
     "range" : "11",
     "domain" : "2",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "209"
+    "id" : "214"
   }, {
-    "range" : "22",
-    "domain" : "21",
+    "range" : "11",
+    "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "210"
+    "id" : "215"
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "65",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "65",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
   }, {
     "range" : "28",
-    "domain" : "57",
+    "domain" : "59",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "211"
+    "id" : "223"
+  }, {
+    "range" : "28",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "65",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasHeading",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasHeading",
       "en" : "has heading"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its heading. Indicates the orientation of the vessel's bow relative to true or magnetic north, expressed as an angle in degrees. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasHeading. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "213"
+    "id" : "228"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasSpeedOverGround",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasSpeedOverGround",
       "en" : "has speed over ground"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its speed over ground (SOG). SOG indicates the speed of a vessel relative to the ground surface. Not to be confused with speed through water. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasSpeedOverGround. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "214"
+    "id" : "229"
   }, {
-    "range" : "28",
-    "domain" : "92",
+    "iri" : "http://qudt.org/schema/qudt/cName",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "cName"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "65",
+    "domain" : "124",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "215"
+    "id" : "231"
   }, {
-    "range" : "63",
-    "domain" : "116",
+    "range" : "65",
+    "domain" : "123",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "216"
+    "id" : "232"
   }, {
-    "range" : "63",
-    "domain" : "114",
+    "range" : "83",
+    "domain" : "120",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "217"
+    "id" : "233"
   }, {
-    "range" : "63",
-    "domain" : "113",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "218"
-  }, {
-    "range" : "63",
-    "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "219"
-  }, {
-    "range" : "63",
-    "domain" : "115",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "220"
-  }, {
-    "range" : "81",
-    "domain" : "110",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "221"
-  }, {
-    "range" : "95",
+    "range" : "21",
     "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "222"
+    "id" : "234"
   }, {
-    "range" : "63",
-    "domain" : "112",
+    "range" : "65",
+    "domain" : "122",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "223"
+    "id" : "235"
   }, {
-    "range" : "81",
-    "domain" : "80",
+    "range" : "83",
+    "domain" : "82",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "224"
+    "id" : "236"
+  }, {
+    "range" : "21",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "range" : "80",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "21",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "21",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasWidth",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasWidth",
       "en" : "has width"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its width. Indicates the overall width (beam) of the vessel, measured in meters. Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasWidth. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "225"
+    "id" : "242"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/bits",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "bits"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "243"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "129",
+    "range" : "139",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3322,30 +3719,40 @@
       "IRI-based" : "type",
       "undefined" : "type"
     },
-    "domain" : "43",
+    "domain" : "44",
     "comment" : {
       "undefined" : "The subject is an instance of a class."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "226"
+    "id" : "244"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#computedOverTimeInterval",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "134",
+    "range" : "145",
     "label" : {
       "IRI-based" : "computedOverTimeInterval",
       "en" : "computed over time interval"
     },
-    "domain" : "161",
+    "domain" : "176",
     "comment" : {
       "en" : "Relatesa typical location with the time interval it was computed over."
     },
     "attributes" : [ "object" ],
-    "id" : "227"
+    "id" : "246"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/pythonName",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "pythonName"
+    },
+    "domain" : "57",
+    "attributes" : [ "external", "object" ],
+    "id" : "247"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "43",
+    "range" : "44",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3358,116 +3765,121 @@
       "IRI-based" : "predicate",
       "undefined" : "predicate"
     },
-    "domain" : "42",
+    "domain" : "43",
     "comment" : {
       "undefined" : "The predicate of the subject RDF statement."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "228"
+    "id" : "248"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propells",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "53",
+    "range" : "55",
     "label" : {
       "IRI-based" : "propells",
       "en" : "propells"
     },
-    "domain" : "95",
+    "domain" : "21",
     "comment" : {
       "en" : "Relates a propulsion system to the vessel it propells."
     },
     "attributes" : [ "object" ],
-    "id" : "143"
+    "id" : "156"
   }, {
-    "range" : "78",
-    "domain" : "86",
+    "range" : "107",
+    "domain" : "110",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "229"
+    "id" : "249"
   }, {
-    "range" : "103",
-    "domain" : "102",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "230"
-  }, {
-    "range" : "95",
+    "range" : "107",
     "domain" : "109",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "231"
+    "id" : "250"
   }, {
-    "range" : "92",
-    "domain" : "91",
+    "range" : "107",
+    "domain" : "106",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "232"
+    "id" : "251"
   }, {
-    "range" : "92",
-    "domain" : "100",
+    "range" : "89",
+    "domain" : "55",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "233"
+    "id" : "252"
   }, {
-    "range" : "103",
-    "domain" : "105",
+    "range" : "59",
+    "domain" : "65",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "234"
+    "id" : "253"
   }, {
-    "range" : "103",
+    "range" : "94",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "94",
     "domain" : "104",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "235"
+    "id" : "255"
   }, {
-    "range" : "43",
-    "domain" : "99",
+    "range" : "119",
+    "domain" : "118",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "236"
+    "id" : "256"
   }, {
-    "range" : "43",
-    "domain" : "61",
+    "range" : "119",
+    "domain" : "211",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "237"
+    "id" : "257"
   }, {
-    "range" : "7",
-    "domain" : "212",
+    "range" : "44",
+    "domain" : "43",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "238"
+    "id" : "258"
   }, {
-    "range" : "43",
-    "domain" : "204",
+    "range" : "119",
+    "domain" : "199",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "239"
+    "id" : "259"
   }, {
-    "range" : "190",
-    "domain" : "194",
+    "range" : "97",
+    "domain" : "24",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "240"
+    "id" : "260"
   }, {
-    "range" : "43",
-    "domain" : "42",
+    "range" : "119",
+    "domain" : "161",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "241"
+    "id" : "261"
   }, {
-    "range" : "190",
-    "domain" : "195",
+    "range" : "119",
+    "domain" : "210",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "242"
+    "id" : "262"
   }, {
-    "range" : "19",
-    "domain" : "109",
+    "range" : "116",
+    "domain" : "114",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "243"
+    "id" : "263"
   }, {
-    "range" : "25",
-    "domain" : "109",
+    "range" : "115",
+    "domain" : "114",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "244"
+    "id" : "264"
   }, {
-    "range" : "96",
+    "range" : "11",
     "domain" : "28",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "245"
+    "id" : "265"
+  }, {
+    "range" : "5",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usedByPropulsionSystem",
-    "inverse" : "94",
+    "inverse" : "95",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "109",
+    "range" : "114",
     "label" : {
       "IRI-based" : "usedByPropulsionSystem",
       "en" : "used by propulsion system"
@@ -3477,69 +3889,59 @@
       "en" : "Relates a propulsion technology to the propulsion system it is used by to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "246"
+    "id" : "267"
   }, {
-    "range" : "2",
+    "range" : "97",
     "domain" : "28",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "247"
-  }, {
-    "range" : "10",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "248"
+    "id" : "268"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "2",
+    "range" : "5",
     "label" : {
       "IRI-based" : "usesPropulsionTechnology",
       "en" : "uses propulsion technology"
     },
-    "domain" : "19",
+    "domain" : "20",
     "comment" : {
       "en" : "Relates a propulsion system to the propulsion technology it uses to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "249"
+    "id" : "269"
   }, {
-    "range" : "48",
-    "domain" : "19",
+    "range" : "116",
+    "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "250"
+    "id" : "270"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isPhotoOf",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "53",
+    "range" : "55",
     "label" : {
       "IRI-based" : "isPhotoOf",
       "en" : "is photo of"
     },
-    "domain" : "184",
+    "domain" : "201",
     "comment" : {
       "en" : "Relates a photo to its vessel."
     },
     "attributes" : [ "object" ],
-    "id" : "185"
+    "id" : "202"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#isDescriptionOf",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "53",
+    "range" : "55",
     "label" : {
       "IRI-based" : "isDescriptionOf",
       "en" : "is description of"
     },
-    "domain" : "82",
+    "domain" : "84",
     "comment" : {
       "en" : "Relates a text document description to a vessel"
     },
     "attributes" : [ "object" ],
-    "id" : "147"
-  }, {
-    "range" : "48",
-    "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "251"
+    "id" : "160"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#usesPropulsionTechnology",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
@@ -3548,115 +3950,120 @@
       "IRI-based" : "usesPropulsionTechnology",
       "en" : "uses propulsion technology"
     },
-    "domain" : "109",
+    "domain" : "114",
     "comment" : {
       "en" : "Relates a propulsion system to the propulsion technology it uses to create thrust."
     },
     "attributes" : [ "allValues", "object" ],
-    "id" : "252"
+    "id" : "271"
+  }, {
+    "range" : "20",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#hasCourseOverGround",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "60",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasCourseOverGround",
       "en" : "has course over ground"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to its course over ground. Indicates the actual course of a vessel over the ground, given as an angle relative to true north (in degrees). Note: This property is semantically the same as http://www.vesselAI-project.eu/ontology#hasCourseOverGround. However, we allow the expression as a quantity with numeric value and a unit."
     },
     "attributes" : [ "object" ],
-    "id" : "253"
+    "id" : "273"
   }, {
-    "range" : "190",
-    "domain" : "191",
+    "range" : "132",
+    "domain" : "172",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "254"
+    "id" : "274"
   }, {
-    "range" : "96",
-    "domain" : "23",
+    "range" : "52",
+    "domain" : "53",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "255"
+    "id" : "275"
   }, {
-    "range" : "190",
-    "domain" : "193",
+    "range" : "97",
+    "domain" : "92",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "256"
+    "id" : "276"
   }, {
-    "range" : "190",
-    "domain" : "192",
+    "range" : "132",
+    "domain" : "173",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "257"
+    "id" : "278"
   }, {
-    "range" : "121",
-    "domain" : "157",
+    "range" : "52",
+    "domain" : "163",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "258"
+    "id" : "279"
   }, {
-    "range" : "50",
+    "range" : "52",
+    "domain" : "162",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "range" : "52",
     "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "259"
+    "id" : "281"
   }, {
-    "range" : "96",
-    "domain" : "90",
+    "range" : "52",
+    "domain" : "85",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "260"
+    "id" : "283"
   }, {
-    "range" : "121",
-    "domain" : "158",
+    "range" : "12",
+    "domain" : "97",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "261"
+    "id" : "284"
   }, {
-    "range" : "50",
-    "domain" : "49",
+    "range" : "12",
+    "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "262"
-  }, {
-    "range" : "50",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "263"
+    "id" : "285"
   }, {
     "iri" : "https://burbachs.github.io/AISHIPOntology/AISHIP#propelledBy",
-    "inverse" : "143",
+    "inverse" : "156",
     "baseIri" : "https://burbachs.github.io/AISHIPOntology/AISHIP",
-    "range" : "95",
+    "range" : "21",
     "label" : {
       "IRI-based" : "propelledBy",
       "en" : "propelled by"
     },
-    "domain" : "53",
+    "domain" : "55",
     "comment" : {
       "en" : "Relates a vessel to the propulsion system it is propelled by."
     },
     "attributes" : [ "object" ],
-    "id" : "264"
+    "id" : "286"
   }, {
-    "range" : "50",
-    "domain" : "149",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "266"
-  }, {
-    "range" : "11",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "267"
-  }, {
-    "range" : "11",
+    "range" : "12",
     "domain" : "28",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "268"
+    "id" : "288"
   }, {
-    "range" : "50",
-    "domain" : "148",
+    "range" : "23",
+    "domain" : "91",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "269"
+    "id" : "289"
   }, {
-    "range" : "11",
-    "domain" : "96",
+    "range" : "146",
+    "domain" : "147",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "270"
+    "id" : "291"
+  }, {
+    "range" : "12",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "292"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
   } ]
 }
