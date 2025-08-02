@@ -63,10 +63,31 @@
         <Literal xml:lang="en">AISHIP is an ontology designed to enable semantic integration and enrichment of heterogeneous maritime data. It extends the VesselAI ontology with enhanced vessel characteristics, detailed propulsion systems, extended trajectory modeling, and multimodal vessel representations.</Literal>
     </Annotation>
     <Declaration>
+        <Class abbreviatedIRI="geo:Geometry"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="nfo:Audio"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="nfo:TextDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vai:Place"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vai:SyntheticTrajectory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vai:Trajectory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vai:TrajectoryPart"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vai:Vessel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:Interval"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:Person"/>
@@ -175,9 +196,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MusclePoweredPropulsionTechnology"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NonMotorizedPropulsionSystem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NonPistonEngine"/>
@@ -310,6 +328,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="qudt:unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="vai:hasGeometry"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#computedOverTimeInterval"/>
@@ -456,6 +477,9 @@
         <AnnotationProperty abbreviatedIRI="dct:bibliographicCitation"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="bibo:doi"/>
     </Declaration>
     <Declaration>
@@ -468,37 +492,331 @@
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="vai:hasGeometry"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="vai:SyntheticTrajectory"/>
-    </Declaration>
-    <Declaration>
-        <Datatype abbreviatedIRI="xsd:date"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dct:license"/>
-    </Declaration>
-    <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="vai:Trajectory"/>
+        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#graphName"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="time:Interval"/>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#QUDT"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="vai:TrajectoryPart"/>
+        <Class IRI="http://www.linkedmodel.org/schema/vaem#CatalogEntry"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="vai:Place"/>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/dtype#GMD_DTYPE"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="vai:Vessel"/>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ConstraintsGraph"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="geo:Geometry"/>
+        <NamedIndividual abbreviatedIRI="qudt:BitEncoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:ISO8601-UTCDateTime-BasicFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="qudt:protocolBuffersName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="qudt:vbName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#GMD_VAEM"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:CT_FINITE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:ScaleType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:CT_COUNTABLY-INFINITE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ProxyGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ViewGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#SchemaGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:BigEndian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:TotallyOrdered"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Container"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#TransformsGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#CurationGraph"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:predicate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#RulesGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:Enumeration"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#graphTitle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:CardinalityType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:OctetEncoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#VocabularyGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Category:Units_of_angle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Class"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:BooleanEncoding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:first"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/dtype"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:hasCitation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="xsd:gMonth"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:StringEncodingType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="xsd:gMonthDay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:EndianType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="qudt:oracleSQLName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="qudt:cName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://qudt.org/vocab/type/BigEndian"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#website"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:Aspect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:Unordered"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:SignedIntegerEncoding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="qudt:ansiSQLName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#FunctionsGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#MappingGraph"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="xsd:gYearMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:Verifiable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#DocumentationGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:fieldCode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:EnumeratedQuantity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:IEEE754_1985RealEncoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:CT_UNCOUNTABLE"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:SymmetricRelation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:DerivedUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:rest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:DoublePrecisionEncoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://qudt.org/vocab/type/LittleEndian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:hasVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:PhysicalConstant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:SIGNED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:Quantity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ScriptGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:LittleEndian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:ShortUnsignedIntegerEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="qudt:bits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="qudt:length"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#DataGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:PartiallyOrdered"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:LongUnsignedIntegerEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="xsd:gDay"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdf:language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:exactMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:type"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Ontology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:UNSIGNED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#TopQuadrant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:SignednessType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:SinglePrecisionRealEncoding"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.linkedmodel.org/schema/vaem#isMetadataFor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#LinkSetGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#ControllersGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.linkedmodel.org/schema/vaem#CollectionGraph"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdf:direction"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:ShortSignedIntegerEncoding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="qudt:pythonName"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:EnumeratedQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:object"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:AngleUnit"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:UnsignedIntegerEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Datatype"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:Aspect"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:Verifiable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="qudt:CharEncoding"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#VesselWithMotorizedPropulsionSystem"/>
@@ -692,7 +1010,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MusclePoweredPropulsionSystem"/>
-        <Class IRI="#NonMotorizedPropulsionSystem"/>
+        <Class IRI="#PropulsionSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MusclePoweredPropulsionSystem"/>
@@ -711,10 +1029,6 @@
             <ObjectProperty IRI="#usedByPropulsionSystem"/>
             <Class IRI="#MusclePoweredPropulsionSystem"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonMotorizedPropulsionSystem"/>
-        <Class IRI="#PropulsionSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NonPistonEngine"/>
@@ -754,7 +1068,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PureWindPropulsionSystem"/>
-        <Class IRI="#NonMotorizedPropulsionSystem"/>
+        <Class IRI="#PropulsionSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PureWindPropulsionSystem"/>
@@ -847,7 +1161,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindAssistedPropulsionSystem"/>
-        <Class IRI="#NonMotorizedPropulsionSystem"/>
+        <Class IRI="#PropulsionSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindAssistedPropulsionSystem"/>
@@ -1883,16 +2197,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MusclePoweredPropulsionTechnology</IRI>
         <Literal xml:lang="en">Muscle-powered propulsion technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NonMotorizedPropulsionSystem</IRI>
-        <Literal xml:lang="en">A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#NonMotorizedPropulsionSystem</IRI>
-        <Literal xml:lang="en">Non-motorized propulsion system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

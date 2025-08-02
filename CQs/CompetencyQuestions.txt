@@ -51,7 +51,7 @@ General
 12.	What properties describe a bladed propulsor?
 13.	What types of screw propellers can be used?
 14.	What is used to prevent cavitation on technologies for motorized propulsion?
-15.	What type of wingsails exist? (If we stick to the classification)
+15.	What type of sails exist?
 16.	Which type of propulsion technologies can assist a motorized ship?
 
 Use case

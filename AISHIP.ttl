@@ -929,7 +929,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://burbachs.github.io/AISHIPOntology/AISHIP#MusclePoweredPropulsionSystem
 :MusclePoweredPropulsionSystem rdf:type owl:Class ;
-                               rdfs:subClassOf :NonMotorizedPropulsionSystem ,
+                               rdfs:subClassOf :PropulsionSystem ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty :usesPropulsionTechnology ;
                                                  owl:allValuesFrom :MusclePoweredPropulsionTechnology
@@ -951,13 +951,6 @@ foaf:Person rdf:type owl:Class .
                                                     :WindAssistedPropulsionTechnology ;
                                    rdfs:comment "A type of propulsion method based on human or animal muscular effort, which is applied by a muscle powered propulsion system to generate thrust. Examples include paddling, rowing, or pedaling, depending on the mechanical realization."@en ;
                                    rdfs:label "Muscle-powered propulsion technology"@en .
-
-
-###  https://burbachs.github.io/AISHIPOntology/AISHIP#NonMotorizedPropulsionSystem
-:NonMotorizedPropulsionSystem rdf:type owl:Class ;
-                              rdfs:subClassOf :PropulsionSystem ;
-                              rdfs:comment "A propulsion system that does not employ mechanical motors or engines, typically relying on natural forces or manual input such as wind or muscle power."@en ;
-                              rdfs:label "Non-motorized propulsion system"@en .
 
 
 ###  https://burbachs.github.io/AISHIPOntology/AISHIP#NonPistonEngine
@@ -1043,7 +1036,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://burbachs.github.io/AISHIPOntology/AISHIP#PureWindPropulsionSystem
 :PureWindPropulsionSystem rdf:type owl:Class ;
-                          rdfs:subClassOf :NonMotorizedPropulsionSystem ,
+                          rdfs:subClassOf :PropulsionSystem ,
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty :usesPropulsionTechnology ;
                                             owl:allValuesFrom :PureWindPropulsionTechnology
@@ -1243,7 +1236,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://burbachs.github.io/AISHIPOntology/AISHIP#WindAssistedPropulsionSystem
 :WindAssistedPropulsionSystem rdf:type owl:Class ;
-                              rdfs:subClassOf :NonMotorizedPropulsionSystem ,
+                              rdfs:subClassOf :PropulsionSystem ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty :usesPropulsionTechnology ;
                                                 owl:allValuesFrom :WindAssistedPropulsionTechnology
